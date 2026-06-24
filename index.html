@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aubuscule — Artisans numériques pour musiciens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:            #e8e6e0;
+      --ink:           #141414;
+      --ink-soft:      #55524b;
+      --ink-mute:      #8a877f;
+      --ink-faint:     #a8a59c;
+      --ink-dim:       #75726b;
+      --hairline:      #d8d5cd;
+      --hairline-soft: #cfccc4;
+      --surface:       #ffffff;
+      --surface-dark:  #141414;
+      --quote:         #3a3833;
+      --footer-body:   #9a978f;
+      --accent:        #44579c;
+      --accent-fg:     #e8e6e0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 40px; }
+
+    /* ── NAV ── */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(232, 230, 224, 0.86);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--hairline);
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto; padding: 14px 40px;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+    .nav-wordmark { font-size: 19px; font-weight: 600; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ink-soft); text-decoration: none;
+    }
+    .nav-cta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--accent-fg); background: var(--accent);
+      text-decoration: none; padding: 9px 16px; border-radius: 2px;
+    }
+
+    /* ── EYEBROW ── */
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 96px 0 80px;
+      display: grid; grid-template-columns: 1.15fr 0.85fr;
+      gap: 56px; align-items: center;
+    }
+    .hero-content { display: flex; flex-direction: column; gap: 28px; }
+    .hero-h1 { font-size: 58px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.04; }
+    .hero-sub { max-width: 480px; font-size: 17px; line-height: 1.65; color: var(--ink-soft); }
+    .hero-sub strong { font-weight: 600; color: var(--ink); }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
+    .btn-primary {
+      font-size: 15px; font-weight: 500;
+      color: var(--accent-fg); background: var(--accent);
+      text-decoration: none; padding: 14px 24px; border-radius: 2px;
+    }
+    .btn-secondary {
+      font-size: 15px; font-weight: 500; color: var(--ink);
+      background: transparent; text-decoration: none;
+      padding: 13px 22px; border-radius: 2px; border: 1px solid var(--ink);
+    }
+    .hero-mark { display: flex; justify-content: center; align-items: center; }
+    .hero-mark-svg { width: 320px; height: 320px; }
+
+    /* ── SECTIONS ── */
+    .section { border-top: 1px solid var(--hairline); padding: 72px 0; }
+    .section-pb { padding-bottom: 88px; }
+    .section-header { display: flex; flex-direction: column; gap: 14px; margin-bottom: 56px; max-width: 620px; }
+    .section-header-sm { margin-bottom: 44px; }
+    .section-h2 { font-size: 38px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.08; }
+    .section-lead { font-size: 16px; line-height: 1.6; color: var(--ink-soft); }
+
+    /* ── SERVICE CATEGORIES ── */
+    .service-cat {
+      display: grid; grid-template-columns: 300px 1fr;
+      gap: 48px; align-items: start;
+      padding: 48px 0;
+    }
+    .service-cat + .service-cat { border-top: 1px solid var(--hairline); }
+    .service-label { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 32px; }
+    .service-num-row { display: flex; align-items: baseline; gap: 12px; }
+    .service-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px; letter-spacing: 0.16em; color: var(--ink-faint);
+    }
+    .service-name { font-size: 32px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+    .service-desc { font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); max-width: 240px; }
+    .service-items { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+    .service-item {
+      display: flex; flex-direction: column; gap: 3px;
+      padding: 16px 0; border-top: 1px solid var(--hairline);
+    }
+    .service-item-name { font-size: 16.5px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3; }
+    .service-item-detail { font-size: 13px; line-height: 1.45; color: var(--ink-mute); }
+
+    /* ── PERSON CARDS ── */
+    .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .person-card {
+      background: var(--surface); border-radius: 3px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+      padding: 24px; display: flex; gap: 24px; align-items: stretch;
+    }
+    .person-photo-col { width: 168px; flex: none; }
+    .person-photo {
+      width: 168px; height: 210px;
+      background: var(--bg); border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .person-photo-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ink-faint); text-align: center; line-height: 1.6;
+    }
+    .person-info {
+      flex: 1; min-width: 0;
+      display: flex; flex-direction: column; gap: 14px; padding-top: 2px;
+    }
+    .person-role {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--ink-faint); margin-bottom: 5px;
+    }
+    .person-name { font-size: 28px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+    .person-bio { font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); }
+    .person-specs { margin-top: auto; display: flex; flex-direction: column; gap: 8px; }
+    .person-specs-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-faint);
+    }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px; letter-spacing: 0.02em;
+      color: var(--ink); border: 1px solid var(--hairline);
+      border-radius: 2px; padding: 5px 9px; line-height: 1;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .testimonial-card {
+      background: var(--surface); border-radius: 3px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+      padding: 28px; display: flex; flex-direction: column;
+      gap: 20px; justify-content: space-between;
+    }
+    .testimonial-quote { font-style: italic; font-size: 15.5px; line-height: 1.6; color: var(--quote); }
+    .testimonial-name { font-size: 14px; font-weight: 500; margin-bottom: 3px; }
+    .testimonial-role {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; letter-spacing: 0.1em; color: var(--ink-faint);
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 56px; align-items: start; }
+    .contact-col { display: flex; flex-direction: column; gap: 24px; }
+    .contact-h2 { font-size: 38px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.08; }
+    .contact-lead { font-size: 16px; line-height: 1.6; color: var(--ink-soft); }
+    .contact-details { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
+    .contact-item { display: flex; flex-direction: column; gap: 3px; text-decoration: none; color: var(--ink); }
+    .contact-item-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faint);
+    }
+    .contact-item-value { font-size: 17px; font-weight: 500; letter-spacing: -0.01em; }
+    .contact-form {
+      background: var(--surface); border-radius: 3px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+      padding: 32px; display: flex; flex-direction: column; gap: 22px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .form-field { display: flex; flex-direction: column; gap: 7px; }
+    .form-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute);
+    }
+    .form-input, .form-select, .form-textarea {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px; color: var(--ink);
+      background: transparent; border: none;
+      border-bottom: 1px solid var(--hairline-soft);
+      padding: 9px 0; outline: none; width: 100%;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-bottom-color: var(--ink);
+    }
+    .form-select { appearance: none; cursor: pointer; }
+    .form-textarea { resize: vertical; }
+    .form-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap; margin-top: 4px;
+    }
+    .form-notice {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; letter-spacing: 0.04em; color: var(--ink-faint);
+    }
+    .form-submit {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px; font-weight: 500;
+      color: var(--accent-fg); background: var(--accent);
+      border: none; padding: 14px 26px; border-radius: 2px; cursor: pointer;
+    }
+    .form-submit:hover { opacity: 0.85; }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--surface-dark); border-top: 1px solid var(--hairline); }
+    .footer-main {
+      max-width: 1120px; margin: 0 auto; padding: 48px 40px;
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 32px; flex-wrap: wrap;
+    }
+    .footer-brand { display: flex; flex-direction: column; gap: 16px; max-width: 380px; }
+    .footer-logo { display: flex; align-items: center; gap: 12px; }
+    .footer-wordmark { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: var(--bg); }
+    .footer-tagline { font-size: 14px; line-height: 1.6; color: var(--footer-body); }
+    .footer-cols { display: flex; gap: 56px; flex-wrap: wrap; }
+    .footer-col { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-dim);
+    }
+    .footer-link { font-size: 14px; color: var(--bg); text-decoration: none; }
+    .footer-bottom {
+      max-width: 1120px; margin: 0 auto; padding: 0 40px 36px;
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    }
+    .footer-copy {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; letter-spacing: 0.08em; color: var(--ink-dim);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <svg width="32" height="32" viewBox="0 0 100 100" style="display:block;overflow:visible;flex:none">
+        <defs>
+          <mask id="nc">
+            <rect width="100" height="100" fill="#fff"/>
+            <circle cx="63" cy="39" r="29" fill="#000"/>
+          </mask>
+          <mask id="nk">
+            <rect width="100" height="100" fill="#000"/>
+            <circle cx="57" cy="47" r="35" fill="#fff"/>
+            <circle cx="50" cy="51" r="30" fill="#000"/>
+          </mask>
+          <pattern id="nd" width="2.7" height="2.7" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+            <circle cx="1.35" cy="1.35" r="0.52" fill="#44579c"/>
+          </pattern>
+        </defs>
+        <rect width="100" height="100" fill="url(#nd)" mask="url(#nk)"/>
+        <circle cx="50" cy="51" r="29" fill="#44579c" mask="url(#nc)"/>
+      </svg>
+      <span class="nav-wordmark">Aubuscule</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#equipe" class="nav-link">Équipe</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<span id="top"></span>
+<main>
+  <div class="wrap">
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Musiciens · artisans numériques</div>
+        <h1 class="hero-h1">Concentrez-vous sur votre art. On fait le reste.</h1>
+        <p class="hero-sub">Aubuscule accompagne les artistes sur quatre fronts — <strong>digital, audio, vidéo et administratif</strong>.</p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn-primary">Découvrir les services</a>
+          <a href="#contact" class="btn-secondary">Nous écrire</a>
+        </div>
+      </div>
+      <div class="hero-mark">
+        <svg class="hero-mark-svg" viewBox="0 0 100 100" style="display:block;overflow:visible">
+          <defs>
+            <mask id="hc">
+              <rect width="100" height="100" fill="#fff"/>
+              <circle cx="63" cy="39" r="29" fill="#000"/>
+            </mask>
+            <mask id="hk">
+              <rect width="100" height="100" fill="#000"/>
+              <circle cx="57" cy="47" r="35" fill="#fff"/>
+              <circle cx="50" cy="51" r="30" fill="#000"/>
+            </mask>
+            <pattern id="hd" width="2.7" height="2.7" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+              <circle cx="1.35" cy="1.35" r="0.52" fill="#44579c"/>
+            </pattern>
+          </defs>
+          <rect width="100" height="100" fill="url(#hd)" mask="url(#hk)"/>
+          <circle cx="50" cy="51" r="29" fill="#44579c" mask="url(#hc)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section class="section" id="services">
+      <div class="section-header">
+        <div class="eyebrow">Prestations · 01—04</div>
+        <h2 class="section-h2">Quatre domaines, une équipe</h2>
+        <p class="section-lead">Chaque prestation se prend à la carte ou en accompagnement global. Tout est pensé pour rester léger et réutilisable.</p>
+      </div>
+
+      <div>
+        <!-- 01 Digital -->
+        <div class="service-cat">
+          <div class="service-label">
+            <div class="service-num-row">
+              <span class="service-num">01</span>
+              <h3 class="service-name">Digital</h3>
+            </div>
+            <p class="service-desc">Le socle en ligne de l'artiste : site, EPK, plateformes et image.</p>
+          </div>
+          <div class="service-items">
+            <div class="service-item">
+              <div class="service-item-name">One-page web</div>
+              <div class="service-item-detail">Site vitrine léger, rapide, à votre image.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">EPK numérique</div>
+              <div class="service-item-detail">Dossier de presse en ligne, prêt à partager.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Setup plateformes</div>
+              <div class="service-item-detail">Spotify, Apple, YouTube, réseaux configurés.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Calendrier synchronisé</div>
+              <div class="service-item-detail">Agenda du site relié à un Google Sheet.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Mises à jour</div>
+              <div class="service-item-detail">Site, EPK et réseaux tenus à jour.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Communication audiovisuelle</div>
+              <div class="service-item-detail">Déclinaisons visuelles et fil éditorial.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Mini-séance portrait</div>
+              <div class="service-item-detail">Shooting court, cadré pour vos besoins.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Photos live</div>
+              <div class="service-item-detail">Captation photo de vos concerts.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Tri + retouche</div>
+              <div class="service-item-detail">Sélection et retouche de votre existant.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Pack photo « réseaux »</div>
+              <div class="service-item-detail">Format pensé pour Instagram &amp; co.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 Audio -->
+        <div class="service-cat">
+          <div class="service-label">
+            <div class="service-num-row">
+              <span class="service-num">02</span>
+              <h3 class="service-name">Audio</h3>
+            </div>
+            <p class="service-desc">Du studio à la diffusion : enregistrement, mix, mastering, création.</p>
+          </div>
+          <div class="service-items">
+            <div class="service-item">
+              <div class="service-item-name">Mixage / Mastering</div>
+              <div class="service-item-detail">Au titre, prêt pour la diffusion.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Production titre « radio »</div>
+              <div class="service-item-detail">Production calibrée format radio.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Journée studio multipiste</div>
+              <div class="service-item-detail">Session d'enregistrement multipiste.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Création musicale sur mesure</div>
+              <div class="service-item-detail">Composition originale, sans IA.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Setup informatique scénique</div>
+              <div class="service-item-detail">Configuration de votre rig de scène.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Vidéos -->
+        <div class="service-cat">
+          <div class="service-label">
+            <div class="service-num-row">
+              <span class="service-num">03</span>
+              <h3 class="service-name">Vidéos</h3>
+            </div>
+            <p class="service-desc">L'image en mouvement : montage réseaux, clip, captation live.</p>
+          </div>
+          <div class="service-items">
+            <div class="service-item">
+              <div class="service-item-name">Montage vidéo RS</div>
+              <div class="service-item-detail">Formats réseaux, monté sur FCPX.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Réalisation clip</div>
+              <div class="service-item-detail">Clip réalisé sur FCPX / Motion.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Captation live acoustique</div>
+              <div class="service-item-detail">Ambiance + vidéo, prise en live.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 Admin -->
+        <div class="service-cat">
+          <div class="service-label">
+            <div class="service-num-row">
+              <span class="service-num">04</span>
+              <h3 class="service-name">Admin</h3>
+            </div>
+            <p class="service-desc">Tout ce qui vous vole votre temps de création :</p>
+          </div>
+          <div class="service-items">
+            <div class="service-item">
+              <div class="service-item-name">Fiche technique + plan de scène</div>
+              <div class="service-item-detail">Rider et plan de scène clairs.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Droits admin</div>
+              <div class="service-item-detail">Gestion des droits, en perso ou via label.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Distribution numérique</div>
+              <div class="service-item-detail">Mise en ligne sur les plateformes.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Automatisation sur mesure</div>
+              <div class="service-item-detail">Workflows et scripts entre vos outils.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Synchronisation de données</div>
+              <div class="service-item-detail">Feuilles, formulaires, plateformes reliés.</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-name">Notifications &amp; rapports auto</div>
+              <div class="service-item-detail">Alertes, résumés et envois programmés.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ÉQUIPE ── -->
+    <section class="section" id="equipe">
+      <div class="section-header section-header-sm">
+        <div class="eyebrow">L'équipe</div>
+        <h2 class="section-h2">Les visages derrière Aubuscule</h2>
+        <p class="section-lead">Deux personnes, des compétences complémentaires. Pas d'intermédiaire : vous parlez directement à ceux qui font.</p>
+      </div>
+      <div class="team-grid">
+        <div class="person-card">
+          <div class="person-photo-col">
+            <div class="person-photo">
+              <span class="person-photo-label">Portrait<br>Boris</span>
+            </div>
+          </div>
+          <div class="person-info">
+            <div>
+              <div class="person-role">Artisan numérique · Photo</div>
+              <div class="person-name">Boris</div>
+            </div>
+            <p class="person-bio">Musicien, artisan numérique et photographe. Il façonne le web, l'image et l'automatisation autour de l'artiste — du site à l'EPK jusqu'aux réseaux.</p>
+            <div class="person-specs">
+              <div class="person-specs-label">Spécialités</div>
+              <div class="tag-row">
+                <span class="tag">Web</span>
+                <span class="tag">Design</span>
+                <span class="tag">Photo</span>
+                <span class="tag">Automatisation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="person-card">
+          <div class="person-photo-col">
+            <div class="person-photo">
+              <span class="person-photo-label">Portrait<br>Éric</span>
+            </div>
+          </div>
+          <div class="person-info">
+            <div>
+              <div class="person-role">Musicien · Composition · Son</div>
+              <div class="person-name">Éric</div>
+            </div>
+            <p class="person-bio">Musicien et compositeur avant tout, ingénieur du son de formation. L'enregistrement, la vidéo et le clip n'ont pas de secrets pour lui — de la prise au mastering.</p>
+            <div class="person-specs">
+              <div class="person-specs-label">Spécialités</div>
+              <div class="tag-row">
+                <span class="tag">Enregistrement</span>
+                <span class="tag">Mix / Master</span>
+                <span class="tag">Vidéo</span>
+                <span class="tag">Clip</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TÉMOIGNAGES ── -->
+    <section class="section" id="temoignages">
+      <div class="section-header section-header-sm">
+        <div class="eyebrow">La parole aux artistes</div>
+        <h2 class="section-h2">Ce qu'ils en disent</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">« Vous nous avez sorti la tête du sable côté admin et web. On avait la musique, il nous manquait le reste. »</p>
+          <div>
+            <div class="testimonial-name">Léa M.</div>
+            <div class="testimonial-role">Auteure-compositrice</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">« L'EPK a été fait en une semaine. Propre, direct. On l'envoie encore aujourd'hui. »</p>
+          <div>
+            <div class="testimonial-name">Naïl B.</div>
+            <div class="testimonial-role">Rappeur</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">« Le mix a tout changé. On entendait enfin ce qu'on voulait entendre. »</p>
+          <div>
+            <div class="testimonial-name">Thomas R.</div>
+            <div class="testimonial-role">Producteur</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="section section-pb" id="contact">
+      <div class="contact-grid">
+        <div class="contact-col">
+          <div>
+            <div class="eyebrow" style="margin-bottom:14px">Contact</div>
+            <h2 class="contact-h2">Parlons de votre projet</h2>
+            <p class="contact-lead" style="margin-top:14px">Dites-nous où vous en êtes. On répond vite, sans jargon.</p>
+          </div>
+          <div class="contact-details">
+            <a href="mailto:contact@aubuscule.com" class="contact-item">
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-value">contact@aubuscule.com</span>
+            </a>
+            <a href="tel:+32474780539" class="contact-item">
+              <span class="contact-item-label">Téléphone · Boris</span>
+              <span class="contact-item-value">0474 78 05 39</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label class="form-field">
+              <span class="form-label">Nom</span>
+              <input class="form-input" name="nom" type="text" placeholder="Votre nom d'artiste">
+            </label>
+            <label class="form-field">
+              <span class="form-label">Email</span>
+              <input class="form-input" name="email" type="email" placeholder="vous@exemple.com">
+            </label>
+          </div>
+          <label class="form-field">
+            <span class="form-label">Type de projet</span>
+            <select class="form-select" name="type">
+              <option>Digital — web, EPK, plateformes</option>
+              <option>Audio — studio, mix, création</option>
+              <option>Vidéo — montage, clip, captation</option>
+              <option>Admin — technique, droits, distribution</option>
+              <option>Accompagnement global</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span class="form-label">Votre projet</span>
+            <textarea class="form-textarea" name="message" rows="4" placeholder="En quelques mots, où vous en êtes et ce dont vous avez besoin."></textarea>
+          </label>
+          <div class="form-footer">
+            <span class="form-notice" id="form-notice">Réponse sous 48 h ouvrées.</span>
+            <button type="submit" class="form-submit">Envoyer la demande</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </div><!-- .wrap -->
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg width="34" height="34" viewBox="0 0 100 100" style="display:block;overflow:visible;flex:none">
+          <defs>
+            <mask id="fc">
+              <rect width="100" height="100" fill="#fff"/>
+              <circle cx="63" cy="39" r="29" fill="#000"/>
+            </mask>
+            <mask id="fk">
+              <rect width="100" height="100" fill="#000"/>
+              <circle cx="57" cy="47" r="35" fill="#fff"/>
+              <circle cx="50" cy="51" r="30" fill="#000"/>
+            </mask>
+            <pattern id="fd" width="2.7" height="2.7" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+              <circle cx="1.35" cy="1.35" r="0.52" fill="#ffffff"/>
+            </pattern>
+          </defs>
+          <rect width="100" height="100" fill="url(#fd)" mask="url(#fk)"/>
+          <circle cx="50" cy="51" r="29" fill="#ffffff" mask="url(#fc)"/>
+        </svg>
+        <span class="footer-wordmark">Aubuscule</span>
+      </div>
+      <p class="footer-tagline">On ne livre pas des projets. On éclaire un besoin, on construit une solution, on transmet les clés.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <span class="footer-col-label">Contact</span>
+        <a href="mailto:contact@aubuscule.com" class="footer-link">contact@aubuscule.com</a>
+        <a href="tel:+32474780539" class="footer-link">0474 78 05 39</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Naviguer</span>
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#equipe" class="footer-link">Équipe</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Aubuscule</span>
+    <span class="footer-copy">Musiciens · artisans numériques</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var el = e.target.elements;
+    var v = function(k) { return el[k] && el[k].value ? el[k].value : ""; };
+    var nom = v("nom"), email = v("email"), type = v("type"), message = v("message");
+    var subject = "Aubuscule — " + (type ? type.split("—")[0].trim() : "Demande") + (nom ? " · " + nom : "");
+    var body = "Nom : " + nom + "\nEmail : " + email + "\nType : " + type + "\n\n" + message;
+    window.location.href = "mailto:contact@aubuscule.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    var notice = document.getElementById("form-notice");
+    notice.textContent = "Merci — votre messagerie va s’ouvrir.";
+    notice.style.color = "#141414";
+  });
+</script>
+</body>
+</html>
