@@ -17,10 +17,6 @@ export function Contact() {
               <span className="contact-item-label">Email</span>
               <span className="contact-item-value">contact@aubuscule.com</span>
             </a>
-            <a href="tel:+32474780539" className="contact-item">
-              <span className="contact-item-label">Téléphone · Boris</span>
-              <span className="contact-item-value">0474 78 05 39</span>
-            </a>
           </address>
         </div>
         <ContactForm />

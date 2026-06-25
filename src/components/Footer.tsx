@@ -20,7 +20,6 @@ export function Footer() {
             <a href="mailto:contact@aubuscule.com" className="footer-link">
               contact@aubuscule.com
             </a>
-            <a href="tel:+32474780539" className="footer-link">0474 78 05 39</a>
           </div>
           <div className="footer-col">
             <span className="footer-col-label">Naviguer</span>
