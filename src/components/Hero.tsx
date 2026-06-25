@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero-content">
-        <p className="eyebrow" aria-hidden="true">Musiciens · artisans numériques</p>
+        <p className="eyebrow" aria-hidden="true">Musiciens · Plasticiens · Artistes</p>
         <h1 className="hero-h1" id="hero-heading">
           Concentrez-vous sur votre art. On fait le reste.
         </h1>

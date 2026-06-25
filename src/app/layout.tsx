@@ -19,13 +19,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Aubuscule — Artisans numériques pour musiciens',
+  title: 'Aubuscule — Artisans numériques pour artistes',
   description:
-    'Aubuscule accompagne les artistes sur quatre fronts — digital, audio, vidéo et administratif. Deux musiciens-artisans au service de votre projet.',
+    'Aubuscule accompagne les artistes — digital, audio, vidéo et administratif. Musiciens, plasticiens, performeurs : deux artisans au service de votre projet.',
   openGraph: {
-    title: 'Aubuscule — Artisans numériques pour musiciens',
+    title: 'Aubuscule — Artisans numériques pour artistes',
     description:
-      'Accompagnement digital, audio, vidéo et administratif pour artistes musiciens.',
+      'Accompagnement digital, audio, vidéo et administratif pour musiciens, plasticiens et artistes.',
     locale: 'fr_BE',
     type: 'website',
   },

@@ -32,7 +32,7 @@ export function Footer() {
       </div>
       <div className="footer-bottom">
         <span className="footer-copy">© 2026 Aubuscule</span>
-        <span className="footer-copy">Musiciens · artisans numériques</span>
+        <span className="footer-copy">Musiciens · Plasticiens · Artistes</span>
       </div>
     </footer>
   )
