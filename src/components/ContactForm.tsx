@@ -5,11 +5,6 @@ import { useState } from 'react'
 export function ContactForm() {
   const [sent, setSent] = useState(false)
   const [error, setError] = useState(false)
-  const notice = sent
-    ? 'Merci — on revient vers vous sous 48 h.'
-    : error
-    ? 'Erreur lors de l\'envoi. Réessayez ou écrivez-nous directement.'
-    : 'Réponse sous 48 h ouvrées.'
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -22,13 +17,25 @@ export function ContactForm() {
       })
       if (res.ok) {
         setSent(true)
-        form.reset()
       } else {
         setError(true)
       }
     } catch {
       setError(true)
     }
+  }
+
+  if (sent) {
+    return (
+      <div className="form-success" role="status">
+        <svg className="form-success-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="23" stroke="currentColor" strokeWidth="2"/>
+          <polyline points="14,25 21,32 34,17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        <p className="form-success-title">Votre message a bien été envoyé.</p>
+        <p className="form-success-sub">On revient vers vous sous 48 h ouvrées.</p>
+      </div>
+    )
   }
 
   return (
@@ -88,13 +95,15 @@ export function ContactForm() {
       <div className="form-footer">
         <span
           className="form-notice"
-          role={sent || error ? 'status' : undefined}
-          aria-live={sent || error ? 'polite' : undefined}
+          role={error ? 'status' : undefined}
+          aria-live={error ? 'polite' : undefined}
         >
-          {notice}
+          {error
+            ? "Erreur lors de l'envoi. Réessayez ou écrivez-nous directement."
+            : 'Réponse sous 48 h ouvrées.'}
         </span>
-        <button type="submit" className="form-submit" disabled={sent}>
-          {sent ? 'Envoyé' : 'Envoyer la demande'}
+        <button type="submit" className="form-submit">
+          Envoyer la demande
         </button>
       </div>
     </form>
