@@ -397,7 +397,7 @@ body {
 
   .hero { padding: 48px 0 40px; }
   .hero-h1 { font-size: 36px; }
-  .hero-mark-svg { width: 140px; height: 140px; }
+  .hero-mark-svg { display: none; }
 
   .section { padding: 48px 0; }
   .section-h2 { font-size: 26px; }
