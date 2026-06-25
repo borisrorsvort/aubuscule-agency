@@ -5,20 +5,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Dev server
 
 ```bash
-python3 -m http.server 8743
-# → http://localhost:8743/
+npm run dev
+# → http://localhost:3000/
 ```
 
-No build step. No dependencies. No package manager.
+Build: `npm run build` · Start prod: `npm start`
 
 ## Architecture
 
-Single-file static site: everything lives in `index.html`.
+Next.js 16 app (App Router, TypeScript). Source in `src/`.
 
-- **CSS** — custom properties in `:root`, all tokens in `DESIGN.md`. No framework, no preprocessor.
-- **SVG marks** — the eclipse mark is inlined three times with unique `id` prefixes (`n*` nav, `h*` hero, `f*` footer). Each is the "trame" treatment: a dot-pattern corona mask + crescent circle. Nav and hero use `--accent` ink; footer uses white (inverse on dark bg).
-- **JS** — single `<script>` block at bottom, vanilla. Handles the contact form: builds a `mailto:` URI from field values and fires `window.location.href`.
-- **No frameworks, no modules, no bundler.**
+- **`src/app/layout.tsx`** — root layout: fonts (next/font/google), metadata, Nav, Footer, skip link.
+- **`src/app/page.tsx`** — single page: Hero → Services → Team → Testimonials → Contact.
+- **`src/app/globals.css`** — all CSS (tokens, reset, components, responsive breakpoints). Global only — no CSS Modules.
+- **`src/components/Mark.tsx`** — reusable eclipse SVG. Props: `idPrefix` (unique per instance: `n`/`h`/`f`), `inkColor` (default accent, white for footer), `style`, `className`.
+- **`src/components/Nav.tsx`** — `'use client'`. Sticky nav with hamburger at < 480 px.
+- **`src/components/ContactForm.tsx`** — `'use client'`. Mailto: form handler.
+- **`public/img/`** — person photos served as static assets.
+- **Responsive breakpoints:** 899 px (tablet), 719 px (large mobile), 479 px (mobile + hamburger).
 
 ## Design constraints
 

@@ -1,0 +1,30 @@
+import { ContactForm } from './ContactForm'
+
+export function Contact() {
+  return (
+    <section className="section section-pb" id="contact" aria-labelledby="contact-heading">
+      <div className="contact-grid">
+        <div className="contact-col">
+          <div>
+            <p className="eyebrow contact-eyebrow">Contact</p>
+            <h2 className="contact-h2" id="contact-heading">Parlons de votre projet</h2>
+            <p className="contact-lead">
+              Dites-nous où vous en êtes. On répond vite, sans jargon.
+            </p>
+          </div>
+          <address className="contact-details">
+            <a href="mailto:contact@aubuscule.com" className="contact-item">
+              <span className="contact-item-label">Email</span>
+              <span className="contact-item-value">contact@aubuscule.com</span>
+            </a>
+            <a href="tel:+32474780539" className="contact-item">
+              <span className="contact-item-label">Téléphone · Boris</span>
+              <span className="contact-item-value">0474 78 05 39</span>
+            </a>
+          </address>
+        </div>
+        <ContactForm />
+      </div>
+    </section>
+  )
+}
