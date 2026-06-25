@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const testimonials = [
   {
     quote: '«\u00A0Ravi du travail d\'Aubuscule ! Ils ont parfaitement su immortaliser mon univers et l\'âme de mes UDU, que ce soit pour le catalogue ou en plein jeu. Je recommande à 100\u00A0%\u00A0»',
@@ -58,7 +60,7 @@ export function Testimonials() {
               <footer className="testimonial-footer">
                 <div className="testimonial-avatar" aria-hidden="true">
                   {t.photo
-                    ? <img src={t.photo} alt="" />
+                    ? <Image src={t.photo} alt="" width={48} height={48} sizes="48px" />
                     : t.initials}
                 </div>
                 <div>
