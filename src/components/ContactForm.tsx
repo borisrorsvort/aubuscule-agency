@@ -4,35 +4,43 @@ import { useState } from 'react'
 
 export function ContactForm() {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState(false)
   const notice = sent
-    ? "Merci — votre messagerie va s'ouvrir."
+    ? 'Merci — on revient vers vous sous 48 h.'
+    : error
+    ? 'Erreur lors de l\'envoi. Réessayez ou écrivez-nous directement.'
     : 'Réponse sous 48 h ouvrées.'
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    const els = e.currentTarget.elements as HTMLFormControlsCollection & {
-      nom: HTMLInputElement
-      email: HTMLInputElement
-      type: HTMLSelectElement
-      message: HTMLTextAreaElement
+    const form = e.currentTarget
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form) as unknown as Record<string, string>).toString(),
+      })
+      if (res.ok) {
+        setSent(true)
+        form.reset()
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
     }
-    const nom = els.nom?.value ?? ''
-    const email = els.email?.value ?? ''
-    const type = els.type?.value ?? ''
-    const message = els.message?.value ?? ''
-    const subject =
-      'Aubuscule — ' + (type ? type.split('—')[0].trim() : 'Demande') + (nom ? ' · ' + nom : '')
-    const body = `Nom : ${nom}\nEmail : ${email}\nType : ${type}\n\n${message}`
-    window.location.href =
-      'mailto:contact@aubuscule.com?subject=' +
-      encodeURIComponent(subject) +
-      '&body=' +
-      encodeURIComponent(body)
-    setSent(true)
   }
 
   return (
-    <form className="contact-form" id="contact-form" onSubmit={handleSubmit} noValidate>
+    <form
+      className="contact-form"
+      id="contact-form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      onSubmit={handleSubmit}
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <div className="form-row">
         <label className="form-field">
           <span className="form-label">Nom</span>
@@ -80,13 +88,13 @@ export function ContactForm() {
       <div className="form-footer">
         <span
           className="form-notice"
-          role={sent ? 'status' : undefined}
-          aria-live={sent ? 'polite' : undefined}
+          role={sent || error ? 'status' : undefined}
+          aria-live={sent || error ? 'polite' : undefined}
         >
           {notice}
         </span>
-        <button type="submit" className="form-submit">
-          Envoyer la demande
+        <button type="submit" className="form-submit" disabled={sent}>
+          {sent ? 'Envoyé' : 'Envoyer la demande'}
         </button>
       </div>
     </form>
