@@ -1,17 +1,23 @@
 const testimonials = [
   {
     quote: '« Vous nous avez sorti la tête du sable côté admin et web. On avait la musique, il nous manquait le reste. »',
-    name: 'Léa M.',
+    name: 'Léa Martin',
+    initials: 'LM',
+    photo: null,
     role: 'Auteure-compositrice',
   },
   {
     quote: "« L'EPK a été fait en une semaine. Propre, direct. On l'envoie encore aujourd'hui. »",
-    name: 'Naïl B.',
+    name: 'Naïl Benali',
+    initials: 'NB',
+    photo: null,
     role: 'Rappeur',
   },
   {
     quote: "« Le mix a tout changé. On entendait enfin ce qu'on voulait entendre. »",
-    name: 'Thomas R.',
+    name: 'Thomas Renaud',
+    initials: 'TR',
+    photo: null,
     role: 'Producteur',
   },
 ]
@@ -28,9 +34,16 @@ export function Testimonials() {
           <li key={t.name} className="testimonial-card">
             <blockquote>
               <p className="testimonial-quote">{t.quote}</p>
-              <footer>
-                <cite className="testimonial-name">{t.name}</cite>
-                <p className="testimonial-role">{t.role}</p>
+              <footer className="testimonial-footer">
+                <div className="testimonial-avatar" aria-hidden="true">
+                  {t.photo
+                    ? <img src={t.photo} alt="" />
+                    : t.initials}
+                </div>
+                <div>
+                  <cite className="testimonial-name">{t.name}</cite>
+                  <p className="testimonial-role">{t.role}</p>
+                </div>
               </footer>
             </blockquote>
           </li>
