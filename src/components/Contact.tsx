@@ -13,7 +13,7 @@ export function Contact() {
             </p>
           </div>
           <address className="contact-details">
-            <a href="mailto:contact@aubuscule.com" className="contact-item">
+            <a href={`mailto:contact@aubuscule.com?subject=${encodeURIComponent("Demande d'information - Aubuscule")}&body=${encodeURIComponent("Bonjour,\n\nVoici où j'en suis :\n\n\nCe dont j'ai besoin :\n\n")}`} className="contact-item">
               <span className="contact-item-label">Email</span>
               <span className="contact-item-value">contact@aubuscule.com</span>
             </a>
