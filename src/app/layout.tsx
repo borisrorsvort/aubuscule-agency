@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aubuscule.be'),
+  metadataBase: new URL('https://agency.aubuscule.com'),
   title: 'Aubuscule — Artisans numériques pour artistes',
   description:
     'Aubuscule accompagne les artistes — digital, audio, vidéo et administratif. Musiciens, plasticiens, performeurs : deux artisans au service de votre projet.',
