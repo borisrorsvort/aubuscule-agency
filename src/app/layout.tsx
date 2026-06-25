@@ -3,6 +3,7 @@ import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { Nav } from '@/components/Nav'
 import { Footer } from '@/components/Footer'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -33,14 +34,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
+    <html lang="fr" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Runs before paint — prevents flash of wrong theme */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body>
         <a href="#main-content" className="skip-link">
           Aller au contenu principal
         </a>
-        <Nav />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -14,6 +14,31 @@
   --footer-body:   #9a978f;
   --accent:        #44579c;
   --accent-fg:     #e8e6e0;
+  --nav-bg:        rgba(232, 230, 224, 0.86);
+  --nav-open-bg:   rgba(232, 230, 224, 0.97);
+  --focus-ring:    #44579c;
+}
+
+/* ── DARK MODE ── */
+[data-theme="dark"] {
+  --bg:            #1c1b18;
+  --ink:           #eae8e2;
+  --ink-soft:      #b0ada5;
+  --ink-mute:      #8a877f;
+  --ink-faint:     #696560;
+  --ink-dim:       #5c5950;
+  --hairline:      #2e2c28;
+  --hairline-soft: #2b2925;
+  --surface:       #242220;
+  --surface-dark:  #0f0e0c;
+  --quote:         #c8c5bc;
+  --footer-body:   #6e6b63;
+  --accent:        #44579c;
+  --accent-fg:     #e8e6e0;
+  --nav-bg:        rgba(28, 27, 24, 0.90);
+  --nav-open-bg:   rgba(28, 27, 24, 0.97);
+  /* Lighter blue for accent-as-foreground on dark bg — passes 4.5:1 WCAG AA */
+  --focus-ring:    #7a8ec2;
 }
 
 /* ── RESET ── */
@@ -24,6 +49,7 @@ body {
   font-family: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* ── ACCESSIBILITY ── */
@@ -44,7 +70,7 @@ body {
 .skip-link:focus { left: 16px; top: 16px; }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -64,9 +90,10 @@ body {
 /* ── NAV ── */
 .nav {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(232, 230, 224, 0.86);
+  background: var(--nav-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--hairline);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 .nav-inner {
   max-width: 1120px; margin: 0 auto; padding: 14px 40px;
@@ -92,6 +119,24 @@ body {
   color: var(--accent-fg); background: var(--accent);
   text-decoration: none; padding: 9px 16px; border-radius: 2px;
 }
+.nav-area {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  background: none; border: none; cursor: pointer;
+  color: var(--ink-mute);
+  border-radius: 2px;
+  padding: 6px;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+.theme-toggle:hover { color: var(--ink); }
 .hamburger {
   display: none;
   flex-direction: column;
@@ -394,7 +439,7 @@ body {
     align-items: stretch;
     gap: 0;
     padding: 0 20px 12px;
-    background: rgba(232, 230, 224, 0.97);
+    background: var(--nav-open-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--hairline);
     transform: translateY(-110%);
@@ -437,6 +482,36 @@ body {
 
   .person-photo { height: 180px; }
   .person-name { font-size: 22px; }
+}
+
+/* ── DARK MODE OVERRIDES ── */
+
+/* Cards: shadow barely visible on dark bg — add hairline highlight + stronger shadow */
+[data-theme="dark"] .person-card,
+[data-theme="dark"] .testimonial-card,
+[data-theme="dark"] .contact-form,
+[data-theme="dark"] .form-success {
+  box-shadow: 0 1px 6px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.05);
+}
+
+/* Form success icon: accent (#44579c) fails contrast as fg on dark surface.
+   Use --focus-ring (#7a8ec2) which passes 4.5:1 on dark surfaces. */
+[data-theme="dark"] .form-success-icon {
+  color: var(--focus-ring);
+}
+
+/* Form select options inherit system bg on some browsers — ensure legibility */
+[data-theme="dark"] .form-select option {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* Mobile nav CTA: in mobile open menu, nav-cta uses color: var(--accent) as plain text.
+   #44579c on dark bg = 2.7:1 — fails WCAG AA. Use ink instead. */
+@media (max-width: 479px) {
+  [data-theme="dark"] .nav-cta {
+    color: var(--ink);
+  }
 }
 
 /* Reduced motion */
