@@ -48,7 +48,6 @@ export function Team() {
             </div>
             <div className="person-info">
               <div>
-                <p className="person-role">{m.role}</p>
                 <p className="person-name">{m.name}</p>
               </div>
               <p className="person-bio">{m.bio}</p>
