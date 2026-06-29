@@ -4,6 +4,9 @@ tmp/
 node_modules/
 .next/
 out/
+.open-next/
+.wrangler/
+.dev.vars
 .env*
 *.tsbuildinfo
 next-env.d.ts

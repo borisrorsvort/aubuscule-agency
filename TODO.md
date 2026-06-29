@@ -51,20 +51,31 @@ _Resolve before starting the tagged epic._
 
 ---
 
-## Epic 1 — Cloudflare Pages Migration
+## Epic 1 — Cloudflare Workers Migration (OpenNext)
 
 _Unblocks: All epics. Requires CF account (Open Question)._
 
-- [ ] Remove `output: 'export'` from `next.config.ts`
-- [ ] Add `opennextjs-cloudflare` (or `@cloudflare/next-on-pages`) adapter
-- [ ] Configure `<Image>` loader for Cloudflare (replace `unoptimized: true`)
-- [ ] Convert `public/robots.txt` → `src/app/robots.ts` (auto-generated)
-- [ ] Convert `public/sitemap.xml` → `src/app/sitemap.ts` (auto-generated)
-- [ ] Create Cloudflare Pages project, connect GitHub repo _(user action)_
-- [ ] Set build command in CF Pages (adapter-specific) _(user action)_
-- [ ] Migrate DNS from Netlify to Cloudflare (`agency.aubuscule.com` → CF Pages) _(user action)_
-- [ ] Test current agency site works identically on CF Pages
-- [ ] Remove Netlify config (`netlify.toml`, `_redirects`, etc.)
+> **Decision (2026-06-29):** Target **Cloudflare Workers + `@opennextjs/cloudflare`**, not Pages.
+> `@cloudflare/next-on-pages` is deprecated; CF now steers SSR Next.js to Workers + OpenNext
+> (1.0 GA, full Node.js runtime, request-time middleware — required for host-based routing).
+> Pin **Node 22** (`.nvmrc`); sharp has no Node 25 prebuild and tries to compile from source.
+
+- [x] Remove `output: 'export'` from `next.config.ts`
+- [x] Add `@opennextjs/cloudflare` + `wrangler` (installed with `--ignore-scripts`; sharp's native build skipped — unused while images are `unoptimized`)
+- [x] Add `open-next.config.ts` + `wrangler.jsonc` (ASSETS binding, `nodejs_compat`)
+- [x] Add `preview` / `deploy` / `cf-typegen` scripts to `package.json`
+- [x] Pin Node 22 via `.nvmrc`; ignore `.open-next/` `.wrangler/` `.dev.vars` in git
+- [x] Port Netlify security headers (CSP, HSTS, X-Frame-Options…) → `next.config.ts` `headers()`
+- [x] Convert `public/robots.txt` → `src/app/robots.ts` (auto-generated)
+- [x] Convert `public/sitemap.xml` → `src/app/sitemap.ts` (auto-generated)
+- [x] Remove Netlify config (`netlify.toml`) + stale static `out/`
+- [x] Verify locally: `next build` (SSR) → `opennextjs-cloudflare build` → `wrangler deploy --dry-run` all green
+- [ ] Replace `images.unoptimized` with a Cloudflare Images loader once Image Resizing is enabled on the zone _(deferred)_
+- [x] Smoke-test the running Worker locally (`wrangler dev`): `/` 200 + correct title, CSP/HSTS/X-Frame headers applied, `/robots.txt` + `/sitemap.xml` serve correctly
+- [ ] Create Cloudflare **Workers** project, connect GitHub repo _(user action)_
+- [ ] Set Workers Build: deploy command `npx opennextjs-cloudflare build && wrangler deploy`, Node 22 _(user action)_
+- [ ] Migrate DNS from Netlify to Cloudflare (`agency.aubuscule.com` → Worker custom domain) _(user action)_
+- [ ] Confirm agency site renders identically on the deployed Worker
 
 ---
 
@@ -85,7 +96,7 @@ _Depends on: E1. Unblocks: E3–E8._
 
 ### 2b — Host-Based Middleware
 
-- [ ] Create `src/middleware.ts` with host routing:
+- [ ] Create `src/middleware.ts` with host routing (**single file** — Epic 7 locale logic composes into this same middleware; next-intl's middleware must wrap, not replace, the host rewrite):
   - `aubuscule.com` → `/(hub)`
   - `agency.aubuscule.com` → `/(agency)`
   - `apps.aubuscule.com` → `/(apps)`
@@ -93,7 +104,7 @@ _Depends on: E1. Unblocks: E3–E8._
   - `shop.aubuscule.com` → 301 `https://aubuscule.gumroad.com`
   - `dev.aubuscule.com` → `/(dev)`
   - `remplate.aubuscule.com` → 301 `apps.aubuscule.com/fr/remplate`
-- [ ] Add all 7 domains in Cloudflare dashboard (point to same Pages project)
+- [ ] Add all 7 domains in Cloudflare dashboard as custom domains on the same Worker
 
 ### 2c — Per-Domain Metadata
 
