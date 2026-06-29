@@ -72,10 +72,11 @@ _Unblocks: All epics. Requires CF account (Open Question)._
 - [x] Verify locally: `next build` (SSR) → `opennextjs-cloudflare build` → `wrangler deploy --dry-run` all green
 - [ ] Replace `images.unoptimized` with a Cloudflare Images loader once Image Resizing is enabled on the zone _(deferred)_
 - [x] Smoke-test the running Worker locally (`wrangler dev`): `/` 200 + correct title, CSP/HSTS/X-Frame headers applied, `/robots.txt` + `/sitemap.xml` serve correctly
-- [ ] Create Cloudflare **Workers** project, connect GitHub repo _(user action)_
-- [ ] Set Workers Build: deploy command `npx opennextjs-cloudflare build && wrangler deploy`, Node 22 _(user action)_
-- [ ] Migrate DNS from Netlify to Cloudflare (`agency.aubuscule.com` → Worker custom domain) _(user action)_
-- [ ] Confirm agency site renders identically on the deployed Worker
+- [x] Create Cloudflare **Workers** project; deploy verified on `agency-staging.aubuscule.com` (zone already on CF)
+- [x] `wrangler.jsonc` route: `agency-staging.aubuscule.com` custom_domain — live, renders correctly
+- [ ] Set Workers Build / CI: deploy command `npx opennextjs-cloudflare build && wrangler deploy`, Node 22 _(user action)_
+- [ ] Cut over live `agency.aubuscule.com`: delete Netlify CNAME → add custom_domain route _(last, low-traffic window)_
+- [ ] Remove Netlify deployment once `agency` cutover confirmed
 
 ---
 
