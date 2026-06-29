@@ -6,7 +6,6 @@ const services = [
     items: [
       { name: 'One-page web', detail: 'Site vitrine léger, rapide, à votre image.' },
       { name: 'EPK numérique', detail: 'Dossier de presse en ligne, prêt à partager.' },
-      { name: 'Setup plateformes', detail: 'Spotify, Apple, YouTube, réseaux configurés.' },
       { name: 'Calendrier synchronisé', detail: 'Agenda du site relié à un Google Sheet.' },
       { name: 'Mises à jour', detail: 'Site, EPK et réseaux tenus à jour.' },
       { name: 'Communication audiovisuelle', detail: 'Déclinaisons visuelles et fil éditorial.' },
@@ -43,6 +42,7 @@ const services = [
     name: 'Admin',
     desc: 'Tout ce qui vous vole votre temps de création :',
     items: [
+      { name: 'Setup plateformes', detail: 'Spotify, Apple, YouTube, réseaux configurés.' },
       { name: 'Fiche technique + plan de scène', detail: 'Rider et plan de scène clairs.' },
       { name: 'Droits admin', detail: 'Gestion des droits, en perso ou via label.' },
       { name: 'Distribution numérique', detail: 'Mise en ligne sur les plateformes.' },
