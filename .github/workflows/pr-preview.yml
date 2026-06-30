@@ -74,7 +74,10 @@ jobs:
           echo "::group::Wrangler output"
           echo "$out"
           echo "::endgroup::"
-          url="https://pr-${PR}-aubuscule.workers.dev"
+          url=$(echo "$out" | grep -oE 'https://[a-zA-Z0-9._-]+\.workers\.dev' | head -n1)
+          if [ -z "$url" ]; then
+            url="https://pr-${PR}-aubuscule.workers.dev"
+          fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
 
       - name: Comment preview URL on PR
