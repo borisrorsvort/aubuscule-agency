@@ -6,11 +6,10 @@ import { useState, useEffect } from 'react'
 import { Mark } from './Mark'
 import { ThemeToggle } from './ThemeToggle'
 
+// Apps/Blog hidden for now (sections not ready).
 const links = [
   { href: '/', label: 'Accueil' },
   { href: '/agency', label: 'Agence' },
-  { href: '/apps', label: 'Apps' },
-  { href: '/blog', label: 'Blog' },
 ] as const
 
 export function Nav() {
@@ -35,20 +34,15 @@ export function Nav() {
           <span className="nav-wordmark">Aubuscule</span>
         </Link>
         <nav aria-label="Navigation principale" className="nav-area">
-          <ul
-            className={`nav-links${isOpen ? ' open' : ''}`}
-            id="nav-menu"
-            role="menubar"
-          >
+          <ul className={`nav-links${isOpen ? ' open' : ''}`} id="nav-menu">
             {links.map(link => {
               const active = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
               return (
-                <li key={link.href} role="none">
+                <li key={link.href}>
                   <Link
                     href={link.href}
                     className={`nav-link${active ? ' nav-link--active' : ''}`}
                     onClick={close}
-                    role="menuitem"
                     aria-current={active ? 'page' : undefined}
                   >
                     {link.label}

@@ -4,6 +4,7 @@ import './globals.css'
 import { ThemeProvider } from '@/components/shared/ThemeProvider'
 import { Nav } from '@/components/shared/Nav'
 import { Footer } from '@/components/shared/Footer'
+import { SITE_URL } from '@/lib/site'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -20,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aubuscule.com'),
+  metadataBase: new URL(SITE_URL),
   title: 'Aubuscule',
   description: 'Aubuscule.',
 }

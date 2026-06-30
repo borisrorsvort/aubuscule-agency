@@ -5,7 +5,7 @@ import { HubHome } from '@/components/hub/HubHome'
 export const metadata: Metadata = {
   title: 'Aubuscule',
   description: 'Aubuscule — agence, apps, blog, shop. Tout ce qu\u2019il faut pour les artistes.',
-  alternates: { canonical: 'https://aubuscule.com' },
+  alternates: { canonical: '/' },
 }
 
 export default HubHome

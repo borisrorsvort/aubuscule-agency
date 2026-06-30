@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Dev — Aubuscule',
   description: 'Développement web — Aubuscule.',
-  alternates: { canonical: 'https://dev.aubuscule.com' },
+  alternates: { canonical: '/dev' },
 }
 
 export default function DevHome() {
