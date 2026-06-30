@@ -17,9 +17,11 @@ domains.
 ### One-time setup
 
 1. **GitHub repo secrets** (Settings → Secrets and variables → Actions):
-   - `CLOUDFLARE_API_TOKEN` — create at dash.cloudflare.com/profile/api-tokens
-     using the **“Edit Cloudflare Workers”** template.
-   - `CLOUDFLARE_ACCOUNT_ID` — from the Cloudflare dashboard (Workers overview).
+    - `CLOUDFLARE_API_TOKEN` — create at dash.cloudflare.com/profile/api-tokens
+      using the **"Edit Cloudflare Workers"** template. The token must have
+      **Workers Scripts:Edit** permission (and **Account Settings:Read** so
+      wrangler can resolve the account ID).
+    - `CLOUDFLARE_ACCOUNT_ID` — from the Cloudflare dashboard (Workers overview).
 2. **Enable the Worker’s preview URLs** — Worker → Settings → Domains & Routes →
    ensure a `*.workers.dev` subdomain and **Preview URLs** are enabled (default).
 3. **Workers Builds: production only** — to avoid double-deploys, set Workers

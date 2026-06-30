@@ -34,6 +34,8 @@ jobs:
       - run: npx opennextjs-cloudflare build
 
       - name: Generate preview wrangler config (no routes)
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           node -e "
             const fs = require('fs');
@@ -41,6 +43,7 @@ jobs:
             const clean = src.replace(/\/\/.*$/gm, '').replace(/\/\*[\s\S]*?\*\//gm, '');
             const cfg = JSON.parse(clean);
             delete cfg.routes;
+            cfg.account_id = process.env.CLOUDFLARE_ACCOUNT_ID;
             fs.writeFileSync('wrangler.preview.json', JSON.stringify(cfg, null, 2));
           "
 
