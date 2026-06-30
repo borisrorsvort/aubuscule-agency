@@ -16,7 +16,7 @@ export function Footer() {
         </div>
         <nav className="footer-cols" aria-label="Liens rapides">
           <div className="footer-col">
-            <span className="footer-col-label">Contact</span>
+            <span className="label-sm footer-col-label">Contact</span>
             <a href="mailto:contact@aubuscule.com" className="footer-link">
               contact@aubuscule.com
             </a>
@@ -26,7 +26,7 @@ export function Footer() {
             </a>
           </div>
           <div className="footer-col">
-            <span className="footer-col-label">Naviguer</span>
+            <span className="label-sm footer-col-label">Naviguer</span>
             <a href="#services" className="footer-link">Services</a>
             <a href="#equipe" className="footer-link">Équipe</a>
             <a href="#contact" className="footer-link">Contact</a>

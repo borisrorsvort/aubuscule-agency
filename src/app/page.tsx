@@ -1,18 +1,11 @@
 import type { Metadata } from 'next'
+import '@/components/hub/hub.css'
+import { HubHome } from '@/components/hub/HubHome'
 
 export const metadata: Metadata = {
   title: 'Aubuscule',
-  description: 'Aubuscule — agence, apps, blog.',
+  description: 'Aubuscule — agence, apps, blog, shop. Tout ce qu\u2019il faut pour les artistes.',
   alternates: { canonical: 'https://aubuscule.com' },
 }
 
-export default function HubHome() {
-  return (
-    <main id="main-content">
-      <div className="wrap">
-        <h1>Aubuscule</h1>
-        <p>Hub — à venir (Epic 3).</p>
-      </div>
-    </main>
-  )
-}
+export default HubHome

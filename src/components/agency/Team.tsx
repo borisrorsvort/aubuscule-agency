@@ -34,7 +34,7 @@ export function Team() {
       </div>
       <ul className="team-grid" role="list">
         {members.map(m => (
-          <li key={m.slug} className="person-card">
+          <li key={m.slug} className="card person-card">
             <div className="person-photo-col">
               <div className="person-photo">
                 <Image
@@ -52,7 +52,7 @@ export function Team() {
               </div>
               <p className="person-bio">{m.bio}</p>
               <div className="person-specs">
-                <p className="person-specs-label">Spécialités</p>
+                <p className="label person-specs-label">Spécialités</p>
                 <ul className="tag-row" role="list">
                   {m.tags.map(tag => (
                     <li key={tag} className="tag">{tag}</li>
