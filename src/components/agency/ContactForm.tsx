@@ -35,7 +35,7 @@ export function ContactForm() {
 
   if (sent) {
     return (
-      <div className="form-success" role="status">
+      <div className="card form-success" role="status">
         <svg className="form-success-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
           <circle cx="24" cy="24" r="23" stroke="currentColor" strokeWidth="2"/>
           <polyline points="14,25 21,32 34,17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -47,10 +47,10 @@ export function ContactForm() {
   }
 
   return (
-    <form className="contact-form" id="contact-form" onSubmit={handleSubmit}>
+    <form className="card contact-form" id="contact-form" onSubmit={handleSubmit}>
       <div className="form-row">
         <label className="form-field">
-          <span className="form-label">Nom</span>
+          <span className="label-sm form-label">Nom</span>
           <input
             className="form-input"
             name="nom"
@@ -61,7 +61,7 @@ export function ContactForm() {
           />
         </label>
         <label className="form-field">
-          <span className="form-label">Email</span>
+          <span className="label-sm form-label">Email</span>
           <input
             className="form-input"
             name="email"
@@ -73,7 +73,7 @@ export function ContactForm() {
         </label>
       </div>
       <label className="form-field">
-        <span className="form-label">Type de projet</span>
+        <span className="label-sm form-label">Type de projet</span>
         <select className="form-select" name="type" defaultValue="Digital — web, EPK, plateformes">
           <option>Digital — web, EPK, plateformes</option>
           <option>Audio — studio, mix, création</option>
@@ -83,7 +83,7 @@ export function ContactForm() {
         </select>
       </label>
       <label className="form-field">
-        <span className="form-label">Votre projet</span>
+        <span className="label-sm form-label">Votre projet</span>
         <textarea
           className="form-textarea"
           name="message"

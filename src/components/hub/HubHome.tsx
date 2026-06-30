@@ -74,7 +74,7 @@ export function HubHome() {
               className="hub-card"
               {...(card.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
             >
-              <span className="hub-card-label">{card.label}</span>
+              <span className="label hub-card-label">{card.label}</span>
               <span className="hub-card-title">{card.title}</span>
               <span className="hub-card-desc">{card.desc}</span>
             </Link>

@@ -69,7 +69,7 @@ export function Services() {
           <div className="service-cat" key={cat.num}>
             <div className="service-label">
               <div className="service-num-row">
-                <span className="service-num" aria-hidden="true">{cat.num}</span>
+                <span className="label service-num" aria-hidden="true">{cat.num}</span>
                 <h3 className="service-name">{cat.name}</h3>
               </div>
               <p className="service-desc">{cat.desc}</p>

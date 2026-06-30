@@ -1,0 +1,47 @@
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--sp-10); }
+
+.eyebrow {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.07);
+}
+
+.label {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.label-sm {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.btn-primary {
+  display: inline-block;
+  font-size: 15px; font-weight: 500;
+  color: var(--accent-fg); background: var(--accent);
+  text-decoration: none; padding: var(--sp-3_5) var(--sp-6); border-radius: 2px;
+}
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-secondary {
+  display: inline-block;
+  font-size: 15px; font-weight: 500; color: var(--ink);
+  background: transparent; text-decoration: none;
+  padding: var(--sp-3_5) var(--sp-5); border-radius: 2px; border: 1px solid var(--ink);
+}
+.btn-secondary:hover { background: var(--ink); color: var(--bg); }
