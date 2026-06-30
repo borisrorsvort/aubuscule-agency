@@ -80,37 +80,43 @@ _Unblocks: All epics. Requires CF account (Open Question)._
 
 ---
 
-## Epic 2 — Multi-Domain Architecture
+## Epic 2 — Single-Domain Path Architecture
 
 _Depends on: E1. Unblocks: E3–E8._
 
-### 2a — Route Group Restructure
+> **Decision (2026-06-30):** Pivoted from subdomains to **single-domain, path-based routing** —
+> `aubuscule.com/{agency,apps,blog,dev}`, hub at `/`. Pure Next path routing (no middleware, no
+> host logic). Reasons: subdirectories ≥ subdomains for SEO consolidation; per-segment `layout.tsx`
+> gives full per-section design freedom anyway; and host-routing is unreliable on OpenNext
+> (Next 16 `proxy` is Node-runtime/rejected; `middleware.ts` flaky; OpenNext ignores `has:host`
+> on rewrites → mis-routed everything to `/agency`). Removing host logic made the local Worker
+> serve correctly. Old subdomains 301 → paths via Cloudflare dashboard redirect rules.
 
-- [ ] Create root `src/app/layout.tsx` (fonts, ThemeProvider only — no domain content)
-- [ ] Create `src/app/(hub)/layout.tsx` + `page.tsx`
-- [ ] Create `src/app/(agency)/layout.tsx` + `page.tsx`
-- [ ] Create `src/app/(apps)/layout.tsx` + `page.tsx` + `[slug]/page.tsx`
-- [ ] Create `src/app/(blog)/layout.tsx` + `page.tsx` + `[slug]/page.tsx`
-- [ ] Create `src/app/(dev)/layout.tsx` + `page.tsx`
-- [ ] Move current components into `src/components/agency/`
-- [ ] Create `src/components/shared/` (Mark, Nav, Footer, ThemeProvider, ThemeToggle)
+### 2a — Segment Restructure
 
-### 2b — Host-Based Middleware
+- [x] Root `src/app/layout.tsx` slimmed to fonts + ThemeProvider + theme-init + skip-link only
+- [x] Hub at root `src/app/page.tsx`; agency at `src/app/agency/` (layout w/ Nav, Footer, metadata, Organization JSON-LD + page)
+- [x] `src/app/apps/page.tsx` + `[slug]/page.tsx` (stubs)
+- [x] `src/app/blog/page.tsx` + `[slug]/page.tsx` (stubs)
+- [x] `src/app/dev/page.tsx` (stub)
+- [x] Moved agency components → `src/components/agency/`; shared → `src/components/shared/`
 
-- [ ] Create `src/middleware.ts` with host routing (**single file** — Epic 7 locale logic composes into this same middleware; next-intl's middleware must wrap, not replace, the host rewrite):
-  - `aubuscule.com` → `/(hub)`
-  - `agency.aubuscule.com` → `/(agency)`
-  - `apps.aubuscule.com` → `/(apps)`
-  - `blog.aubuscule.com` → `/(blog)`
-  - `shop.aubuscule.com` → 301 `https://aubuscule.gumroad.com`
-  - `dev.aubuscule.com` → `/(dev)`
-  - `remplate.aubuscule.com` → 301 `apps.aubuscule.com/fr/remplate`
-- [ ] Add all 7 domains in Cloudflare dashboard as custom domains on the same Worker
+### 2b — Path Routing + Redirects (`next.config.ts`)
 
-### 2c — Per-Domain Metadata
+- [x] Pure path routing — `/agency`, `/apps`, `/apps/[slug]`, `/blog`, `/blog/[slug]`, `/dev`, hub at `/`
+- [x] `redirects()` — `/shop` → gumroad (308), `/remplate` → `/apps/remplate` (308)
+- [x] **Verified on `next dev` AND local Worker (`opennextjs-cloudflare preview`)** — all paths + redirects correct
+- [ ] _(user)_ Cloudflare dashboard 301 redirect rules for old subdomains → paths:
+  - `agency.aubuscule.com/*` → `aubuscule.com/agency/*`  (currently live on Worker — cut over)
+  - `apps.` → `/apps`, `blog.` → `/blog`, `dev.` → `/dev`
+  - `shop.` → `https://aubuscule.gumroad.com`, `remplate.` → `aubuscule.com/apps/remplate`
+- [ ] _(user)_ wrangler `routes`: `aubuscule.com` is now the primary custom domain (+ `agency-staging` for testing)
 
-- [ ] `generateMetadata()` in each route group layout
-- [ ] Per-domain JSON-LD (Organization on hub, SoftwareApplication on apps, etc.)
+### 2c — Per-Section Metadata
+
+- [x] `metadata` per segment (agency full OG/twitter/canonical; hub/apps/blog/dev titles + canonical); `generateMetadata()` on `[slug]` pages
+- [x] Organization JSON-LD moved to agency layout
+- [ ] SoftwareApplication JSON-LD on apps (Epic 5), BlogPosting on blog (Epic 8)
 
 ---
 

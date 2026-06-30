@@ -15,9 +15,12 @@ const securityHeaders = [
   },
 ]
 
+// Single-domain, path-based routing (aubuscule.com/agency, /apps, …) — pure Next
+// routing, no host inspection. Old subdomains 301 to these paths via Cloudflare
+// redirect rules (see TODO.md Epic 2). `shop`/`remplate` shortcuts below have no
+// host condition, so the OpenNext `has:host` limitation doesn't apply.
 const nextConfig: NextConfig = {
-  // SSR on Cloudflare Workers via @opennextjs/cloudflare — host-based
-  // multi-domain routing needs request-time middleware, so no static export.
+  // SSR on Cloudflare Workers via @opennextjs/cloudflare — no static export.
   //
   // Images are served unoptimized by design for now. Switching to a Cloudflare
   // Images loader is deferred until Image Resizing is enabled on the zone
@@ -25,6 +28,12 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
+  },
+  async redirects() {
+    return [
+      { source: '/shop', destination: 'https://aubuscule.gumroad.com', permanent: true },
+      { source: '/remplate', destination: '/apps/remplate', permanent: true },
+    ]
   },
 }
 

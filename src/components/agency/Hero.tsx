@@ -1,4 +1,4 @@
-import { Mark } from './Mark'
+import { Mark } from '@/components/shared/Mark'
 
 export function Hero() {
   return (
