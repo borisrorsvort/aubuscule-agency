@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Apps — Aubuscule',
   description: 'Les applications développées par Aubuscule.',
-  alternates: { canonical: 'https://apps.aubuscule.com' },
+  alternates: { canonical: '/apps' },
 }
 
 export default function AppsHome() {

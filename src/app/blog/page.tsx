@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Blog — Aubuscule',
   description: 'Apps, services, tech et divers — le blog Aubuscule.',
-  alternates: { canonical: 'https://blog.aubuscule.com' },
+  alternates: { canonical: '/blog' },
 }
 
 export default function BlogHome() {

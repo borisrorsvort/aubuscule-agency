@@ -9,7 +9,7 @@
     "directory": ".open-next/assets"
   },
   "routes": [
-    { "pattern": "aubuscule.com", "custom_domain": true },
+    { "pattern": "www.aubuscule.com", "custom_domain": true },
     { "pattern": "agency-staging.aubuscule.com", "custom_domain": true }
   ]
 }

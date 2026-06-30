@@ -8,7 +8,7 @@ export async function generateMetadata({
   const { slug } = await params
   return {
     title: `${slug} — Aubuscule`,
-    alternates: { canonical: `https://apps.aubuscule.com/${slug}` },
+    alternates: { canonical: `/apps/${slug}` },
   }
 }
 

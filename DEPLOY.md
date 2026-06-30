@@ -40,19 +40,22 @@ preview step only runs for branches in this repo.
 
 ## Production cutover (when merging the path-based PR to `main`)
 
-Merging deploys path-based routing to the live Worker. Because this branch’s
-`wrangler.jsonc` makes `aubuscule.com` the primary domain and drops
-`agency.aubuscule.com`, do this in order:
+Canonical origin is **`https://www.aubuscule.com`**. The Worker serves `www`;
+the apex and old subdomains 301 to `www` paths. This branch’s `wrangler.jsonc`
+makes `www.aubuscule.com` the primary custom domain and drops
+`agency.aubuscule.com`, so do this in order:
 
 1. In Cloudflare, add **Redirect Rules** (301) before/at merge:
-   - `agency.aubuscule.com/*` → `https://aubuscule.com/agency/$1`
-   - `apps.aubuscule.com/*` → `https://aubuscule.com/apps/$1`
-   - `blog.aubuscule.com/*` → `https://aubuscule.com/blog/$1`
-   - `dev.aubuscule.com/*` → `https://aubuscule.com/dev/$1`
+   - `aubuscule.com/*` (apex) → `https://www.aubuscule.com/$1`
+   - `agency.aubuscule.com/*` → `https://www.aubuscule.com/agency/$1`
+   - `apps.aubuscule.com/*` → `https://www.aubuscule.com/apps/$1`
+   - `blog.aubuscule.com/*` → `https://www.aubuscule.com/blog/$1`
+   - `dev.aubuscule.com/*` → `https://www.aubuscule.com/dev/$1`
    - `shop.aubuscule.com/*` → `https://aubuscule.gumroad.com`
-   - `remplate.aubuscule.com/*` → `https://aubuscule.com/apps/remplate`
-2. Ensure `aubuscule.com` is attached to the Worker as a custom domain.
-3. Merge → Workers Builds deploys. Verify `aubuscule.com/`, `/agency`, etc.
+   - `remplate.aubuscule.com/*` → `https://www.aubuscule.com/apps/remplate`
+2. Ensure `www.aubuscule.com` is attached to the Worker as a custom domain
+   (it’s in `wrangler.jsonc` `routes`).
+3. Merge → Workers Builds deploys. Verify `www.aubuscule.com/`, `/agency`, etc.
 
 ## Local development
 

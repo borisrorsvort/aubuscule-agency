@@ -19,12 +19,7 @@ const cards: HubCard[] = [
     title: 'Services artistiques',
     desc: 'Digital, audio, vidéo et administratif — on fait le reste.',
   },
-  {
-    href: '/apps',
-    label: 'Apps',
-    title: 'Outils créatifs',
-    desc: 'Applications conçues pour les artistes et les créateurs.',
-  },
+  // Apps/Blog hidden from the homepage for now (sections not ready).
 ]
 
 export function HubHome() {
@@ -38,6 +33,7 @@ export function HubHome() {
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
     if (!heroRef.current) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const rect = heroRef.current.getBoundingClientRect()
     const cy = rect.top + rect.height / 2
     const dy = (e.clientY - cy) / rect.height

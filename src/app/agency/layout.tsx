@@ -1,14 +1,12 @@
 import type { Metadata } from 'next'
-import { Nav } from '@/components/shared/Nav'
-import { Footer } from '@/components/shared/Footer'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://agency.aubuscule.com'),
   title: 'Aubuscule — Artisans numériques pour artistes',
   description:
     'Aubuscule accompagne les artistes — digital, audio, vidéo et administratif. Musiciens, plasticiens, performeurs : deux artisans au service de votre projet.',
   alternates: {
-    canonical: 'https://agency.aubuscule.com',
+    canonical: '/agency',
   },
   openGraph: {
     title: 'Aubuscule — Artisans numériques pour artistes',
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
       'Accompagnement digital, audio, vidéo et administratif pour musiciens, plasticiens et artistes.',
     locale: 'fr_BE',
     type: 'website',
-    url: 'https://agency.aubuscule.com',
+    url: `${SITE_URL}/agency`,
     siteName: 'Aubuscule',
     images: [{ url: '/img/og-image.png', width: 1200, height: 630, alt: 'Aubuscule' }],
   },
@@ -33,8 +31,8 @@ const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Aubuscule',
-  url: 'https://agency.aubuscule.com',
-  logo: 'https://agency.aubuscule.com/img/og-image.png',
+  url: SITE_URL,
+  logo: `${SITE_URL}/img/og-image.png`,
   description: 'Aubuscule accompagne les artistes — digital, audio, vidéo et administratif.',
   address: {
     '@type': 'PostalAddress',
@@ -68,9 +66,7 @@ export default function AgencyLayout({ children }: { children: React.ReactNode }
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
       />
-      <Nav />
       {children}
-      <Footer />
     </>
   )
 }

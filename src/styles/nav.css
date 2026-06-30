@@ -22,7 +22,23 @@
   font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
   font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink-soft); text-decoration: none;
+  padding: var(--sp-1) 0;
+  position: relative;
+  transition: color 0.15s ease;
 }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -18.5px;
+  left: 0; right: 0;
+  height: 2px;
+  background: transparent;
+  transition: background 0.15s ease;
+}
+.nav-link:hover { color: var(--ink); }
+.nav-link:hover::after { background: var(--ink-soft); }
+.nav-link--active { color: var(--ink); }
+.nav-link--active::after { background: var(--accent); }
 .nav-cta {
   font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
   font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
