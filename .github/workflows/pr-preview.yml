@@ -33,6 +33,17 @@ jobs:
 
       - run: npx opennextjs-cloudflare build
 
+      - name: Generate preview wrangler config (no routes)
+        run: |
+          node -e "
+            const fs = require('fs');
+            const src = fs.readFileSync('wrangler.jsonc', 'utf8');
+            const clean = src.replace(/\/\/.*$/gm, '').replace(/\/\*[\s\S]*?\*\//gm, '');
+            const cfg = JSON.parse(clean);
+            delete cfg.routes;
+            fs.writeFileSync('wrangler.preview.json', JSON.stringify(cfg, null, 2));
+          "
+
       - name: Upload preview version
         id: preview
         env:
@@ -40,10 +51,16 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           PR: ${{ github.event.pull_request.number }}
         run: |
-          set -euo pipefail
-          out=$(npx wrangler versions upload --preview-alias "pr-${PR}" 2>&1)
+          set -uo pipefail
+          out=$(npx wrangler versions upload --config wrangler.preview.json --preview-alias "pr-${PR}" 2>&1) || {
+            echo "::group::Wrangler output (failed)"
+            echo "$out"
+            echo "::endgroup::"
+            exit 1
+          }
+          echo "::group::Wrangler output"
           echo "$out"
-          # Preview-alias URL is deterministic: https://pr-<n>-<worker>.<sub>.workers.dev
+          echo "::endgroup::"
           url=$(echo "$out" | grep -oE "https://pr-${PR}-[a-z0-9.-]+\.workers\.dev" | head -1)
           echo "url=$url" >> "$GITHUB_OUTPUT"
 
