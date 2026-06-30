@@ -1,3 +1,4 @@
+import '@/components/agency/agency.css'
 import { Hero } from '@/components/agency/Hero'
 import { Services } from '@/components/agency/Services'
 import { Team } from '@/components/agency/Team'
