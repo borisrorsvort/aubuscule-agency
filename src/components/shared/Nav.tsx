@@ -1,10 +1,20 @@
 'use client'
 
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { Mark } from './Mark'
 import { ThemeToggle } from './ThemeToggle'
 
+const links = [
+  { href: '/', label: 'Accueil' },
+  { href: '/agency', label: 'Agence' },
+  { href: '/apps', label: 'Apps' },
+  { href: '/blog', label: 'Blog' },
+] as const
+
 export function Nav() {
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -15,21 +25,37 @@ export function Nav() {
 
   const close = () => setIsOpen(false)
 
+  if (pathname === '/') return null
+
   return (
     <header className="nav">
       <div className="nav-inner">
-        <a href="#" className="nav-logo" onClick={close}>
+        <Link href="/" className="nav-logo" onClick={close}>
           <Mark idPrefix="n" style={{ width: 32, height: 32, flexShrink: 0 }} />
           <span className="nav-wordmark">Aubuscule</span>
-        </a>
+        </Link>
         <nav aria-label="Navigation principale" className="nav-area">
           <ul
             className={`nav-links${isOpen ? ' open' : ''}`}
             id="nav-menu"
+            role="menubar"
           >
-            <li><a href="#services" className="nav-link" onClick={close}>Services</a></li>
-            <li><a href="#equipe" className="nav-link" onClick={close}>Équipe</a></li>
-            <li><a href="#contact" className="nav-cta" onClick={close}>Contact</a></li>
+            {links.map(link => {
+              const active = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
+              return (
+                <li key={link.href} role="none">
+                  <Link
+                    href={link.href}
+                    className={`nav-link${active ? ' nav-link--active' : ''}`}
+                    onClick={close}
+                    role="menuitem"
+                    aria-current={active ? 'page' : undefined}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
           <ThemeToggle />
           <button

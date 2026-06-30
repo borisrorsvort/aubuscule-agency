@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { Nav } from '@/components/shared/Nav'
-import { Footer } from '@/components/shared/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://agency.aubuscule.com'),
@@ -68,9 +66,7 @@ export default function AgencyLayout({ children }: { children: React.ReactNode }
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
       />
-      <Nav />
       {children}
-      <Footer />
     </>
   )
 }
