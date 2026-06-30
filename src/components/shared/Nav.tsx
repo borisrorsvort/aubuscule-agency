@@ -1,19 +1,18 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import { useState, useEffect } from 'react'
+import { useTranslations, useLocale } from 'next-intl'
+import { locales } from '@/i18n/config'
+import { Select } from '@/components/shared/Select'
 import { Mark } from './Mark'
 import { ThemeToggle } from './ThemeToggle'
 
-// Apps/Blog hidden for now (sections not ready).
-const links = [
-  { href: '/', label: 'Accueil' },
-  { href: '/agency', label: 'Agence' },
-] as const
-
 export function Nav() {
+  const t = useTranslations('nav')
   const pathname = usePathname()
+  const router = useRouter()
+  const currentLocale = useLocale()
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -26,6 +25,12 @@ export function Nav() {
 
   if (pathname === '/') return null
 
+  // Apps/Blog hidden for now (sections not ready).
+  const links = [
+    { href: '/', label: t('home') },
+    { href: '/agency', label: t('agency') },
+  ] as const
+
   return (
     <header className="nav">
       <div className="nav-inner">
@@ -33,7 +38,7 @@ export function Nav() {
           <Mark idPrefix="n" style={{ width: 32, height: 32, flexShrink: 0 }} />
           <span className="nav-wordmark">Aubuscule</span>
         </Link>
-        <nav aria-label="Navigation principale" className="nav-area">
+        <nav aria-label={t('ariaLabel')} className="nav-area">
           <ul className={`nav-links${isOpen ? ' open' : ''}`} id="nav-menu">
             {links.map(link => {
               const active = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
@@ -51,13 +56,20 @@ export function Nav() {
               )
             })}
           </ul>
+          <Select
+            value={currentLocale}
+            onChange={(nextLocale) => router.replace(pathname, { locale: nextLocale as 'fr' | 'en' | 'nl' })}
+            options={locales.map(loc => ({ value: loc, label: loc.toUpperCase() }))}
+            align="right"
+            className="nav-lang-select"
+          />
           <ThemeToggle />
           <button
             className={`hamburger${isOpen ? ' open' : ''}`}
             onClick={() => setIsOpen(o => !o)}
             aria-expanded={isOpen}
             aria-controls="nav-menu"
-            aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+            aria-label={isOpen ? t('closeMenu') : t('openMenu')}
           >
             <span className="hamburger-line" aria-hidden="true" />
             <span className="hamburger-line" aria-hidden="true" />
@@ -68,3 +80,6 @@ export function Nav() {
     </header>
   )
 }
+
+
+

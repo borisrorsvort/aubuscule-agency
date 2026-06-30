@@ -1,0 +1,251 @@
+{
+  "skipLink": "Skip to main content",
+  "meta": {
+    "siteTitle": "Aubuscule",
+    "siteDescription": "Aubuscule — agency, apps, blog, shop. Everything artists need.",
+    "agencyTitle": "Aubuscule — Digital Artisans for Artists",
+    "agencyDescription": "Aubuscule supports artists — digital, audio, video and administrative. Musicians, visual artists, performers: two artisans at the service of your project.",
+    "agencyOgDescription": "Digital, audio, video and administrative support for musicians, visual artists and performers.",
+    "ogImageAlt": "Aubuscule"
+  },
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "home": "Home",
+    "agency": "Agency",
+    "apps": "Apps",
+    "blog": "Blog",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "themeLight": "Activate light mode",
+    "themeDark": "Activate dark mode"
+  },
+  "footer": {
+    "tagline": "We don't deliver projects. We clarify a need, build a solution, hand over the keys.",
+    "ariaLabel": "Secondary navigation",
+    "colNavigate": "Navigate",
+    "colContact": "Contact",
+    "artists": "Musicians · Visual artists · Performers"
+  },
+  "hub": {
+    "subtitle": "Human-scale digital agency",
+    "cardsSectionLabel": "Sections",
+    "cards": {
+      "agency": {
+        "label": "Agency",
+        "title": "Services for artists",
+        "desc": "Digital, audio, video and administrative — we handle the rest."
+      }
+    }
+  },
+  "hero": {
+    "eyebrow": "Musicians · Visual artists · Performers",
+    "h1": "Focus on your art. We handle the rest.",
+    "strong": "digital, audio, video",
+    "sub": "Aubuscule supports artists on four fronts — <bold>digital, audio, video and administrative</bold>.",
+    "ctaServices": "Discover our services",
+    "ctaContact": "Get in touch"
+  },
+  "services": {
+    "eyebrow": "Services · 01—04",
+    "h2": "Four domains, one team",
+    "lead": "Each service is available à la carte or as a full package. Everything is designed to stay light and reusable.",
+    "categories": {
+      "digital": {
+        "num": "01",
+        "name": "Digital",
+        "desc": "The artist's online foundation: website, EPK, platforms and image.",
+        "items": {
+          "onepage": {
+            "name": "One-page website",
+            "detail": "Lightweight, fast showcase site, tailored to your image."
+          },
+          "epk": {
+            "name": "Digital EPK",
+            "detail": "Online press kit, ready to share."
+          },
+          "calendrier": {
+            "name": "Synced calendar",
+            "detail": "Site agenda linked to a Google Sheet."
+          },
+          "mises_a_jour": {
+            "name": "Updates",
+            "detail": "Site, EPK and social media kept current."
+          },
+          "comm_av": {
+            "name": "Audiovisual communication",
+            "detail": "Visual formats and editorial strategy."
+          },
+          "mini_seance": {
+            "name": "Mini portrait shoot",
+            "detail": "Short shoot, framed for your needs."
+          },
+          "photos_live": {
+            "name": "Live photos",
+            "detail": "Photo coverage of your concerts."
+          },
+          "retouche": {
+            "name": "Cull + retouch",
+            "detail": "Selection and retouching of your existing photos."
+          },
+          "pack_photo": {
+            "name": "Social media photo pack",
+            "detail": "Format designed for Instagram & co."
+          }
+        }
+      },
+      "audio": {
+        "num": "02",
+        "name": "Audio",
+        "desc": "From studio to release: recording, mixing, mastering, composition.",
+        "items": {
+          "mix_master": {
+            "name": "Mixing / Mastering",
+            "detail": "Per track, release-ready."
+          },
+          "prod_radio": {
+            "name": "Radio-format production",
+            "detail": "Production calibrated for radio format."
+          },
+          "studio_mp": {
+            "name": "Multitrack studio day",
+            "detail": "Multitrack recording session."
+          },
+          "compo": {
+            "name": "Custom music creation",
+            "detail": "Original composition, no AI."
+          },
+          "setup_scene": {
+            "name": "Stage tech setup",
+            "detail": "Configuration of your stage rig."
+          }
+        }
+      },
+      "videos": {
+        "num": "03",
+        "name": "Video",
+        "desc": "Moving image: social media edits, music videos, live capture.",
+        "items": {
+          "montage_rs": {
+            "name": "Social media video edit",
+            "detail": "Social formats, edited on FCPX."
+          },
+          "clip": {
+            "name": "Music video production",
+            "detail": "Video produced on FCPX / Motion."
+          },
+          "captation_live": {
+            "name": "Acoustic live capture",
+            "detail": "Ambience + video, recorded live."
+          }
+        }
+      },
+      "admin": {
+        "num": "04",
+        "name": "Admin",
+        "desc": "Everything that steals your creative time:",
+        "items": {
+          "setup_plateformes": {
+            "name": "Platform setup",
+            "detail": "Spotify, Apple, YouTube, social media configured."
+          },
+          "fiche_tech": {
+            "name": "Tech rider + stage plot",
+            "detail": "Clear rider and stage plot."
+          },
+          "droits": {
+            "name": "Rights management",
+            "detail": "Rights management, personal or via label."
+          },
+          "distrib": {
+            "name": "Digital distribution",
+            "detail": "Release on streaming platforms."
+          },
+          "auto": {
+            "name": "Custom automation",
+            "detail": "Workflows and scripts between your tools."
+          },
+          "sync": {
+            "name": "Data sync",
+            "detail": "Sheets, forms, platforms connected."
+          },
+          "notifs": {
+            "name": "Auto notifications & reports",
+            "detail": "Alerts, summaries and scheduled sends."
+          }
+        }
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "The team",
+    "h2": "The faces behind Aubuscule",
+    "lead": "Two people, complementary skills. No middleman: you speak directly to the people doing the work.",
+    "specialties": "Specialties",
+    "members": {
+      "boris": {
+        "alt": "Boris Rorsvort, digital artisan and photographer",
+        "role": "Digital artisan · Photography",
+        "bio": "Musician, digital artisan and photographer. He shapes the web, image and automation around the artist — from website to EPK to social media.",
+        "tags": [
+          "Web",
+          "Design",
+          "Photo",
+          "Automation"
+        ]
+      },
+      "eric": {
+        "alt": "Éric, musician, composer and sound engineer",
+        "role": "Musician · Composition · Sound",
+        "bio": "Musician and composer first, trained sound engineer. Recording, video and music videos hold no secrets for him — from tracking to mastering.",
+        "tags": [
+          "Recording",
+          "Mix / Master",
+          "Video",
+          "Clip"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Artists speak",
+    "h2": "What they say",
+    "roles": {
+      "yovanny": "Creator of UDU",
+      "vincent": "Saxophonist (Maurane etc.)",
+      "guy": "Producer",
+      "david": "Director (animation)",
+      "rakel": "Accordionist, composer",
+      "fabrice": "Saxophonist, composer"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "h2": "Let's talk about your project",
+    "lead": "Tell us where you're at. We respond quickly, no jargon.",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram",
+    "mailtoSubject": "Information request - Aubuscule",
+    "mailtoBody": "Hello,\n\nHere's where I'm at:\n\n\nWhat I need:\n\n"
+  },
+  "form": {
+    "labelName": "Name",
+    "placeholderName": "Your artist name",
+    "labelEmail": "Email",
+    "placeholderEmail": "you@example.com",
+    "labelType": "Project type",
+    "labelMessage": "Your project",
+    "placeholderMessage": "In a few words, where you're at and what you need.",
+    "notice": "Response within 48 business hours.",
+    "noticeError": "Error sending. Try again or write to us directly.",
+    "submit": "Send request",
+    "successTitle": "Your mail client just opened.",
+    "successSub": "Check the send — we'll get back to you within 48 business hours.",
+    "typeOptions": {
+      "digital": "Digital — web, EPK, platforms",
+      "audio": "Audio — studio, mix, composition",
+      "video": "Video — editing, clip, capture",
+      "admin": "Admin — tech, rights, distribution",
+      "global": "Full package"
+    }
+  }
+}

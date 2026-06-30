@@ -1,0 +1,251 @@
+{
+  "skipLink": "Ga naar hoofdinhoud",
+  "meta": {
+    "siteTitle": "Aubuscule",
+    "siteDescription": "Aubuscule — bureau, apps, blog, shop. Alles wat artiesten nodig hebben.",
+    "agencyTitle": "Aubuscule — Digitale Ambachtslieden voor Artiesten",
+    "agencyDescription": "Aubuscule begeleidt artiesten — digitaal, audio, video en administratief. Muzikanten, beeldende kunstenaars, performers: twee ambachtslieden ten dienste van uw project.",
+    "agencyOgDescription": "Digitale, audio-, video- en administratieve begeleiding voor muzikanten, beeldende kunstenaars en artiesten.",
+    "ogImageAlt": "Aubuscule"
+  },
+  "nav": {
+    "ariaLabel": "Hoofdnavigatie",
+    "home": "Home",
+    "agency": "Bureau",
+    "apps": "Apps",
+    "blog": "Blog",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "themeLight": "Activeer lichte modus",
+    "themeDark": "Activeer donkere modus"
+  },
+  "footer": {
+    "tagline": "We leveren geen projecten op. We verduidelijken een nood, bouwen een oplossing, geven de sleutels door.",
+    "ariaLabel": "Secundaire navigatie",
+    "colNavigate": "Navigeren",
+    "colContact": "Contact",
+    "artists": "Muzikanten · Beeldende kunstenaars · Performers"
+  },
+  "hub": {
+    "subtitle": "Digitaal bureau op menselijke schaal",
+    "cardsSectionLabel": "Secties",
+    "cards": {
+      "agency": {
+        "label": "Bureau",
+        "title": "Diensten voor artiesten",
+        "desc": "Digitaal, audio, video en administratief — wij regelen de rest."
+      }
+    }
+  },
+  "hero": {
+    "eyebrow": "Muzikanten · Beeldende kunstenaars · Performers",
+    "h1": "Concentreer u op uw kunst. Wij regelen de rest.",
+    "strong": "digitaal, audio, video",
+    "sub": "Aubuscule begeleidt artiesten op vier fronten — <bold>digitaal, audio, video en administratief</bold>.",
+    "ctaServices": "Onze diensten ontdekken",
+    "ctaContact": "Neem contact op"
+  },
+  "services": {
+    "eyebrow": "Diensten · 01—04",
+    "h2": "Vier domeinen, één team",
+    "lead": "Elke dienst is beschikbaar à la carte of als volledig pakket. Alles is ontworpen om licht en herbruikbaar te blijven.",
+    "categories": {
+      "digital": {
+        "num": "01",
+        "name": "Digitaal",
+        "desc": "De online basis van de artiest: website, EPK, platformen en imago.",
+        "items": {
+          "onepage": {
+            "name": "One-page website",
+            "detail": "Lichte, snelle presentatiesite, op maat van uw imago."
+          },
+          "epk": {
+            "name": "Digitaal EPK",
+            "detail": "Online persdossier, klaar om te delen."
+          },
+          "calendrier": {
+            "name": "Gesynchroniseerde agenda",
+            "detail": "Siteagenda gekoppeld aan een Google Sheet."
+          },
+          "mises_a_jour": {
+            "name": "Updates",
+            "detail": "Site, EPK en sociale media bijgehouden."
+          },
+          "comm_av": {
+            "name": "Audiovisuele communicatie",
+            "detail": "Visuele formats en redactionele strategie."
+          },
+          "mini_seance": {
+            "name": "Mini portretshoot",
+            "detail": "Korte shoot, afgestemd op uw behoeften."
+          },
+          "photos_live": {
+            "name": "Live foto's",
+            "detail": "Fotoverslag van uw concerten."
+          },
+          "retouche": {
+            "name": "Selectie + retouche",
+            "detail": "Selectie en retouche van uw bestaand fotomateriaal."
+          },
+          "pack_photo": {
+            "name": "Sociale media fotopakket",
+            "detail": "Format ontworpen voor Instagram & co."
+          }
+        }
+      },
+      "audio": {
+        "num": "02",
+        "name": "Audio",
+        "desc": "Van studio tot release: opname, mix, mastering, compositie.",
+        "items": {
+          "mix_master": {
+            "name": "Mixing / Mastering",
+            "detail": "Per track, klaar voor release."
+          },
+          "prod_radio": {
+            "name": "Radioformat productie",
+            "detail": "Productie gekalibreerd voor radioformat."
+          },
+          "studio_mp": {
+            "name": "Multispoor studiodag",
+            "detail": "Multispoor opnamesessie."
+          },
+          "compo": {
+            "name": "Maatwerk muziekcompositie",
+            "detail": "Originele compositie, zonder AI."
+          },
+          "setup_scene": {
+            "name": "Scène tech setup",
+            "detail": "Configuratie van uw scène-rig."
+          }
+        }
+      },
+      "videos": {
+        "num": "03",
+        "name": "Video",
+        "desc": "Bewegend beeld: sociale media montage, videoclip, live opname.",
+        "items": {
+          "montage_rs": {
+            "name": "Sociale media videomontage",
+            "detail": "Sociale formats, gemonteerd op FCPX."
+          },
+          "clip": {
+            "name": "Videoclip realisatie",
+            "detail": "Clip gerealiseerd op FCPX / Motion."
+          },
+          "captation_live": {
+            "name": "Akoestische live-opname",
+            "detail": "Sfeer + video, live opgenomen."
+          }
+        }
+      },
+      "admin": {
+        "num": "04",
+        "name": "Admin",
+        "desc": "Alles wat uw creatieve tijd steelt:",
+        "items": {
+          "setup_plateformes": {
+            "name": "Platform setup",
+            "detail": "Spotify, Apple, YouTube, sociale media geconfigureerd."
+          },
+          "fiche_tech": {
+            "name": "Tech rider + scenarioplan",
+            "detail": "Duidelijke rider en scenarioplan."
+          },
+          "droits": {
+            "name": "Rechtenbeheer",
+            "detail": "Rechtenbeheer, persoonlijk of via label."
+          },
+          "distrib": {
+            "name": "Digitale distributie",
+            "detail": "Release op streamingplatformen."
+          },
+          "auto": {
+            "name": "Maatwerk automatisering",
+            "detail": "Workflows en scripts tussen uw tools."
+          },
+          "sync": {
+            "name": "Datasynchronisatie",
+            "detail": "Sheets, formulieren, platformen verbonden."
+          },
+          "notifs": {
+            "name": "Automatische meldingen & rapporten",
+            "detail": "Alerts, samenvattingen en geplande verzendingen."
+          }
+        }
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Het team",
+    "h2": "De gezichten achter Aubuscule",
+    "lead": "Twee mensen, complementaire vaardigheden. Geen tussenpersoon: u spreekt rechtstreeks met degenen die het werk doen.",
+    "specialties": "Specialiteiten",
+    "members": {
+      "boris": {
+        "alt": "Boris Rorsvort, digitale ambachtsman en fotograaf",
+        "role": "Digitale ambachtsman · Fotografie",
+        "bio": "Muzikant, digitale ambachtsman en fotograaf. Hij vormt het web, beeld en automatisering rond de artiest — van website tot EPK tot sociale media.",
+        "tags": [
+          "Web",
+          "Design",
+          "Foto",
+          "Automatisering"
+        ]
+      },
+      "eric": {
+        "alt": "Éric, muzikant, componist en geluidsingenieur",
+        "role": "Muzikant · Compositie · Geluid",
+        "bio": "Muzikant en componist in de eerste plaats, opgeleid geluidsingenieur. Opname, video en videoclips houden geen geheimen voor hem — van tracking tot mastering.",
+        "tags": [
+          "Opname",
+          "Mix / Master",
+          "Video",
+          "Clip"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Artiesten aan het woord",
+    "h2": "Wat zij zeggen",
+    "roles": {
+      "yovanny": "Schepper van de UDU",
+      "vincent": "Saxofonist (Maurane etc.)",
+      "guy": "Producer",
+      "david": "Regisseur (animatie)",
+      "rakel": "Accordeoniste, componiste",
+      "fabrice": "Saxofonist, componist"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "h2": "Laten we over uw project praten",
+    "lead": "Vertel ons waar u staat. We reageren snel, zonder jargon.",
+    "emailLabel": "E-mail",
+    "instagramLabel": "Instagram",
+    "mailtoSubject": "Informatieverzoek - Aubuscule",
+    "mailtoBody": "Hallo,\n\nHier sta ik:\n\n\nWat ik nodig heb:\n\n"
+  },
+  "form": {
+    "labelName": "Naam",
+    "placeholderName": "Uw artiestennaam",
+    "labelEmail": "E-mail",
+    "placeholderEmail": "u@voorbeeld.com",
+    "labelType": "Type project",
+    "labelMessage": "Uw project",
+    "placeholderMessage": "In een paar woorden, waar u staat en wat u nodig heeft.",
+    "notice": "Reactie binnen 48 werkuren.",
+    "noticeError": "Fout bij verzenden. Probeer opnieuw of schrijf ons rechtstreeks.",
+    "submit": "Verzoek verzenden",
+    "successTitle": "Uw e-mailprogramma is zojuist geopend.",
+    "successSub": "Controleer de verzending — we komen binnen 48 werkuren terug.",
+    "typeOptions": {
+      "digital": "Digitaal — web, EPK, platformen",
+      "audio": "Audio — studio, mix, compositie",
+      "video": "Video — montage, clip, opname",
+      "admin": "Admin — tech, rechten, distributie",
+      "global": "Volledig pakket"
+    }
+  }
+}

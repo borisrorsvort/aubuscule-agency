@@ -1,20 +1,24 @@
+import { useTranslations } from 'next-intl'
 import { Mark } from '@/components/shared/Mark'
 
 export function Hero() {
+  const t = useTranslations('hero')
+
   return (
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero-content">
-        <p className="eyebrow" aria-hidden="true">Musiciens · Plasticiens · Artistes</p>
+        <p className="eyebrow" aria-hidden="true">{t('eyebrow')}</p>
         <h1 className="hero-h1" id="hero-heading">
-          Concentrez-vous sur votre art. On fait le reste.
+          {t('h1')}
         </h1>
         <p className="hero-sub">
-          Aubuscule accompagne les artistes sur quatre fronts —{' '}
-          <strong>digital, audio, vidéo et administratif</strong>.
+          {t.rich('sub', {
+            bold: (chunks) => <strong>{chunks}</strong>
+          })}
         </p>
         <div className="hero-ctas">
-          <a href="#services" className="btn-primary">Découvrir les services</a>
-          <a href="#contact" className="btn-secondary">Nous écrire</a>
+          <a href="#services" className="btn-primary">{t('ctaServices')}</a>
+          <a href="#contact" className="btn-secondary">{t('ctaContact')}</a>
         </div>
       </div>
       <div className="hero-mark" aria-hidden="true">
@@ -23,3 +27,4 @@ export function Hero() {
     </section>
   )
 }
+

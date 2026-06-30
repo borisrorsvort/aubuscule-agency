@@ -45,3 +45,104 @@
   padding: var(--sp-3_5) var(--sp-5); border-radius: 2px; border: 1px solid var(--ink);
 }
 .btn-secondary:hover { background: var(--ink); color: var(--bg); }
+
+/* Custom Select Dropdown styles */
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--hairline-soft);
+  padding: var(--sp-2) 0;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s ease;
+}
+
+.custom-select-trigger:focus {
+  border-bottom-color: var(--ink);
+}
+
+.custom-select-arrow {
+  color: var(--ink-mute);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: var(--sp-2);
+}
+
+.custom-select-wrapper[data-open="true"] .custom-select-arrow {
+  transform: rotate(180deg);
+}
+
+.custom-select-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: var(--sp-1);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  box-shadow: 0 var(--sp-1) var(--sp-3) rgba(0,0,0,.08);
+  list-style: none;
+  padding: var(--sp-1) 0;
+  z-index: 100;
+  max-height: calc(var(--sp-6) * 10);
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateY(calc(var(--sp-2) * -1));
+  pointer-events: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.custom-select-wrapper[data-open="true"] .custom-select-options {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.custom-select-options--right {
+  left: auto;
+  right: 0;
+  width: auto;
+  min-width: calc(var(--sp-5) * 5);
+}
+
+.custom-select-option {
+  font-family: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  padding: var(--sp-2) var(--sp-3_5);
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.custom-select-option:hover,
+.custom-select-option:focus {
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+.custom-select-option[aria-selected="true"] {
+  background-color: var(--hairline-soft);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Dark theme specific adjustments for custom select box */
+[data-theme="dark"] .custom-select-options {
+  box-shadow: 0 4px 16px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.05);
+}
+

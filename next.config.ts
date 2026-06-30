@@ -1,4 +1,7 @@
 import type { NextConfig } from 'next'
+import createNextIntlPlugin from 'next-intl/plugin'
+
+const withNextIntl = createNextIntlPlugin()
 
 const securityHeaders = [
   { key: 'X-Frame-Options', value: 'DENY' },
@@ -31,10 +34,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: '/', destination: '/fr', permanent: true },
       { source: '/shop', destination: 'https://aubuscule.gumroad.com', permanent: true },
       { source: '/remplate', destination: '/apps/remplate', permanent: true },
     ]
   },
 }
 
-export default nextConfig
+export default withNextIntl(nextConfig)
+

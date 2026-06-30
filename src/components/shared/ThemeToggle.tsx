@@ -1,8 +1,10 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useTheme } from './ThemeProvider'
 
 export function ThemeToggle() {
+  const t = useTranslations('nav')
   const { theme, toggleTheme } = useTheme()
   const isDark = theme === 'dark'
 
@@ -10,7 +12,7 @@ export function ThemeToggle() {
     <button
       className="theme-toggle"
       onClick={toggleTheme}
-      aria-label={isDark ? 'Activer le mode clair' : 'Activer le mode sombre'}
+      aria-label={isDark ? t('themeLight') : t('themeDark')}
     >
       {isDark ? <SunIcon /> : <MoonIcon />}
     </button>

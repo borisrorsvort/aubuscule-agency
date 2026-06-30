@@ -1,84 +1,61 @@
-const services = [
-  {
-    num: '01',
-    name: 'Digital',
-    desc: "Le socle en ligne de l'artiste : site, EPK, plateformes et image.",
-    items: [
-      { name: 'One-page web', detail: 'Site vitrine léger, rapide, à votre image.' },
-      { name: 'EPK numérique', detail: 'Dossier de presse en ligne, prêt à partager.' },
-      { name: 'Calendrier synchronisé', detail: 'Agenda du site relié à un Google Sheet.' },
-      { name: 'Mises à jour', detail: 'Site, EPK et réseaux tenus à jour.' },
-      { name: 'Communication audiovisuelle', detail: 'Déclinaisons visuelles et fil éditorial.' },
-      { name: 'Mini-séance portrait', detail: 'Shooting court, cadré pour vos besoins.' },
-      { name: 'Photos live', detail: 'Captation photo de vos concerts.' },
-      { name: 'Tri + retouche', detail: 'Sélection et retouche de votre existant.' },
-      { name: 'Pack photo « réseaux »', detail: 'Format pensé pour Instagram & co.' },
-    ],
-  },
-  {
-    num: '02',
-    name: 'Audio',
-    desc: 'Du studio à la diffusion : enregistrement, mix, mastering, création.',
-    items: [
-      { name: 'Mixage / Mastering', detail: 'Au titre, prêt pour la diffusion.' },
-      { name: 'Production titre « radio »', detail: 'Production calibrée format radio.' },
-      { name: 'Journée studio multipiste', detail: "Session d'enregistrement multipiste." },
-      { name: 'Création musicale sur mesure', detail: 'Composition originale, sans IA.' },
-      { name: 'Setup informatique scénique', detail: 'Configuration de votre rig de scène.' },
-    ],
-  },
-  {
-    num: '03',
-    name: 'Vidéos',
-    desc: "L'image en mouvement : montage réseaux, clip, captation live.",
-    items: [
-      { name: 'Montage vidéo RS', detail: 'Formats réseaux, monté sur FCPX.' },
-      { name: 'Réalisation clip', detail: 'Clip réalisé sur FCPX / Motion.' },
-      { name: 'Captation live acoustique', detail: 'Ambiance + vidéo, prise en live.' },
-    ],
-  },
-  {
-    num: '04',
-    name: 'Admin',
-    desc: 'Tout ce qui vous vole votre temps de création :',
-    items: [
-      { name: 'Setup plateformes', detail: 'Spotify, Apple, YouTube, réseaux configurés.' },
-      { name: 'Fiche technique + plan de scène', detail: 'Rider et plan de scène clairs.' },
-      { name: 'Droits admin', detail: 'Gestion des droits, en perso ou via label.' },
-      { name: 'Distribution numérique', detail: 'Mise en ligne sur les plateformes.' },
-      { name: 'Automatisation sur mesure', detail: 'Workflows et scripts entre vos outils.' },
-      { name: 'Synchronisation de données', detail: 'Feuilles, formulaires, plateformes reliés.' },
-      { name: 'Notifications & rapports auto', detail: 'Alertes, résumés et envois programmés.' },
-    ],
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function Services() {
+  const t = useTranslations('services')
+
+  const categories = [
+    {
+      key: 'digital',
+      itemKeys: [
+        'onepage',
+        'epk',
+        'calendrier',
+        'mises_a_jour',
+        'comm_av',
+        'mini_seance',
+        'photos_live',
+        'retouche',
+        'pack_photo',
+      ],
+    },
+    {
+      key: 'audio',
+      itemKeys: ['mix_master', 'prod_radio', 'studio_mp', 'compo', 'setup_scene'],
+    },
+    {
+      key: 'videos',
+      itemKeys: ['montage_rs', 'clip', 'captation_live'],
+    },
+    {
+      key: 'admin',
+      itemKeys: ['setup_plateformes', 'fiche_tech', 'droits', 'distrib', 'auto', 'sync', 'notifs'],
+    },
+  ] as const
+
   return (
     <section className="section" id="services" aria-labelledby="services-heading">
       <div className="section-header">
-        <p className="eyebrow">Prestations · 01—04</p>
-        <h2 className="section-h2" id="services-heading">Quatre domaines, une équipe</h2>
-        <p className="section-lead">
-          Chaque prestation se prend à la carte ou en accompagnement global.
-          Tout est pensé pour rester léger et réutilisable.
-        </p>
+        <p className="eyebrow">{t('eyebrow')}</p>
+        <h2 className="section-h2" id="services-heading">{t('h2')}</h2>
+        <p className="section-lead">{t('lead')}</p>
       </div>
       <div>
-        {services.map(cat => (
-          <div className="service-cat" key={cat.num}>
+        {categories.map(cat => (
+          <div className="service-cat" key={cat.key}>
             <div className="service-label">
               <div className="service-num-row">
-                <span className="label service-num" aria-hidden="true">{cat.num}</span>
-                <h3 className="service-name">{cat.name}</h3>
+                <span className="label service-num" aria-hidden="true">
+                  {t(`categories.${cat.key}.num`)}
+                </span>
+                <h3 className="service-name">{t(`categories.${cat.key}.name`)}</h3>
               </div>
-              <p className="service-desc">{cat.desc}</p>
+              <p className="service-desc">{t(`categories.${cat.key}.desc`)}</p>
             </div>
-            <ul className="service-items" aria-label={`Services ${cat.name}`}>
-              {cat.items.map(item => (
-                <li className="service-item" key={item.name}>
-                  <span className="service-item-name">{item.name}</span>
-                  <span className="service-item-detail">{item.detail}</span>
+            <ul className="service-items" aria-label={`Services ${t(`categories.${cat.key}.name`)}`}>
+              {cat.itemKeys.map(itemKey => (
+                <li className="service-item" key={itemKey}>
+                  <span className="service-item-name">{t(`categories.${cat.key}.items.${itemKey}.name`)}</span>
+                  <span className="service-item-detail">{t(`categories.${cat.key}.items.${itemKey}.detail`)}</span>
                 </li>
               ))}
             </ul>
@@ -88,3 +65,4 @@ export function Services() {
     </section>
   )
 }
+

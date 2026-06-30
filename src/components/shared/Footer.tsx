@@ -1,20 +1,20 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { Link, usePathname } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 import { Mark } from './Mark'
 
-const navLinks = [
-  { href: '/', label: 'Accueil' },
-  { href: '/agency', label: 'Agence' },
-  { href: '/apps', label: 'Apps' },
-  { href: '/blog', label: 'Blog' },
-] as const
-
 export function Footer() {
+  const t = useTranslations('footer')
+  const tNav = useTranslations('nav')
   const pathname = usePathname()
 
   if (pathname === '/') return null
+
+  const navLinks = [
+    { href: '/', label: tNav('home') },
+    { href: '/agency', label: tNav('agency') },
+  ] as const
 
   return (
     <footer className="footer" role="contentinfo">
@@ -25,13 +25,12 @@ export function Footer() {
             <span className="footer-wordmark">Aubuscule</span>
           </Link>
           <p className="footer-tagline">
-            On ne livre pas des projets. On éclaire un besoin, on construit une solution,
-            on transmet les clés.
+            {t('tagline')}
           </p>
         </div>
-        <nav className="footer-cols" aria-label="Navigation secondaire">
+        <nav className="footer-cols" aria-label={t('ariaLabel')}>
           <div className="footer-col">
-            <span className="label-sm footer-col-label">Naviguer</span>
+            <span className="label-sm footer-col-label">{t('colNavigate')}</span>
             {navLinks.map(link => (
               <Link key={link.href} href={link.href} className="footer-link">
                 {link.label}
@@ -39,7 +38,7 @@ export function Footer() {
             ))}
           </div>
           <div className="footer-col">
-            <span className="label-sm footer-col-label">Contact</span>
+            <span className="label-sm footer-col-label">{t('colContact')}</span>
             <a href="mailto:contact@aubuscule.com" className="footer-link">
               contact@aubuscule.com
             </a>
@@ -52,8 +51,9 @@ export function Footer() {
       </div>
       <div className="footer-bottom">
         <span className="footer-copy">&copy; 2026 Aubuscule</span>
-        <span className="footer-copy">Musiciens &middot; Plasticiens &middot; Artistes</span>
+        <span className="footer-copy">{t('artists')}</span>
       </div>
     </footer>
   )
 }
+
