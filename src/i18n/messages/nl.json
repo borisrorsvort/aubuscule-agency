@@ -32,7 +32,7 @@
     "cards": {
       "agency": {
         "label": "Bureau",
-        "title": "Artistieke diensten",
+        "title": "Diensten voor artiesten",
         "desc": "Digitaal, audio, video en administratief — wij regelen de rest."
       }
     }
@@ -55,15 +55,42 @@
         "name": "Digitaal",
         "desc": "De online basis van de artiest: website, EPK, platformen en imago.",
         "items": {
-          "onepage": { "name": "One-page website", "detail": "Lichte, snelle presentatiesite, op maat van uw imago." },
-          "epk": { "name": "Digitaal EPK", "detail": "Online persdossier, klaar om te delen." },
-          "calendrier": { "name": "Gesynchroniseerde agenda", "detail": "Siteagenda gekoppeld aan een Google Sheet." },
-          "mises_a_jour": { "name": "Updates", "detail": "Site, EPK en sociale media bijgehouden." },
-          "comm_av": { "name": "Audiovisuele communicatie", "detail": "Visuele formats en redactionele strategie." },
-          "mini_seance": { "name": "Mini portretshoot", "detail": "Korte shoot, afgestemd op uw behoeften." },
-          "photos_live": { "name": "Live foto's", "detail": "Fotoverslag van uw concerten." },
-          "retouche": { "name": "Selectie + retouche", "detail": "Selectie en retouche van uw bestaand fotomateriaal." },
-          "pack_photo": { "name": "Sociale media fotopakket", "detail": "Format ontworpen voor Instagram & co." }
+          "onepage": {
+            "name": "One-page website",
+            "detail": "Lichte, snelle presentatiesite, op maat van uw imago."
+          },
+          "epk": {
+            "name": "Digitaal EPK",
+            "detail": "Online persdossier, klaar om te delen."
+          },
+          "calendrier": {
+            "name": "Gesynchroniseerde agenda",
+            "detail": "Siteagenda gekoppeld aan een Google Sheet."
+          },
+          "mises_a_jour": {
+            "name": "Updates",
+            "detail": "Site, EPK en sociale media bijgehouden."
+          },
+          "comm_av": {
+            "name": "Audiovisuele communicatie",
+            "detail": "Visuele formats en redactionele strategie."
+          },
+          "mini_seance": {
+            "name": "Mini portretshoot",
+            "detail": "Korte shoot, afgestemd op uw behoeften."
+          },
+          "photos_live": {
+            "name": "Live foto's",
+            "detail": "Fotoverslag van uw concerten."
+          },
+          "retouche": {
+            "name": "Selectie + retouche",
+            "detail": "Selectie en retouche van uw bestaand fotomateriaal."
+          },
+          "pack_photo": {
+            "name": "Sociale media fotopakket",
+            "detail": "Format ontworpen voor Instagram & co."
+          }
         }
       },
       "audio": {
@@ -71,11 +98,26 @@
         "name": "Audio",
         "desc": "Van studio tot release: opname, mix, mastering, compositie.",
         "items": {
-          "mix_master": { "name": "Mixing / Mastering", "detail": "Per track, klaar voor release." },
-          "prod_radio": { "name": "Radioformat productie", "detail": "Productie gekalibreerd voor radioformat." },
-          "studio_mp": { "name": "Multispoor studiodag", "detail": "Multispoor opnamesessie." },
-          "compo": { "name": "Maatwerk muziekcompositie", "detail": "Originele compositie, zonder AI." },
-          "setup_scene": { "name": "Scène tech setup", "detail": "Configuratie van uw scène-rig." }
+          "mix_master": {
+            "name": "Mixing / Mastering",
+            "detail": "Per track, klaar voor release."
+          },
+          "prod_radio": {
+            "name": "Radioformat productie",
+            "detail": "Productie gekalibreerd voor radioformat."
+          },
+          "studio_mp": {
+            "name": "Multispoor studiodag",
+            "detail": "Multispoor opnamesessie."
+          },
+          "compo": {
+            "name": "Maatwerk muziekcompositie",
+            "detail": "Originele compositie, zonder AI."
+          },
+          "setup_scene": {
+            "name": "Scène tech setup",
+            "detail": "Configuratie van uw scène-rig."
+          }
         }
       },
       "videos": {
@@ -83,9 +125,18 @@
         "name": "Video",
         "desc": "Bewegend beeld: sociale media montage, videoclip, live opname.",
         "items": {
-          "montage_rs": { "name": "Sociale media videomontage", "detail": "Sociale formats, gemonteerd op FCPX." },
-          "clip": { "name": "Videoclip realisatie", "detail": "Clip gerealiseerd op FCPX / Motion." },
-          "captation_live": { "name": "Akoestische live-opname", "detail": "Sfeer + video, live opgenomen." }
+          "montage_rs": {
+            "name": "Sociale media videomontage",
+            "detail": "Sociale formats, gemonteerd op FCPX."
+          },
+          "clip": {
+            "name": "Videoclip realisatie",
+            "detail": "Clip gerealiseerd op FCPX / Motion."
+          },
+          "captation_live": {
+            "name": "Akoestische live-opname",
+            "detail": "Sfeer + video, live opgenomen."
+          }
         }
       },
       "admin": {
@@ -93,13 +144,34 @@
         "name": "Admin",
         "desc": "Alles wat uw creatieve tijd steelt:",
         "items": {
-          "setup_plateformes": { "name": "Platform setup", "detail": "Spotify, Apple, YouTube, sociale media geconfigureerd." },
-          "fiche_tech": { "name": "Tech rider + scenarioplan", "detail": "Duidelijke rider en scenarioplan." },
-          "droits": { "name": "Rechtenbeheer", "detail": "Rechtenbeheer, persoonlijk of via label." },
-          "distrib": { "name": "Digitale distributie", "detail": "Release op streamingplatformen." },
-          "auto": { "name": "Maatwerk automatisering", "detail": "Workflows en scripts tussen uw tools." },
-          "sync": { "name": "Datasynchronisatie", "detail": "Sheets, formulieren, platformen verbonden." },
-          "notifs": { "name": "Automatische meldingen & rapporten", "detail": "Alerts, samenvattingen en geplande verzendingen." }
+          "setup_plateformes": {
+            "name": "Platform setup",
+            "detail": "Spotify, Apple, YouTube, sociale media geconfigureerd."
+          },
+          "fiche_tech": {
+            "name": "Tech rider + scenarioplan",
+            "detail": "Duidelijke rider en scenarioplan."
+          },
+          "droits": {
+            "name": "Rechtenbeheer",
+            "detail": "Rechtenbeheer, persoonlijk of via label."
+          },
+          "distrib": {
+            "name": "Digitale distributie",
+            "detail": "Release op streamingplatformen."
+          },
+          "auto": {
+            "name": "Maatwerk automatisering",
+            "detail": "Workflows en scripts tussen uw tools."
+          },
+          "sync": {
+            "name": "Datasynchronisatie",
+            "detail": "Sheets, formulieren, platformen verbonden."
+          },
+          "notifs": {
+            "name": "Automatische meldingen & rapporten",
+            "detail": "Alerts, samenvattingen en geplande verzendingen."
+          }
         }
       }
     }
@@ -114,13 +186,23 @@
         "alt": "Boris Rorsvort, digitale ambachtsman en fotograaf",
         "role": "Digitale ambachtsman · Fotografie",
         "bio": "Muzikant, digitale ambachtsman en fotograaf. Hij vormt het web, beeld en automatisering rond de artiest — van website tot EPK tot sociale media.",
-        "tags": ["Web", "Design", "Foto", "Automatisering"]
+        "tags": [
+          "Web",
+          "Design",
+          "Foto",
+          "Automatisering"
+        ]
       },
       "eric": {
         "alt": "Éric, muzikant, componist en geluidsingenieur",
         "role": "Muzikant · Compositie · Geluid",
         "bio": "Muzikant en componist in de eerste plaats, opgeleid geluidsingenieur. Opname, video en videoclips houden geen geheimen voor hem — van tracking tot mastering.",
-        "tags": ["Opname", "Mix / Master", "Video", "Clip"]
+        "tags": [
+          "Opname",
+          "Mix / Master",
+          "Video",
+          "Clip"
+        ]
       }
     }
   },
