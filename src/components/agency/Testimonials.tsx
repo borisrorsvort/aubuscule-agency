@@ -54,7 +54,7 @@ export function Testimonials() {
       </div>
       <ul className="testimonials-grid" role="list">
         {testimonials.map(t => (
-          <li key={t.name} className="testimonial-card">
+          <li key={t.name} className="card testimonial-card">
             <blockquote>
               <p className="testimonial-quote">{t.quote}</p>
               <footer className="testimonial-footer">
@@ -65,7 +65,7 @@ export function Testimonials() {
                 </div>
                 <div>
                   <cite className="testimonial-name">{t.name}</cite>
-                  <p className="testimonial-role">{t.role}</p>
+                  <p className="label testimonial-role">{t.role}</p>
                 </div>
               </footer>
             </blockquote>

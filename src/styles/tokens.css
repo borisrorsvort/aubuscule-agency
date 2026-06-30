@@ -1,0 +1,61 @@
+:root {
+  --bg:            #e8e6e0;
+  --ink:           #141414;
+  --ink-soft:      #55524b;
+  --ink-mute:      #8a877f;
+  --ink-faint:     #a8a59c;
+  --ink-dim:       #75726b;
+  --hairline:      #d8d5cd;
+  --hairline-soft: #cfccc4;
+  --surface:       #ffffff;
+  --surface-dark:  #141414;
+  --quote:         #3a3833;
+  --footer-body:   #9a978f;
+  --accent:        #44579c;
+  --accent-fg:     #e8e6e0;
+  --nav-bg:        rgba(232, 230, 224, 0.86);
+  --nav-open-bg:   rgba(232, 230, 224, 0.97);
+  --focus-ring:    #44579c;
+
+  --sp-0_5: 2px;
+  --sp-1:   4px;
+  --sp-1_5: 6px;
+  --sp-2:   8px;
+  --sp-2_5: 10px;
+  --sp-3:   12px;
+  --sp-3_5: 14px;
+  --sp-4:   16px;
+  --sp-5:   20px;
+  --sp-6:   24px;
+  --sp-7:   28px;
+  --sp-8:   32px;
+  --sp-9:   36px;
+  --sp-10:  40px;
+  --sp-12:  48px;
+  --sp-14:  56px;
+  --sp-16:  64px;
+  --sp-18:  72px;
+  --sp-20:  80px;
+  --sp-22:  88px;
+  --sp-24:  96px;
+}
+
+[data-theme="dark"] {
+  --bg:            #1c1b18;
+  --ink:           #eae8e2;
+  --ink-soft:      #b0ada5;
+  --ink-mute:      #8a877f;
+  --ink-faint:     #696560;
+  --ink-dim:       #5c5950;
+  --hairline:      #2e2c28;
+  --hairline-soft: #2b2925;
+  --surface:       #242220;
+  --surface-dark:  #0f0e0c;
+  --quote:         #c8c5bc;
+  --footer-body:   #6e6b63;
+  --accent:        #44579c;
+  --accent-fg:     #e8e6e0;
+  --nav-bg:        rgba(28, 27, 24, 0.90);
+  --nav-open-bg:   rgba(28, 27, 24, 0.97);
+  --focus-ring:    #7a8ec2;
+}

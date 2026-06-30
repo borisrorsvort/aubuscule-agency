@@ -14,11 +14,11 @@ export function Contact() {
           </div>
           <address className="contact-details">
             <a href={`mailto:contact@aubuscule.com?subject=${encodeURIComponent("Demande d'information - Aubuscule")}&body=${encodeURIComponent("Bonjour,\n\nVoici où j'en suis :\n\n\nCe dont j'ai besoin :\n\n")}`} className="contact-item">
-              <span className="contact-item-label">Email</span>
+              <span className="label-sm contact-item-label">Email</span>
               <span className="contact-item-value">contact@aubuscule.com</span>
             </a>
             <a href="https://www.instagram.com/aubuscule_agency/" className="contact-item" target="_blank" rel="noopener noreferrer">
-              <span className="contact-item-label">Instagram</span>
+              <span className="label-sm contact-item-label">Instagram</span>
               <span className="contact-item-value contact-item-instagram">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                 @aubuscule_agency
