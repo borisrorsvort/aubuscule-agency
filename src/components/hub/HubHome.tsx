@@ -1,28 +1,26 @@
 'use client'
 
 import { useRef, useState, useEffect, useCallback } from 'react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 import { Mark } from '@/components/shared/Mark'
 
 interface HubCard {
+  key: string
   href: string
-  label: string
-  title: string
-  desc: string
   external?: boolean
 }
 
 const cards: HubCard[] = [
   {
+    key: 'agency',
     href: '/agency',
-    label: 'Agence',
-    title: 'Services artistiques',
-    desc: 'Digital, audio, vidéo et administratif — on fait le reste.',
   },
   // Apps/Blog hidden from the homepage for now (sections not ready).
 ]
 
 export function HubHome() {
+  const t = useTranslations('hub')
   const heroRef = useRef<HTMLElement>(null)
   const [yOffset, setYOffset] = useState(0)
   const [visible, setVisible] = useState(false)
@@ -60,9 +58,9 @@ export function HubHome() {
           <Mark idPrefix="hub" className="hub-mark-svg" inkColor="#e8e6e0" />
         </div>
         <h1 className="hub-h1" id="hub-heading">Aubuscule</h1>
-        <p className="hub-sub">Agence digital à échelle humaine</p>
+        <p className="hub-sub">{t('subtitle')}</p>
 
-        <section className="hub-cards" aria-label="Sections">
+        <section className="hub-cards" aria-label={t('cardsSectionLabel')}>
           {cards.map((card) => (
             <Link
               key={card.href}
@@ -70,9 +68,9 @@ export function HubHome() {
               className="hub-card"
               {...(card.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
             >
-              <span className="label hub-card-label">{card.label}</span>
-              <span className="hub-card-title">{card.title}</span>
-              <span className="hub-card-desc">{card.desc}</span>
+              <span className="label hub-card-label">{t(`cards.${card.key}.label`)}</span>
+              <span className="hub-card-title">{t(`cards.${card.key}.title`)}</span>
+              <span className="hub-card-desc">{t(`cards.${card.key}.desc`)}</span>
             </Link>
           ))}
         </section>
@@ -80,3 +78,4 @@ export function HubHome() {
     </main>
   )
 }
+

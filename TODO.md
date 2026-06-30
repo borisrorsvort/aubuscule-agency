@@ -1,6 +1,6 @@
 # Aubuscule Multi-Domain + Multilingual — Roadmap
 
-> **Status:** In progress. E1–E4 complete · E5–E8 remaining.
+> **Status:** In progress. E1–E4 and E7 complete · E5, E6, E8 remaining.
 
 ---
 
@@ -167,23 +167,23 @@ _Depends on: E2. Resolve copy open question first._
 
 _Depends on: E2–E6 (all route groups populated). Unblocks: E8._
 
-- [ ] Install `next-intl`
-- [ ] Create `src/i18n/config.ts` — locales `['fr', 'en', 'nl']`, defaultLocale `'fr'`
-- [ ] Create `src/i18n/fr.json` (~105 strings)
-- [ ] Create `src/i18n/en.json`
-- [ ] Create `src/i18n/nl.json`
-- [ ] Add `[locale]` segment to all route group pages:
+- [x] Install `next-intl`
+- [x] Create `src/i18n/config.ts` — locales `['fr', 'en', 'nl']`, defaultLocale `'fr'`
+- [x] Create `src/i18n/fr.json` (~105 strings)
+- [x] Create `src/i18n/en.json`
+- [x] Create `src/i18n/nl.json`
+- [x] Add `[locale]` segment to all route group pages:
   - `(hub)/[locale]/page.tsx`
   - `(agency)/[locale]/page.tsx`
   - `(apps)/[locale]/page.tsx` + `[slug]/page.tsx`
   - `(blog)/[locale]/page.tsx` + `[slug]/page.tsx`
   - `(dev)/[locale]/page.tsx`
-- [ ] Extract all hardcoded strings → `t('key')` calls
-- [ ] Per-locale `<html lang>`, metadata, OG tags
-- [ ] Add `hreflang` alternate links on every page
-- [ ] Update middleware — locale detection, redirect root `/` → `/fr/`
-- [ ] Update `sitemap.ts` — all locale × domain combinations
-- [ ] Keep testimonial quotes in original French (role labels only translate)
+- [x] Extract all hardcoded strings → `t('key')` calls
+- [x] Per-locale `<html lang>`, metadata, OG tags
+- [x] Add `hreflang` alternate links on every page
+- [x] Update middleware — locale detection, redirect root `/` → `/fr/`
+- [x] Update `sitemap.ts` — all locale × domain combinations
+- [x] Keep testimonial quotes in original French (role labels only translate)
 
 ---
 

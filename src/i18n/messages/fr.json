@@ -1,0 +1,169 @@
+{
+  "skipLink": "Aller au contenu principal",
+  "meta": {
+    "siteTitle": "Aubuscule",
+    "siteDescription": "Aubuscule — agence, apps, blog, shop. Tout ce qu'il faut pour les artistes.",
+    "agencyTitle": "Aubuscule — Artisans numériques pour artistes",
+    "agencyDescription": "Aubuscule accompagne les artistes — digital, audio, vidéo et administratif. Musiciens, plasticiens, performeurs : deux artisans au service de votre projet.",
+    "agencyOgDescription": "Accompagnement digital, audio, vidéo et administratif pour musiciens, plasticiens et artistes.",
+    "ogImageAlt": "Aubuscule"
+  },
+  "nav": {
+    "ariaLabel": "Navigation principale",
+    "home": "Accueil",
+    "agency": "Agence",
+    "apps": "Apps",
+    "blog": "Blog",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "themeLight": "Activer le mode clair",
+    "themeDark": "Activer le mode sombre"
+  },
+  "footer": {
+    "tagline": "On ne livre pas des projets. On éclaire un besoin, on construit une solution, on transmet les clés.",
+    "ariaLabel": "Navigation secondaire",
+    "colNavigate": "Naviguer",
+    "colContact": "Contact",
+    "artists": "Musiciens · Plasticiens · Artistes"
+  },
+  "hub": {
+    "subtitle": "Agence digital à échelle humaine",
+    "cardsSectionLabel": "Sections",
+    "cards": {
+      "agency": {
+        "label": "Agence",
+        "title": "Services artistiques",
+        "desc": "Digital, audio, vidéo et administratif — on fait le reste."
+      }
+    }
+  },
+  "hero": {
+    "eyebrow": "Musiciens · Plasticiens · Artistes",
+    "h1": "Concentrez-vous sur votre art. On fait le reste.",
+    "strong": "digital, audio, vidéo",
+    "sub": "Aubuscule accompagne les artistes sur quatre fronts — <bold>digital, audio, vidéo et administratif</bold>.",
+    "ctaServices": "Découvrir les services",
+    "ctaContact": "Nous écrire"
+  },
+  "services": {
+    "eyebrow": "Prestations · 01—04",
+    "h2": "Quatre domaines, une équipe",
+    "lead": "Chaque prestation se prend à la carte ou en accompagnement global. Tout est pensé pour rester léger et réutilisable.",
+    "categories": {
+      "digital": {
+        "num": "01",
+        "name": "Digital",
+        "desc": "Le socle en ligne de l'artiste : site, EPK, plateformes et image.",
+        "items": {
+          "onepage": { "name": "One-page web", "detail": "Site vitrine léger, rapide, à votre image." },
+          "epk": { "name": "EPK numérique", "detail": "Dossier de presse en ligne, prêt à partager." },
+          "calendrier": { "name": "Calendrier synchronisé", "detail": "Agenda du site relié à un Google Sheet." },
+          "mises_a_jour": { "name": "Mises à jour", "detail": "Site, EPK et réseaux tenus à jour." },
+          "comm_av": { "name": "Communication audiovisuelle", "detail": "Déclinaisons visuelles et fil éditorial." },
+          "mini_seance": { "name": "Mini-séance portrait", "detail": "Shooting court, cadré pour vos besoins." },
+          "photos_live": { "name": "Photos live", "detail": "Captation photo de vos concerts." },
+          "retouche": { "name": "Tri + retouche", "detail": "Sélection et retouche de votre existant." },
+          "pack_photo": { "name": "Pack photo « réseaux »", "detail": "Format pensé pour Instagram & co." }
+        }
+      },
+      "audio": {
+        "num": "02",
+        "name": "Audio",
+        "desc": "Du studio à la diffusion : enregistrement, mix, mastering, création.",
+        "items": {
+          "mix_master": { "name": "Mixage / Mastering", "detail": "Au titre, prêt pour la diffusion." },
+          "prod_radio": { "name": "Production titre « radio »", "detail": "Production calibrée format radio." },
+          "studio_mp": { "name": "Journée studio multipiste", "detail": "Session d'enregistrement multipiste." },
+          "compo": { "name": "Création musicale sur mesure", "detail": "Composition originale, sans IA." },
+          "setup_scene": { "name": "Setup informatique scénique", "detail": "Configuration de votre rig de scène." }
+        }
+      },
+      "videos": {
+        "num": "03",
+        "name": "Vidéos",
+        "desc": "L'image en mouvement : montage réseaux, clip, captation live.",
+        "items": {
+          "montage_rs": { "name": "Montage vidéo RS", "detail": "Formats réseaux, monté sur FCPX." },
+          "clip": { "name": "Réalisation clip", "detail": "Clip réalisé sur FCPX / Motion." },
+          "captation_live": { "name": "Captation live acoustique", "detail": "Ambiance + vidéo, prise en live." }
+        }
+      },
+      "admin": {
+        "num": "04",
+        "name": "Admin",
+        "desc": "Tout ce qui vous vole votre temps de création :",
+        "items": {
+          "setup_plateformes": { "name": "Setup plateformes", "detail": "Spotify, Apple, YouTube, réseaux configurés." },
+          "fiche_tech": { "name": "Fiche technique + plan de scène", "detail": "Rider et plan de scène clairs." },
+          "droits": { "name": "Droits admin", "detail": "Gestion des droits, en perso ou via label." },
+          "distrib": { "name": "Distribution numérique", "detail": "Mise en ligne sur les plateformes." },
+          "auto": { "name": "Automatisation sur mesure", "detail": "Workflows et scripts entre vos outils." },
+          "sync": { "name": "Synchronisation de données", "detail": "Feuilles, formulaires, plateformes reliés." },
+          "notifs": { "name": "Notifications & rapports auto", "detail": "Alertes, résumés et envois programmés." }
+        }
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "L'équipe",
+    "h2": "Les visages derrière Aubuscule",
+    "lead": "Deux personnes, des compétences complémentaires. Pas d'intermédiaire : vous parlez directement à ceux qui font.",
+    "specialties": "Spécialités",
+    "members": {
+      "boris": {
+        "alt": "Boris Rorsvort, artisan numérique et photographe",
+        "role": "Artisan numérique · Photo",
+        "bio": "Musicien, artisan numérique et photographe. Il façonne le web, l'image et l'automatisation autour de l'artiste — du site à l'EPK jusqu'aux réseaux.",
+        "tags": ["Web", "Design", "Photo", "Automatisation"]
+      },
+      "eric": {
+        "alt": "Éric, musicien, compositeur et ingénieur du son",
+        "role": "Musicien · Composition · Son",
+        "bio": "Musicien et compositeur avant tout, ingénieur du son de formation. L'enregistrement, la vidéo et le clip n'ont pas de secrets pour lui — de la prise au mastering.",
+        "tags": ["Enregistrement", "Mix / Master", "Vidéo", "Clip"]
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "La parole aux artistes",
+    "h2": "Ce qu'ils en disent",
+    "roles": {
+      "yovanny": "Créateur des UDU",
+      "vincent": "Saxophoniste (Maurane etc.)",
+      "guy": "Producteur",
+      "david": "Réalisateur (animation)",
+      "rakel": "Accordéoniste, compositrice",
+      "fabrice": "Saxophoniste, compositeur"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "h2": "Parlons de votre projet",
+    "lead": "Dites-nous où vous en êtes. On répond vite, sans jargon.",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram",
+    "mailtoSubject": "Demande d'information - Aubuscule",
+    "mailtoBody": "Bonjour,\n\nVoici où j'en suis :\n\n\nCe dont j'ai besoin :\n\n"
+  },
+  "form": {
+    "labelName": "Nom",
+    "placeholderName": "Votre nom d'artiste",
+    "labelEmail": "Email",
+    "placeholderEmail": "vous@exemple.com",
+    "labelType": "Type de projet",
+    "labelMessage": "Votre projet",
+    "placeholderMessage": "En quelques mots, où vous en êtes et ce dont vous avez besoin.",
+    "notice": "Réponse sous 48 h ouvrées.",
+    "noticeError": "Erreur lors de l'envoi. Réessayez ou écrivez-nous directement.",
+    "submit": "Envoyer la demande",
+    "successTitle": "Votre client mail vient de s'ouvrir.",
+    "successSub": "Vérifiez l'envoi — on revient sous 48 h ouvrées.",
+    "typeOptions": {
+      "digital": "Digital — web, EPK, plateformes",
+      "audio": "Audio — studio, mix, création",
+      "video": "Vidéo — montage, clip, captation",
+      "admin": "Admin — technique, droits, distribution",
+      "global": "Accompagnement global"
+    }
+  }
+}
