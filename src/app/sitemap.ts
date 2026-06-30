@@ -4,7 +4,9 @@ import { locales } from '@/i18n/config'
 
 // Only publicly-linked, ready pages. Apps/blog/dev are hidden stubs for now.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date()
+  // Static date to avoid unnecessary re-crawling of unchanged pages on every build.
+  // Update this when content actually changes.
+  const lastModified = new Date('2024-06-30')
   const paths = ['', '/agency']
 
   return paths.flatMap((path) =>

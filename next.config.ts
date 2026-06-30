@@ -34,6 +34,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: '/', destination: '/fr', permanent: true },
       { source: '/shop', destination: 'https://aubuscule.gumroad.com', permanent: true },
       { source: '/remplate', destination: '/apps/remplate', permanent: true },
     ]
