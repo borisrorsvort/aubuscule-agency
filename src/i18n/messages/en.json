@@ -34,6 +34,11 @@
         "label": "Agency",
         "title": "Services for artists",
         "desc": "Digital, audio, video and administrative — we handle the rest."
+      },
+      "apps": {
+        "label": "Applications",
+        "title": "Software",
+        "desc": "Custom software that makes your life easier."
       }
     }
   },

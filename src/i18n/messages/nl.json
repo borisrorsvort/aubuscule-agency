@@ -34,6 +34,11 @@
         "label": "Bureau",
         "title": "Diensten voor artiesten",
         "desc": "Digitaal, audio, video en administratief — wij regelen de rest."
+      },
+      "apps": {
+        "label": "Applicaties",
+        "title": "Software",
+        "desc": "Maatwerksoftware die uw leven makkelijker maakt."
       }
     }
   },

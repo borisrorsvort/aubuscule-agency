@@ -34,6 +34,11 @@
         "label": "Agence",
         "title": "Services aux artistes",
         "desc": "Digital, audio, vidéo et administratif — on fait le reste."
+      },
+      "apps": {
+        "label": "Applications",
+        "title": "Logiciels",
+        "desc": "Des logiciels sur mesure qui vous rendent la vie plus facile."
       }
     }
   },

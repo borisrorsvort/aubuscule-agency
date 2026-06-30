@@ -16,7 +16,10 @@ const cards: HubCard[] = [
     key: 'agency',
     href: '/agency',
   },
-  // Apps/Blog hidden from the homepage for now (sections not ready).
+  {
+    key: 'apps',
+    href: '/apps',
+  },
 ]
 
 export function HubHome() {

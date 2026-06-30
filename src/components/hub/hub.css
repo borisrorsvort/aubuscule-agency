@@ -47,11 +47,12 @@
 
 .hub-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--sp-5);
   justify-content: center;
+  max-width: 800px;
+  margin: var(--sp-8) auto 0;
   padding: 0 var(--sp-10) var(--sp-12);
-  margin-top: var(--sp-8);
 }
 .hub-card {
   background: rgba(255,255,255,.04);
@@ -96,7 +97,7 @@
   .hub-hero { gap: var(--sp-5); padding: var(--sp-9) var(--sp-6) var(--sp-7); }
   .hub-mark-svg { width: 72px; height: 72px; }
   .hub-h1 { font-size: 40px; }
-  .hub-cards { grid-template-columns: repeat(2, 1fr); padding: 0 var(--sp-6) var(--sp-9); }
+  .hub-cards { max-width: 100%; padding: 0 var(--sp-6) var(--sp-9); }
 }
 
 @media (max-width: 719px) {
