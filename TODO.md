@@ -109,7 +109,7 @@ _Depends on: E1. Unblocks: E3–E8._
   - `agency.aubuscule.com/*` → `aubuscule.com/agency/*`  (currently live on Worker — cut over)
   - `apps.` → `/apps`, `blog.` → `/blog`, `dev.` → `/dev`
   - `shop.` → `https://aubuscule.gumroad.com`, `remplate.` → `aubuscule.com/apps/remplate`
-- [ ] _(user)_ wrangler `routes`: `aubuscule.com` is now the primary custom domain (+ `agency-staging` for testing)
+- [x] wrangler `routes`: `www.aubuscule.com` is the sole worker custom domain (PR previews use per-PR dev workers; `agency-staging` removed)
 
 ### 2c — Per-Section Metadata
 
