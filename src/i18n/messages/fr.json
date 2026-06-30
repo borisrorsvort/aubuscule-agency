@@ -27,7 +27,7 @@
     "artists": "Musiciens · Plasticiens · Artistes"
   },
   "hub": {
-    "subtitle": "Agence digital à échelle humaine",
+    "subtitle": "Agence digitale à échelle humaine",
     "cardsSectionLabel": "Sections",
     "cards": {
       "agency": {
@@ -317,14 +317,14 @@
       "ctaGetButton": "Acheter pour Mac · 15 €",
       "disclaimerTitle": "Clause de non-responsabilité",
       "disclaimerDesc": "Remplate est fourni \"en l'état\", sans garantie d'aucune sorte, expresse ou implicite, y compris mais sans s'y limiter, les garanties de qualité marchande, d'adéquation à un usage particulier et d'absence de contrefaçon. En aucun cas l'auteur ne pourra être tenu responsable de toute réclamation, dommage, perte de données, dysfonctionnement de l'appareil ou autre responsabilité découlant de, ou en relation avec le logiciel ou son utilisation. En téléchargeant et utilisant Remplate, vous reconnaissez le faire à vos propres risques.",
-    "featureOneTime": "Achat unique",
-    "featureNoSub": "Sans abonnement ni compte",
-    "featureUpdates": "Mises à jour régulières",
-    "screenshotAlt": "Application Remplate montrant le navigateur de modèles reMarkable",
-    "lightboxLabel": "Aperçu",
-    "lightboxClose": "Fermer"
-  },
-  "templates": {
+      "featureOneTime": "Achat unique",
+      "featureNoSub": "Sans abonnement ni compte",
+      "featureUpdates": "Mises à jour régulières",
+      "screenshotAlt": "Application Remplate montrant le navigateur de modèles reMarkable",
+      "lightboxLabel": "Aperçu",
+      "lightboxClose": "Fermer"
+    },
+    "templates": {
       "badge": "Modèles gratuits",
       "title": "Un pack de démarrage pour le bullet journal",
       "lead": "Trois packs de modèles pensés pour vous — Future Log, Daily Log et un ensemble de 5 fiches mensuelles. Adaptés au pixel près à votre appareil, prêts à importer.",
@@ -336,38 +336,65 @@
       "howtoTitle": "Nouveau sur Remplate ?",
       "howtoLead": "Trouvez l'IP de votre appareil, connectez-vous et découvrez le fonctionnement des modèles — cela prend moins d'une minute.",
       "howtoButton": "Démarrer",
-    "lightboxClose": "Fermer",
-    "viewAllTemplates": "Voir les {count} modèles",
-    "lightboxLabel": "Aperçu",
-    "tagSingle": "Simple",
-    "tagBundle": "Pack · {count}",
-    "templateCount": "{count} modèles",
-    "packs": {
-      "future": {
-        "title": "Future Log",
-        "desc": "Trois mois en un coup d'œil — page divisée en trois sections avec en-têtes mois/année et une large zone de notes pointillée. Idéal pour planifier.",
-        "meta": ["1 PNG", "Portrait", "3 mois/page"]
-      },
-      "daily": {
-        "title": "Daily Log",
-        "desc": "Une page journalière soignée — date, sélecteur d'humeur à 5 smileys, trois questions de gratitude et espace de notes pointillé.",
-        "meta": ["1 PNG", "Portrait", "Humeur + gratitude"]
-      },
-      "monthly": {
-        "title": "Monthly Log Bundle",
-        "desc": "Cinq modèles : un journal quotidien pour chaque longueur de mois, plus une liste d'actions mensuelle. Chaque journal dispose d'une ligne pour le jour, de notes et d'un suivi d'humeur.",
-        "meta": ["5 PNG", "Portrait", "28/29/30/31 + actions"],
-        "files": {
-          "28": { "name": "Monthly Log · 28 jours", "sub": "Fév (non bissextile)" },
-          "29": { "name": "Monthly Log · 29 jours", "sub": "Fév (bissextile)" },
-          "30": { "name": "Monthly Log · 30 jours", "sub": "Avr/Juin/Sept/Nov" },
-          "31": { "name": "Monthly Log · 31 jours", "sub": "Jan/Mars/Mai/Juil/Août/Oct/Déc" },
-          "actions": { "name": "Actions mensuelles", "sub": "Liste d'actions numérotées" }
+      "lightboxClose": "Fermer",
+      "viewAllTemplates": "Voir les {count} modèles",
+      "lightboxLabel": "Aperçu",
+      "tagSingle": "Simple",
+      "tagBundle": "Pack · {count}",
+      "templateCount": "{count} modèles",
+      "packs": {
+        "future": {
+          "title": "Future Log",
+          "desc": "Trois mois en un coup d'œil — page divisée en trois sections avec en-têtes mois/année et une large zone de notes pointillée. Idéal pour planifier.",
+          "meta": [
+            "1 PNG",
+            "Portrait",
+            "3 mois/page"
+          ]
+        },
+        "daily": {
+          "title": "Daily Log",
+          "desc": "Une page journalière soignée — date, sélecteur d'humeur à 5 smileys, trois questions de gratitude et espace de notes pointillé.",
+          "meta": [
+            "1 PNG",
+            "Portrait",
+            "Humeur + gratitude"
+          ]
+        },
+        "monthly": {
+          "title": "Monthly Log Bundle",
+          "desc": "Cinq modèles : un journal quotidien pour chaque longueur de mois, plus une liste d'actions mensuelle. Chaque journal dispose d'une ligne pour le jour, de notes et d'un suivi d'humeur.",
+          "meta": [
+            "5 PNG",
+            "Portrait",
+            "28/29/30/31 + actions"
+          ],
+          "files": {
+            "28": {
+              "name": "Monthly Log · 28 jours",
+              "sub": "Fév (non bissextile)"
+            },
+            "29": {
+              "name": "Monthly Log · 29 jours",
+              "sub": "Fév (bissextile)"
+            },
+            "30": {
+              "name": "Monthly Log · 30 jours",
+              "sub": "Avr/Juin/Sept/Nov"
+            },
+            "31": {
+              "name": "Monthly Log · 31 jours",
+              "sub": "Jan/Mars/Mai/Juil/Août/Oct/Déc"
+            },
+            "actions": {
+              "name": "Actions mensuelles",
+              "sub": "Liste d'actions numérotées"
+            }
+          }
         }
       }
-    }
-  },
-  "faq": {
+    },
+    "faq": {
       "badge": "Prise en main",
       "title": "Tout pour bien démarrer",
       "lead": "Connectez votre reMarkable, trouvez la bonne taille de modèle et apprenez comment fonctionne le transfert de fichiers.",
