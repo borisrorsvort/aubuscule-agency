@@ -52,7 +52,12 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale })
 
   return (
-    <html lang={locale} className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
+    <html
+      lang={locale}
+      className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{

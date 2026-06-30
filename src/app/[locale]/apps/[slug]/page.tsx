@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 
 export async function generateMetadata({
   params,
@@ -21,19 +22,11 @@ export async function generateMetadata({
 }
 
 export default async function AppDetail({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { locale, slug } = await params
-  return (
-    <main id="main-content">
-      <div className="wrap">
-        <h1>{slug}</h1>
-        <p>
-          {locale === 'fr'
-            ? 'Page détail de l’app — à venir (Epic 5).'
-            : locale === 'nl'
-            ? 'App details pagina — binnenkort (Epic 5).'
-            : 'App detail page — coming soon (Epic 5).'}
-        </p>
-      </div>
-    </main>
-  )
+  const { slug } = await params
+
+  if (slug === 'remplate') {
+    notFound()
+  }
+
+  notFound()
 }

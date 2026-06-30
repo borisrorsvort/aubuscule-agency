@@ -25,10 +25,10 @@ export function Nav() {
 
   if (pathname === '/') return null
 
-  // Apps/Blog hidden for now (sections not ready).
   const links = [
     { href: '/', label: t('home') },
     { href: '/agency', label: t('agency') },
+    { href: '/apps', label: t('apps') },
   ] as const
 
   return (

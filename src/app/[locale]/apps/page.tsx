@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { AppsGallery } from '@/components/apps/AppsGallery'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -7,8 +8,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: `${t('apps')} — Aubuscule`,
     description: tMeta('siteDescription'),
-    // TODO: remove once published
-    robots: { index: false },
     alternates: {
       canonical: `/${locale}/apps`,
       languages: {
@@ -21,20 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
-export default async function AppsHome({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'nav' })
+export default async function AppsHome() {
   return (
     <main id="main-content">
       <div className="wrap">
-        <h1>{t('apps')}</h1>
-        <p>
-          {locale === 'fr'
-            ? 'Listing des apps — à venir (Epic 5).'
-            : locale === 'nl'
-            ? 'Lijst met apps — binnenkort (Epic 5).'
-            : 'Apps listing — coming soon (Epic 5).'}
-        </p>
+        <AppsGallery />
       </div>
     </main>
   )

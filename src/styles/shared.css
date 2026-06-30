@@ -30,19 +30,34 @@
   color: var(--ink-faint);
 }
 
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: var(--sp-3_5) var(--sp-6);
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  line-height: 1;
+}
+
 .btn-primary {
-  display: inline-block;
-  font-size: 15px; font-weight: 500;
-  color: var(--accent-fg); background: var(--accent);
-  text-decoration: none; padding: var(--sp-3_5) var(--sp-6); border-radius: 2px;
+  color: var(--accent-fg);
+  background: var(--accent);
+  border: none;
 }
 .btn-primary:hover { opacity: 0.85; }
 
 .btn-secondary {
-  display: inline-block;
-  font-size: 15px; font-weight: 500; color: var(--ink);
-  background: transparent; text-decoration: none;
-  padding: var(--sp-3_5) var(--sp-5); border-radius: 2px; border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  padding: calc(var(--sp-3_5) - 1px) calc(var(--sp-5) - 1px);
+  border: 1px solid var(--ink);
 }
 .btn-secondary:hover { background: var(--ink); color: var(--bg); }
 

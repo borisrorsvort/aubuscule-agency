@@ -154,7 +154,8 @@
 .nav-lang-select {
   width: auto;
   min-width: calc(var(--sp-8) * 2);
-  margin-inline: var(--sp-3) var(--sp-1);
+  margin-inline-start: var(--sp-6);
+  margin-inline-end: var(--sp-2);
 }
 
 .nav-lang-select .custom-select-trigger {

@@ -247,5 +247,175 @@
       "admin": "Admin — tech, rechten, distributie",
       "global": "Volledig pakket"
     }
+  },
+  "apps": {
+    "heroTitle": "Onze applicaties",
+    "heroLead": "Vaste prijs, geen abonnement, geen account.",
+    "cardLearnMore": "Meer informatie",
+    "cardBuy": "Kopen",
+    "cardTagDesktop": "Desktop",
+    "ctaTitle": "Een app-idee?",
+    "ctaText": "Als je een behoefte hebt die een tool kan invullen, laat het ons weten. We bestuderen elk voorstel.",
+    "ctaButton": "Schrijf ons",
+    "listHeading": "Lijst",
+    "cardDesc": "Beheer je reMarkable-sjablonen. Geen commandoregel, geen risico."
+  },
+  "remplate": {
+    "subnav": {
+      "overview": "Overzicht",
+      "templates": "Sjablonen",
+      "faq": "FAQ"
+    },
+    "meta": {
+      "overviewTitle": "Remplate — Beheer reMarkable-sjablonen op de Mac",
+      "overviewDesc": "Een gebruiksvriendelijke Mac-app om aangepaste sjablonen toe te voegen, te organiseren en te uploaden naar je reMarkable-tablet. Eenmalig € 15.",
+      "templatesTitle": "Gratis reMarkable-sjablonen — Remplate",
+      "templatesDesc": "Gratis PNG-sjablonen voor reMarkable 2, Paper Pure, Paper Pro en Paper Pro Move — Future Log, Daily Log en een maandpakket.",
+      "faqTitle": "FAQ en handleidingen — Remplate",
+      "faqDesc": "Hoe vind je het IP-adres van je reMarkable, verbind je met Remplate, voeg je sjablonen toe en begrijp je de resoluties."
+    },
+    "overview": {
+      "heroBadge": "BETA · macOS",
+      "heroTagline": "Beheer reMarkable-sjablonen met vertrouwen",
+      "heroLead": "Voeg je eigen sjablonen toe aan je reMarkable vanaf je Mac. Kies wat je wilt, bekijk een voorbeeld en upload ze naar je tablet in een paar klikken — zonder de standaardsjablonen aan te raken.",
+      "heroGetMac": "Koop voor Mac · € 15",
+      "heroNotified": "Op Windows of Linux? Blijf op de hoogte",
+      "flowYourTemplate": "Jouw sjabloon",
+      "flowYourRemarkable": "Jouw reMarkable",
+      "whyTitle": "Jouw reMarkable moet zich aan jou aanpassen, niet andersom.",
+      "whyLead": "Sjablonen toevoegen vereist normaal terminal-commando's, SSH en angst om je tablet te beschadigen. Remplate maakt het zo simpel en veilig als het toevoegen van een foto aan je telefoon.",
+      "featuresEyebrow": "Functies",
+      "featuresTitle": "Alles wat je nodig hebt om sjablonen te beheren",
+      "f1Title": "Veilig ontwerp",
+      "f1Desc": "Remplate voegt je sjablonen alleen toe naast de ingebouwde sjablonen — ze worden nooit overschreven of vervangen. Je reMarkable-standaarden blijven precies zoals ze waren.",
+      "f2Title": "Testen voor het opslaan",
+      "f2Desc": "Stel de sjablonen in die je wilt, zie exact wat er gaat veranderen, en stuur ze pas naar je tablet als je helemaal tevreden bent.",
+      "f3Title": "Geen verrassingen",
+      "f3Desc": "Een duidelijke voor-en-na-vergelijking van elke wijziging, zij aan zij. Geen onverwachte resultaten na het opslaan.",
+      "f4Title": "Verbinden in seconden",
+      "f4Desc": "Voer simpelweg het wachtwoord in dat in de instellingen van je reMarkable staat. SSH-sleutelverbinding is ook mogelijk voor geavanceerde gebruikers.",
+      "f5Title": "Net zo simpel als je foto's",
+      "f5Desc": "Al je sjablonen overzichtelijk gepresenteerd, net als de foto's op je telefoon. Klik om toe te voegen of te verwijderen, zonder gedoe met systeembestanden.",
+      "f6Title": "Ontwerp je eigen sjablonen",
+      "f6Desc": "Wil je je eigen sjablonen ontwerpen? Remplate vertelt je exact welke afmetingen je moet gebruiken voor een perfect resultaat.",
+      "specsEyebrow": "Specificaties",
+      "specsTitle": "Directe richtlijnen voor elk formaat",
+      "specsDesc": "Remplate controleert je PNG-bestanden op de reMarkable-vereisten vóór de upload, zodat je nooit een sjabloon met foute afmetingen verstuurt. Kies je apparaat voor de juiste resolutie en download direct handige basisontwerpen.",
+      "specsLink": "Krijg meer sjablonen",
+      "specsLabel": "Apparaat",
+      "specsPortrait": "Portretformaat",
+      "specsLandscape": "Landschapformaat",
+      "specsResolution": "Resolutie",
+      "specsDownloadBase": "Download basissjabloon voor {deviceName}",
+      "ctaGetTitle": "Verkrijg Remplate",
+      "ctaGetDesc": "Eenmalige aankoop van € 15. Geen abonnement, geen account vereist.",
+      "ctaGetButton": "Koop voor Mac · € 15",
+      "disclaimerTitle": "Disclaimer",
+      "disclaimerDesc": "Remplate wordt geleverd \"zoals het is\", zonder enige vorm van garantie, expliciet of impliciet. De auteur is in geen geval aansprakelijk voor claims, schade of apparaatstoringen die voortvloeien uit het gebruik van de software. Het downloaden en gebruiken van Remplate geschiedt geheel op eigen risico.",
+    "featureOneTime": "Eenmalige aankoop",
+    "featureNoSub": "Geen abonnement of account",
+    "featureUpdates": "Regelmatige updates",
+    "screenshotAlt": "Remplate-app die de reMarkable-sjabloonbrowser toont",
+    "lightboxLabel": "Voorvertoning",
+    "lightboxClose": "Sluiten"
+  },
+  "templates": {
+      "badge": "Gratis sjablonen",
+      "title": "Een starterspakket voor bullet journaling",
+      "lead": "Drie handige sjabloonpakketten — Future Log, Daily Log en een maandelijks pakket van 5 sjablonen. Pixelperfect voor je apparaat, klaar voor import.",
+      "chooseDevice": "Kies je apparaat",
+      "downloadPng": "Download PNG",
+      "downloadPngs": "Download {count} PNG's",
+      "downloadAll": "Download alles (7 PNG's)",
+      "howtoEyebrow": "Aan de slag",
+      "howtoTitle": "Nieuw bij Remplate?",
+      "howtoLead": "Vind het IP-adres van je tablet, maak verbinding en leer hoe sjablonen werken op je reMarkable — het duurt slechts een minuut.",
+      "howtoButton": "Aan de slag",
+    "lightboxClose": "Sluiten",
+    "viewAllTemplates": "Bekijk alle {count} sjablonen",
+    "lightboxLabel": "Voorvertoning",
+    "tagSingle": "Enkel",
+    "tagBundle": "Bundel · {count}",
+    "templateCount": "{count} sjablonen",
+    "packs": {
+      "future": {
+        "title": "Future Log",
+        "desc": "Drie maanden in één oogopslag — pagina verdeeld in drieën met maand/jaar-velden en een royale bullet-ruimte. Perfect voor langetermijnplanning.",
+        "meta": ["1 PNG", "Portret", "3 maanden/pagina"]
+      },
+      "daily": {
+        "title": "Daily Log",
+        "desc": "Een zorgvuldig ontworpen dagelijkse pagina — datum, moodtracker met 5 gezichtjes, drie dankbaarheidsprompts en een gestippeld notitieveld.",
+        "meta": ["1 PNG", "Portret", "Stemming + dankbaarheid"]
+      },
+      "monthly": {
+        "title": "Monthly Log Bundle",
+        "desc": "Vijf sjablonen: een dagboek voor elke maandlengte, plus een actielijst. Elk dagboek heeft een dag-kolom, notitieregel en moodtracker.",
+        "meta": ["5 PNG's", "Portret", "28/29/30/31 + acties"],
+        "files": {
+          "28": { "name": "Monthly Log · 28 dagen", "sub": "Feb (niet-schrikkel)" },
+          "29": { "name": "Monthly Log · 29 dagen", "sub": "Feb (schrikkel)" },
+          "30": { "name": "Monthly Log · 30 dagen", "sub": "Apr/Jun/Sep/Nov" },
+          "31": { "name": "Monthly Log · 31 dagen", "sub": "Jan/Mrt/Mei/Jul/Aug/Okt/Dec" },
+          "actions": { "name": "Maandelijkse acties", "sub": "Genummerde actielijst" }
+        }
+      }
+    }
+  },
+  "faq": {
+      "badge": "Aan de slag",
+      "title": "Alles om direct te beginnen",
+      "lead": "Verbind je reMarkable, vind het juiste formaat en leer hoe sjabloonbeheer werkt met Remplate.",
+      "groupConnected": "Apparaat verbinden",
+      "groupBasics": "Sjabloon-basis",
+      "groupUsing": "Remplate gebruiken",
+      "helpTitle": "Kom je er niet uit?",
+      "helpLead": "We helpen je graag — stuur ons een bericht en we nemen snel contact op.",
+      "helpButton": "Contact opnemen",
+      "items": {
+        "ip": {
+          "q": "Waar vind ik het IP-adres van mijn reMarkable?",
+          "a1": "Open op je tablet Instellingen → Algemeen → Help → Auteursrecht en licenties. Scroll helemaal naar beneden — onder \"Algemene informatie\" vind je het Wi-Fi IP-adres en een eenmalig SSH-wachtwoord.",
+          "a2": "Als je de reMarkable met de USB-C kabel op je computer aansluit, kun je deze ook altijd bereiken op het vaste adres 10.11.99.1 — geen Wi-Fi nodig."
+        },
+        "connect": {
+          "q": "Hoe verbind ik Remplate met mijn apparaat?",
+          "step1": "Zorg dat je computer en reMarkable op hetzelfde Wi-Fi-netwerk zitten, of verbind ze met de USB-C kabel.",
+          "step2": "Voer in Remplate het IP-adres en het wachtwoord in zoals hierboven getoond op je tablet.",
+          "step3": "Klik op verbinden — een groen indicatielampje bevestigt de verbinding.",
+          "sshKey": "Voor geavanceerde gebruikers is verbinding via SSH-sleutel ook mogelijk in plaats van een wachtwoord."
+        },
+        "error": {
+          "q": "Ik krijg een verbindingsfout — wat moet ik controleren?",
+          "check1": "Zitten beide apparaten op hetzelfde netwerk (of gebruik de USB-C kabel en 10.11.99.1).",
+          "check2": "Je USB-C kabel moet gegevensoverdracht ondersteunen, niet alleen opladen.",
+          "check3": "Het wachtwoord is hoofdlettergevoelig en verandert na een fabrieksreset."
+        },
+        "dims": {
+          "q": "Welke afmetingen en bestandsindelingen moeten sjablonen hebben?",
+          "a": "Sjablonen zijn PNG-bestanden die exact overeenkomen met het schermformaat. Zie portretdimensies hieronder (draai breedte/hoogte om voor landschap):",
+          "device": "Apparaat",
+          "portrait": "Portret",
+          "dpi": "DPI"
+        },
+        "base": {
+          "q": "Waar kan ik basissjablonen vinden om te beginnen?",
+          "a1": "We bieden een gratis starterspakket — Future Log, Daily Log en Monthly Log — aangepast aan elk apparaat op de sjablonenpagina.",
+          "a2": "Liever zelf ontwerpen? Download een leeg basissjabloon voor Figma, Penpot, Affinity, Illustrator of PNG via de specificaties op de homepage."
+        },
+        "add": {
+          "q": "Hoe voeg ik een nieuw sjabloon toe?",
+          "a1": "Zodra je verbonden bent, toont Remplate de sjablonen op je tablet. Om je eigen sjabloon toe te voegen, klik op Sjablonen toevoegen, selecteer je PNG en kies een oriëntatie.",
+          "a2": "Elk toegevoegd sjabloon verschijnt in de categorie Custom op je reMarkable, apart van de standaard sjablonen. Bevestig de wijzigingen en upload — Remplate herstart de gebruikersinterface van de tablet automatisch."
+        },
+        "remove": {
+          "q": "Kan ik de standaardsjablonen verwijderen?",
+          "a1": "Nee. Remplate is ontworpen om de ingebouwde bestanden van je tablet nooit aan te raken. De standaardsjablonen van je reMarkable blijven altijd intact.",
+          "a2": "Hierdoor is er geen risico op verlies van standaardbestanden en is er geen risicovolle herstelprocedure nodig. Je tablet is altijd veilig."
+        }
+      },
+      "mailtoSubject": "Remplate-ondersteuning",
+      "mailtoBody": "Hallo,\n\nIk heb hulp nodig met Remplate.\n\nWat ik aan het doen was :\n\n\nWat er gebeurde :\n\n\nMijn apparaat (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move) :\nmacOS-versie :\n\n\nBedankt!"
+    }
   }
 }

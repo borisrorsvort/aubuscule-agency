@@ -247,5 +247,175 @@
       "admin": "Admin — technique, droits, distribution",
       "global": "Accompagnement global"
     }
+  },
+  "apps": {
+    "heroTitle": "Nos applications",
+    "heroLead": "Prix fixe, pas d’abonnement, pas de compte.",
+    "cardLearnMore": "En savoir plus",
+    "cardBuy": "Acheter",
+    "cardTagDesktop": "Ordinateur",
+    "ctaTitle": "Une idée d’application ?",
+    "ctaText": "Si vous avez un besoin qu’un outil pourrait combler, dites-le nous. On étudie chaque proposition.",
+    "ctaButton": "Nous écrire",
+    "listHeading": "Liste",
+    "cardDesc": "Gérez vos templates reMarkable. Sans ligne de commande, sans risque."
+  },
+  "remplate": {
+    "subnav": {
+      "overview": "Aperçu",
+      "templates": "Modèles",
+      "faq": "FAQ"
+    },
+    "meta": {
+      "overviewTitle": "Remplate — Gestionnaire de modèles reMarkable pour Mac",
+      "overviewDesc": "Une application Mac conviviale pour ajouter, organiser et envoyer des modèles personnalisés sur votre tablette reMarkable. Achat unique 15 €.",
+      "templatesTitle": "Modèles reMarkable gratuits — Remplate",
+      "templatesDesc": "Modèles PNG gratuits pour reMarkable 2, Paper Pure, Paper Pro et Paper Pro Move — Future Log, Daily Log et pack mensuel.",
+      "faqTitle": "FAQ et guides de démarrage — Remplate",
+      "faqDesc": "Comment trouver l'adresse IP de votre reMarkable, connecter Remplate, ajouter des modèles personnalisés et comprendre les dimensions."
+    },
+    "overview": {
+      "heroBadge": "BETA · macOS",
+      "heroTagline": "Gerez vos modèles reMarkable en toute confiance",
+      "heroLead": "Ajoutez vos propres modèles à votre reMarkable depuis votre Mac. Choisissez ce que vous voulez, prévisualisez avant d'enregistrer et envoyez-les sur votre tablette en quelques clics — sans jamais toucher aux modèles d'origine.",
+      "heroGetMac": "Acheter pour Mac · 15 €",
+      "heroNotified": "Sous Windows ou Linux ? Restez informé",
+      "flowYourTemplate": "Votre modèle",
+      "flowYourRemarkable": "Votre reMarkable",
+      "whyTitle": "Votre reMarkable doit s'adapter à vous, pas l'inverse.",
+      "whyLead": "Ajouter des modèles nécessite habituellement des commandes de terminal, du SSH et la peur de bloquer sa tablette. Remplate rend cela aussi simple et sûr qu'ajouter une photo sur son téléphone.",
+      "featuresEyebrow": "Fonctionnalités",
+      "featuresTitle": "Tout pour gérer vos modèles simplement",
+      "f1Title": "Sûr par conception",
+      "f1Desc": "Remplate ajoute uniquement vos modèles à côté de ceux d'origine — il ne les remplace ni ne les écrase jamais. Vos configurations d'origine restent inchangées.",
+      "f2Title": "Visualisez avant d'envoyer",
+      "f2Desc": "Préparez les modèles de votre choix, vérifiez précisément ce qui va changer, et envoyez sur votre reMarkable uniquement quand tout vous plaît.",
+      "f3Title": "Aucune mauvaise surprise",
+      "f3Desc": "Un comparatif clair avant/après de chaque modification, côte à côte. Aucun imprévu après la sauvegarde.",
+      "f4Title": "Connexion en quelques secondes",
+      "f4Desc": "Saisissez simplement le mot de passe de l'appareil indiqué dans les réglages de votre reMarkable. Les clés SSH sont également supportées pour les plus techniques.",
+      "f5Title": "Aussi simple que vos photos",
+      "f5Desc": "Tous vos modèles s'affichent sous vos yeux, comme vos photos. Cliquez pour ajouter ou supprimer, sans bidouiller les fichiers système.",
+      "f6Title": "Créez vos propres modèles",
+      "f6Desc": "Vous souhaitez concevoir vos designs ? Remplate vous indique exactement les dimensions requises pour un rendu parfait sur votre tablette.",
+      "specsEyebrow": "Dimensions requises",
+      "specsTitle": "Un repère intégré pour chaque format",
+      "specsDesc": "Remplate valide vos fichiers PNG par rapport aux critères de la reMarkable avant le transfert, évitant tout envoi défectueux. Choisissez votre appareil pour obtenir les bonnes dimensions et téléchargez des bases de travail prêtes à l'emploi.",
+      "specsLink": "Obtenir d'autres modèles",
+      "specsLabel": "Appareil",
+      "specsPortrait": "Taille portrait",
+      "specsLandscape": "Taille paysage",
+      "specsResolution": "Résolution",
+      "specsDownloadBase": "Télécharger le modèle de base pour {deviceName}",
+      "ctaGetTitle": "Obtenir Remplate",
+      "ctaGetDesc": "Achat unique de 15 €. Pas d'abonnement, pas de compte requis.",
+      "ctaGetButton": "Acheter pour Mac · 15 €",
+      "disclaimerTitle": "Clause de non-responsabilité",
+      "disclaimerDesc": "Remplate est fourni \"en l'état\", sans garantie d'aucune sorte, expresse ou implicite, y compris mais sans s'y limiter, les garanties de qualité marchande, d'adéquation à un usage particulier et d'absence de contrefaçon. En aucun cas l'auteur ne pourra être tenu responsable de toute réclamation, dommage, perte de données, dysfonctionnement de l'appareil ou autre responsabilité découlant de, ou en relation avec le logiciel ou son utilisation. En téléchargeant et utilisant Remplate, vous reconnaissez le faire à vos propres risques.",
+    "featureOneTime": "Achat unique",
+    "featureNoSub": "Sans abonnement ni compte",
+    "featureUpdates": "Mises à jour régulières",
+    "screenshotAlt": "Application Remplate montrant le navigateur de modèles reMarkable",
+    "lightboxLabel": "Aperçu",
+    "lightboxClose": "Fermer"
+  },
+  "templates": {
+      "badge": "Modèles gratuits",
+      "title": "Un pack de démarrage pour le bullet journal",
+      "lead": "Trois packs de modèles pensés pour vous — Future Log, Daily Log et un ensemble de 5 fiches mensuelles. Adaptés au pixel près à votre appareil, prêts à importer.",
+      "chooseDevice": "Choisissez votre appareil",
+      "downloadPng": "Télécharger le PNG",
+      "downloadPngs": "Télécharger les {count} PNG",
+      "downloadAll": "Tout télécharger (7 PNG)",
+      "howtoEyebrow": "Démarrage",
+      "howtoTitle": "Nouveau sur Remplate ?",
+      "howtoLead": "Trouvez l'IP de votre appareil, connectez-vous et découvrez le fonctionnement des modèles — cela prend moins d'une minute.",
+      "howtoButton": "Démarrer",
+    "lightboxClose": "Fermer",
+    "viewAllTemplates": "Voir les {count} modèles",
+    "lightboxLabel": "Aperçu",
+    "tagSingle": "Simple",
+    "tagBundle": "Pack · {count}",
+    "templateCount": "{count} modèles",
+    "packs": {
+      "future": {
+        "title": "Future Log",
+        "desc": "Trois mois en un coup d'œil — page divisée en trois sections avec en-têtes mois/année et une large zone de notes pointillée. Idéal pour planifier.",
+        "meta": ["1 PNG", "Portrait", "3 mois/page"]
+      },
+      "daily": {
+        "title": "Daily Log",
+        "desc": "Une page journalière soignée — date, sélecteur d'humeur à 5 smileys, trois questions de gratitude et espace de notes pointillé.",
+        "meta": ["1 PNG", "Portrait", "Humeur + gratitude"]
+      },
+      "monthly": {
+        "title": "Monthly Log Bundle",
+        "desc": "Cinq modèles : un journal quotidien pour chaque longueur de mois, plus une liste d'actions mensuelle. Chaque journal dispose d'une ligne pour le jour, de notes et d'un suivi d'humeur.",
+        "meta": ["5 PNG", "Portrait", "28/29/30/31 + actions"],
+        "files": {
+          "28": { "name": "Monthly Log · 28 jours", "sub": "Fév (non bissextile)" },
+          "29": { "name": "Monthly Log · 29 jours", "sub": "Fév (bissextile)" },
+          "30": { "name": "Monthly Log · 30 jours", "sub": "Avr/Juin/Sept/Nov" },
+          "31": { "name": "Monthly Log · 31 jours", "sub": "Jan/Mars/Mai/Juil/Août/Oct/Déc" },
+          "actions": { "name": "Actions mensuelles", "sub": "Liste d'actions numérotées" }
+        }
+      }
+    }
+  },
+  "faq": {
+      "badge": "Prise en main",
+      "title": "Tout pour bien démarrer",
+      "lead": "Connectez votre reMarkable, trouvez la bonne taille de modèle et apprenez comment fonctionne le transfert de fichiers.",
+      "groupConnected": "Connexion de l'appareil",
+      "groupBasics": "Bases des modèles",
+      "groupUsing": "Utilisation de Remplate",
+      "helpTitle": "Toujours bloqué ?",
+      "helpLead": "Nous sommes là pour vous aider — écrivez-nous et nous vous répondrons rapidement.",
+      "helpButton": "Contacter le support",
+      "items": {
+        "ip": {
+          "q": "Où trouver l'adresse IP de ma reMarkable ?",
+          "a1": "Sur votre tablette, ouvrez Réglages → Général → Aide → Droits d'auteur et licences. Faites défiler tout en bas — sous la section « Informations générales », vous trouverez l'adresse IP Wi-Fi de votre appareil ainsi qu'un mot de passe SSH à usage unique.",
+          "a2": "Si vous connectez votre reMarkable à votre ordinateur avec le câble USB-C, vous pouvez également y accéder à l'adresse fixe 10.11.99.1 — sans avoir besoin du Wi-Fi."
+        },
+        "connect": {
+          "q": "Comment connecter Remplate à mon appareil ?",
+          "step1": "Assurez-vous que votre ordinateur et votre reMarkable sont sur le même réseau Wi-Fi, ou connectez-les via le câble USB-C.",
+          "step2": "Dans Remplate, saisissez l'adresse IP et le mot de passe de l'appareil trouvés dans les réglages décrits ci-dessus.",
+          "step3": "Cliquez sur Connecter — un voyant vert confirme que la liaison est établie.",
+          "sshKey": "Pour les utilisateurs avancés, la connexion par clé SSH est également supportée à la place du mot de passe."
+        },
+        "error": {
+          "q": "J'obtiens une erreur de connexion — que dois-je vérifier ?",
+          "check1": "Les deux appareils sont sur le même réseau (ou utilisez le câble USB-C et l'IP 10.11.99.1).",
+          "check2": "Votre câble USB-C supporte le transfert de données, pas seulement la charge.",
+          "check3": "Le mot de passe correspond exactement — il est sensible à la casse et change si vous réinitialisez l'appareil."
+        },
+        "dims": {
+          "q": "Quelles dimensions et formats de modèles utiliser ?",
+          "a": "Les modèles sont des fichiers PNG dimensionnés exactement pour votre écran. Utilisez les dimensions portrait ci-dessous (inversez largeur et hauteur pour le paysage) :",
+          "device": "Appareil",
+          "portrait": "Portrait",
+          "dpi": "DPI"
+        },
+        "base": {
+          "q": "Où obtenir des modèles de base pour créer mes designs ?",
+          "a1": "We propose un kit de démarrage gratuit — Future Log, Daily Log et Monthly Log — pré-dimensionné pour chaque modèle d'appareil sur la page Modèles.",
+          "a2": "Vous préférez repartir de zéro ? Téléchargez une grille de base blanche pour Figma, Penpot, Affinity, Illustrator ou PNG depuis la section des spécifications de la page d'accueil."
+        },
+        "add": {
+          "q": "Comment ajouter un nouveau modèle ?",
+          "a1": "Une fois connecté, Remplate affiche les modèles déjà présents sur votre tablette. Pour ajouter le vôtre, cliquez sur Ajouter un modèle, choisissez votre PNG et sélectionnez une orientation.",
+          "a2": "Chaque modèle importé apparaît dans la catégorie Custom de votre reMarkable, isolant ainsi vos ajouts des designs par défaut. Validez vos changements, passez-les en revue, puis lancez le transfert — Remplate relancera l'interface de la tablette automatiquement."
+        },
+        "remove": {
+          "q": "Puis-je supprimer les modèles d'origine ?",
+          "a1": "Non. Remplate est conçu sur un principe fondamental : ne jamais toucher aux fichiers système d'origine. Vos modèles reMarkable par défaut restent toujours intacts.",
+          "a2": "Cela évite toute perte accidentelle de modèle d'origine et élimine le besoin d'une étape de restauration risquée. Les fichiers par défaut de votre tablette ne courent aucun danger."
+        }
+      },
+      "mailtoSubject": "Support Remplate",
+      "mailtoBody": "Bonjour,\n\nJ'ai besoin d'aide avec Remplate.\n\nCe que je faisais :\n\n\nCe qui s'est passé :\n\n\nMon appareil (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move) :\nVersion de macOS :\n\n\nMerci !"
+    }
   }
 }

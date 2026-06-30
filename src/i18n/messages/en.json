@@ -247,5 +247,175 @@
       "admin": "Admin — tech, rights, distribution",
       "global": "Full package"
     }
+  },
+  "apps": {
+    "heroTitle": "Our applications",
+    "heroLead": "Fixed price, no subscription, no account.",
+    "cardLearnMore": "Learn more",
+    "cardBuy": "Buy",
+    "cardTagDesktop": "Desktop",
+    "ctaTitle": "An application idea?",
+    "ctaText": "If you have a need that a tool could fill, let us know. We study every proposal.",
+    "ctaButton": "Write to us",
+    "listHeading": "List",
+    "cardDesc": "Manage your reMarkable templates. No command line, no risk."
+  },
+  "remplate": {
+    "subnav": {
+      "overview": "Overview",
+      "templates": "Templates",
+      "faq": "FAQ"
+    },
+    "meta": {
+      "overviewTitle": "Remplate — reMarkable Template Manager for Mac",
+      "overviewDesc": "A friendly Mac app to add, organize, and push custom templates to your reMarkable tablet. One-time €15.",
+      "templatesTitle": "Free reMarkable Templates — Remplate",
+      "templatesDesc": "Free PNG templates for reMarkable 2, Paper Pure, Paper Pro, and Paper Pro Move — Future Log, Daily Log, and a five-template Monthly Log bundle.",
+      "faqTitle": "FAQ & Getting Started — Remplate",
+      "faqDesc": "How to find your reMarkable's IP, connect Remplate, add custom templates, and understand template sizes."
+    },
+    "overview": {
+      "heroBadge": "BETA · macOS",
+      "heroTagline": "Manage reMarkable templates with confidence",
+      "heroLead": "Add your own templates to your reMarkable from your computer. Pick what you want, preview before saving, and send it to your tablet in a few clicks — without ever touching your built-in templates.",
+      "heroGetMac": "Get for Mac · €15",
+      "heroNotified": "On Windows or Linux? Get notified",
+      "flowYourTemplate": "Your template",
+      "flowYourRemarkable": "Your reMarkable",
+      "whyTitle": "Your reMarkable should fit you, not the other way around.",
+      "whyLead": "Adding new templates usually means terminal commands, SSH, and the fear of breaking your tablet. Remplate makes it as simple and safe as adding a photo to your phone.",
+      "featuresEyebrow": "Features",
+      "featuresTitle": "Everything you need to manage templates",
+      "f1Title": "Safe by design",
+      "f1Desc": "Remplate only adds your templates next to the built-in ones — it never replaces or overwrites them. Your reMarkable defaults stay exactly as they were, so you can always go back.",
+      "f2Title": "Try before you save",
+      "f2Desc": "Set up the templates you want, see exactly what's going to change, and only send them to your reMarkable when you're happy.",
+      "f3Title": "See it before it happens",
+      "f3Desc": "A clear before-and-after of every change, side by side. No surprises after you press save.",
+      "f4Title": "Connect in seconds",
+      "f4Desc": "Just type the device password from your reMarkable's settings — that's all it takes. For the more technical, connecting with an SSH key is also supported.",
+      "f5Title": "As simple as your photos",
+      "f5Desc": "All your templates laid out in front of you, like photos on your phone. Click to add, click to remove — no tinkering required.",
+      "f6Title": "Make your own templates",
+      "f6Desc": "Want to design your own? Remplate tells you exactly what size to make them, so they always look perfect on your tablet.",
+      "specsEyebrow": "Template specs",
+      "specsTitle": "Built-in reference for every requirement",
+      "specsDesc": "Remplate validates your PNG files against reMarkable's requirements before upload — so you never waste a push on a broken template. Pick your device for the right dimensions and a ready-made template file in your design tool of choice.",
+      "specsLink": "Get more templates",
+      "specsLabel": "Device",
+      "specsPortrait": "Portrait size",
+      "specsLandscape": "Landscape size",
+      "specsResolution": "Resolution",
+      "specsDownloadBase": "Download base template for {deviceName}",
+      "ctaGetTitle": "Get Remplate",
+      "ctaGetDesc": "A one-time €15 purchase. No subscription, no account.",
+      "ctaGetButton": "Get for Mac · €15",
+      "disclaimerTitle": "Disclaimer",
+      "disclaimerDesc": "Remplate is provided \"as is\", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the author be liable for any claim, damages, data loss, device malfunction, or other liability — whether in an action of contract, tort, or otherwise — arising from, out of, or in connection with the software or its use. By downloading and using Remplate, you acknowledge that you do so at your own risk and accept full responsibility for any consequences on your reMarkable device or files.",
+    "featureOneTime": "One-time purchase",
+    "featureNoSub": "No subscription, no account",
+    "featureUpdates": "Regular updates",
+    "screenshotAlt": "Remplate app showing the reMarkable template browser",
+    "lightboxLabel": "Preview",
+    "lightboxClose": "Close"
+  },
+  "templates": {
+      "badge": "Free templates",
+      "title": "A starter pack for bullet journaling",
+      "lead": "Three thoughtful template packs — Future Log, Daily Log, and a five-template Monthly Log bundle. Pixel-perfect for your device, ready to import into Remplate.",
+      "chooseDevice": "Choose your device",
+      "downloadPng": "Download PNG",
+      "downloadPngs": "Download {count} PNGs",
+      "downloadAll": "Download everything (7 PNGs)",
+      "howtoEyebrow": "Getting started",
+      "howtoTitle": "New to Remplate?",
+      "howtoLead": "Find your device's IP, get connected, and learn how templates work on your reMarkable — it only takes a minute.",
+      "howtoButton": "Get started",
+    "lightboxClose": "Close",
+    "viewAllTemplates": "View all {count} templates",
+    "lightboxLabel": "Preview",
+    "tagSingle": "Single",
+    "tagBundle": "Bundle · {count}",
+    "templateCount": "{count} templates",
+    "packs": {
+      "future": {
+        "title": "Future Log",
+        "desc": "Three months at a glance — page split in thirds with month/year fields and a generous bullet area for each. Perfect for long-range planning.",
+        "meta": ["1 PNG", "Portrait", "3 months/page"]
+      },
+      "daily": {
+        "title": "Daily Log",
+        "desc": "A thoughtful daily page — date fields, a 5-face mood selector next to the date, three gratitude prompts, and a dotted notes area.",
+        "meta": ["1 PNG", "Portrait", "Mood + gratitudes"]
+      },
+      "monthly": {
+        "title": "Monthly Log Bundle",
+        "desc": "Five templates: one day-by-day log for each month length, plus a monthly actions list. Each daily log has a weekday slot, notes line, and a mood circle on every row.",
+        "meta": ["5 PNGs", "Portrait", "28/29/30/31 + actions"],
+        "files": {
+          "28": { "name": "Monthly Log · 28 days", "sub": "Feb (non-leap)" },
+          "29": { "name": "Monthly Log · 29 days", "sub": "Feb (leap)" },
+          "30": { "name": "Monthly Log · 30 days", "sub": "Apr/Jun/Sep/Nov" },
+          "31": { "name": "Monthly Log · 31 days", "sub": "Jan/Mar/May/Jul/Aug/Oct/Dec" },
+          "actions": { "name": "Monthly Actions", "sub": "Numbered actions list" }
+        }
+      }
+    }
+  },
+  "faq": {
+      "badge": "Getting started",
+      "title": "Everything you need to get going",
+      "lead": "Connect your reMarkable, find the right template size, and learn how templates work inside Remplate.",
+      "groupConnected": "Getting connected",
+      "groupBasics": "Template basics",
+      "groupUsing": "Using Remplate",
+      "helpTitle": "Still stuck?",
+      "helpLead": "We're happy to help — drop us a line and we'll get back to you.",
+      "helpButton": "Contact support",
+      "items": {
+        "ip": {
+          "q": "Where do I find my reMarkable's IP address?",
+          "a1": "On your tablet, open Settings → General → Help → Copyrights and licenses. Scroll to the very bottom — under \"General information\" you'll find your device's Wi-Fi IP address along with a one-time SSH password.",
+          "a2": "If you connect your reMarkable to your computer with the USB-C cable, you can also always reach it at the fixed address 10.11.99.1 — no Wi-Fi needed."
+        },
+        "connect": {
+          "q": "How do I connect Remplate to my device?",
+          "step1": "Make sure your computer and reMarkable are on the same Wi-Fi network, or connect them with the USB-C cable.",
+          "step2": "In Remplate, enter the IP address and the device password from the settings screen above.",
+          "step3": "Hit connect — a green indicator confirms you're in.",
+          "sshKey": "For the more technical, connecting with an SSH key is also supported instead of a password."
+        },
+        "error": {
+          "q": "I get a connection error — what should I check?",
+          "check1": "Both devices are on the same network (or use the USB-C cable and 10.11.99.1).",
+          "check2": "Your USB-C cable supports data transfer, not just charging.",
+          "check3": "The password matches exactly — it's case-sensitive and changes if you factory-reset."
+        },
+        "dims": {
+          "q": "What size and format do templates need to be?",
+          "a": "Templates are PNG files sized exactly to your device's screen. Use portrait dimensions below (swap width/height for landscape):",
+          "device": "Device",
+          "portrait": "Portrait",
+          "dpi": "DPI"
+        },
+        "base": {
+          "q": "Where can I get base templates to start from?",
+          "a1": "We offer a free starter pack — Future Log, Daily Log, and a Monthly Log bundle — pre-sized for every device on the Templates page below.",
+          "a2": "Prefer to design your own? Download a blank base template in Figma, Penpot, Affinity, Illustrator, or PNG from the specs section, sized correctly for your device."
+        },
+        "add": {
+          "q": "How do I add a new template?",
+          "a1": "Once connected, Remplate shows the templates already on your device. To add your own, click Add Template, choose your PNG, and pick an orientation.",
+          "a2": "Every template you add appears under the Custom category on your reMarkable, so your additions stay neatly separated from the built-in ones. Stage your changes, review them, then push — Remplate restarts the device's interface automatically so your new templates show up right away."
+        },
+        "remove": {
+          "q": "Can I remove the default templates?",
+          "a1": "No. Remplate is built around one principle: never touch what's already on your tablet. Your reMarkable's built-in templates always stay exactly as they came — Remplate only adds your own next to them, under the Custom category.",
+          "a2": "This means there's no way to accidentally lose a default template through Remplate, and no risky restore step to worry about. Your tablet's defaults are always safe."
+        }
+      },
+      "mailtoSubject": "Remplate Support",
+      "mailtoBody": "Hi,\n\nI need help with Remplate.\n\nWhat I was doing:\n\n\nWhat happened:\n\n\nMy device (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move):\nmacOS version:\n\n\nThanks!"
+    }
   }
 }
