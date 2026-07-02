@@ -13,7 +13,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'meta' })
 
   return {
-    title: t('siteTitle'),
+    title: t('homeTitle'),
     description: t('siteDescription'),
     alternates: {
       canonical: `/${locale}`,
@@ -25,7 +25,7 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: t('siteTitle'),
+      title: t('homeTitle'),
       description: t('siteDescription'),
       locale: locale === 'fr' ? 'fr_BE' : locale === 'nl' ? 'nl_BE' : 'en_US',
       type: 'website',
@@ -35,7 +35,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: t('siteTitle'),
+      title: t('homeTitle'),
       description: t('siteDescription'),
       images: ['/img/og-image.png'],
     },

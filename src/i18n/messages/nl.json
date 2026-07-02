@@ -2,7 +2,8 @@
   "skipLink": "Ga naar hoofdinhoud",
   "meta": {
     "siteTitle": "Aubuscule",
-    "siteDescription": "Aubuscule — bureau, apps, blog, shop. Alles wat artiesten nodig hebben.",
+    "homeTitle": "Aubuscule — Websites, Maatwerk Apps & Audio/Videostudio",
+    "siteDescription": "Websites, maatwerk apps, automatisering en een volledig audio/videostudio — voor bedrijven, creatieven, artiesten en iedereen die liever focust op zijn echte werk.",
     "agencyTitle": "Aubuscule — Digitale Ambachtslieden voor Artiesten",
     "agencyDescription": "Aubuscule begeleidt artiesten — digitaal, audio, video en administratief. Muzikanten, beeldende kunstenaars, performers: twee ambachtslieden ten dienste van uw project.",
     "agencyOgDescription": "Digitale, audio-, video- en administratieve begeleiding voor muzikanten, beeldende kunstenaars en artiesten.",
@@ -26,7 +27,7 @@
     "colContact": "Contact",
     "artists": "Muzikanten · Beeldende kunstenaars · Performers"
   },
-  "hub": {
+  "home": {
     "subtitle": "Digitaal bureau op menselijke schaal",
     "cardsSectionLabel": "Secties",
     "cards": {

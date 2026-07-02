@@ -2,7 +2,8 @@
   "skipLink": "Skip to main content",
   "meta": {
     "siteTitle": "Aubuscule",
-    "siteDescription": "Aubuscule — agency, apps, blog, shop. Everything artists need.",
+    "homeTitle": "Aubuscule — Websites, Custom Apps & Audio/Video Studio",
+    "siteDescription": "We build websites, custom apps and automation, and run a full audio/video studio — for businesses, creators, artists, or anyone who'd rather focus on their work.",
     "agencyTitle": "Aubuscule — Digital Artisans for Artists",
     "agencyDescription": "Aubuscule supports artists — digital, audio, video and administrative. Musicians, visual artists, performers: two artisans at the service of your project.",
     "agencyOgDescription": "Digital, audio, video and administrative support for musicians, visual artists and performers.",
@@ -26,7 +27,7 @@
     "colContact": "Contact",
     "artists": "Musicians · Visual artists · Performers"
   },
-  "hub": {
+  "home": {
     "subtitle": "Human-scale digital agency",
     "cardsSectionLabel": "Sections",
     "cards": {

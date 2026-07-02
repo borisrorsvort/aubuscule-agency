@@ -23,7 +23,7 @@ const cards: HubCard[] = [
 ]
 
 export function HubHome() {
-  const t = useTranslations('hub')
+  const t = useTranslations('home')
   const heroRef = useRef<HTMLElement>(null)
   const [yOffset, setYOffset] = useState(0)
   const [visible, setVisible] = useState(false)
