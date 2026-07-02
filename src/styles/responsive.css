@@ -33,11 +33,17 @@
     opacity: 1;
     pointer-events: all;
   }
-  .nav-link {
+  .nav-links .nav-link {
     padding: var(--sp-3_5) 0;
     font-size: 14px;
     border-bottom: 1px solid var(--hairline);
     display: block;
+  }
+  .nav-links .nav-link::after {
+    display: none;
+  }
+  .nav-links li:last-child .nav-link {
+    border-bottom: none;
   }
   .nav-cta {
     background: none;
