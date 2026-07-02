@@ -4,6 +4,7 @@ import { useRef, useState, useEffect, useCallback } from 'react'
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { Mark } from '@/components/shared/Mark'
+import { Starfield } from './Starfield'
 
 interface HubCard {
   key: string
@@ -54,6 +55,7 @@ export function HubHome() {
         onMouseLeave={handleMouseLeave}
         aria-labelledby="hub-heading"
       >
+        <Starfield />
         <div
           className="hub-hero-parallax"
           style={{ transform: `translateY(${yOffset}px)` }}

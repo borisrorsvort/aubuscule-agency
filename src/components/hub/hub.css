@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 .hub-hero {
+  position: relative;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -16,6 +17,22 @@
     linear-gradient(170deg, #0f0e0c 0%, #161513 50%, #1a1816 100%);
   color: #eae8e2;
   overflow: hidden;
+}
+/* 3D constellation canvas — sits behind hero content, above the gradient */
+.hub-starfield {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.hub-hero-parallax,
+.hub-h1,
+.hub-sub,
+.hub-cards {
+  position: relative;
+  z-index: 1;
 }
 .hub-hero--visible .hub-hero-parallax,
 .hub-hero--visible .hub-h1,
@@ -40,6 +57,7 @@
 }
 .hub-sub {
   font-size: 17px; line-height: 1.65; color: #9a978f;
+  text-align: center; max-width: 620px; margin-inline: auto;
   opacity: 0;
   transform: translateY(var(--sp-4));
   transition: opacity .9s cubic-bezier(.23,1,.32,1) .35s, transform .9s cubic-bezier(.23,1,.32,1) .35s;

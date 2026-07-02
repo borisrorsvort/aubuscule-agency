@@ -2,10 +2,10 @@
   "skipLink": "Ga naar hoofdinhoud",
   "meta": {
     "siteTitle": "Aubuscule",
-    "homeTitle": "Aubuscule — Websites, Maatwerk Apps & Audio/Videostudio",
-    "siteDescription": "Websites, maatwerk apps, automatisering en een volledig audio/videostudio — voor bedrijven, creatieven, artiesten en iedereen die liever focust op zijn echte werk.",
-    "agencyTitle": "Aubuscule — Digitale Ambachtslieden voor Artiesten",
-    "agencyDescription": "Aubuscule begeleidt artiesten — digitaal, audio, video en administratief. Muzikanten, beeldende kunstenaars, performers: twee ambachtslieden ten dienste van uw project.",
+    "homeTitle": "Aubuscule, Websites, Maatwerk Apps & Audio/Videostudio",
+    "siteDescription": "Websites, maatwerk apps, automatisering en een volledig audio/videostudio, voor bedrijven, creatieven, artiesten en iedereen die liever focust op zijn echte werk.",
+    "agencyTitle": "Aubuscule, Digitale Ambachtslieden voor Artiesten",
+    "agencyDescription": "Aubuscule begeleidt artiesten, digitaal, audio, video en administratief. Muzikanten, beeldende kunstenaars, performers: twee ambachtslieden ten dienste van uw project.",
     "agencyOgDescription": "Digitale, audio-, video- en administratieve begeleiding voor muzikanten, beeldende kunstenaars en artiesten.",
     "ogImageAlt": "Aubuscule"
   },
@@ -28,13 +28,13 @@
     "artists": "Muzikanten · Beeldende kunstenaars · Performers"
   },
   "home": {
-    "subtitle": "We bouwen websites, apps op maat en automatiseringen, en runnen een volledig audio/videostudio — voor bedrijven, makers, artiesten, of iedereen die liever focust op zijn echte werk.",
+    "subtitle": "We bouwen websites, apps op maat en automatiseringen, en runnen een volledig audio/videostudio, voor bedrijven, makers, artiesten, of iedereen die liever focust op zijn echte werk.",
     "cardsSectionLabel": "Secties",
     "cards": {
       "agency": {
         "label": "Bureau",
         "title": "Diensten voor artiesten",
-        "desc": "Website, EPK, foto, opname, mix, clip, live-opname, distributie, automatisering — vier domeinen, één team."
+        "desc": "Website, EPK, foto, opname, mix, clip, live-opname, distributie, automatisering, vier domeinen, één team."
       },
       "apps": {
         "label": "Applicaties",
@@ -47,7 +47,7 @@
     "eyebrow": "Muzikanten · Beeldende kunstenaars · Performers",
     "h1": "Concentreer u op uw kunst. Wij regelen de rest.",
     "strong": "digitaal, audio, video",
-    "sub": "Aubuscule begeleidt artiesten op vier fronten — <bold>digitaal, audio, video en administratief</bold>.",
+    "sub": "Aubuscule begeleidt artiesten op vier fronten, <bold>digitaal, audio, video en administratief</bold>.",
     "ctaServices": "Onze diensten ontdekken",
     "ctaContact": "Neem contact op"
   },
@@ -191,7 +191,7 @@
       "boris": {
         "alt": "Boris Rorsvort, digitale ambachtsman en fotograaf",
         "role": "Digitale ambachtsman · Fotografie",
-        "bio": "Muzikant, digitale ambachtsman en fotograaf. Hij vormt het web, beeld en automatisering rond de artiest — van website tot EPK tot sociale media.",
+        "bio": "Muzikant, digitale ambachtsman en fotograaf. Hij vormt het web, beeld en automatisering rond de artiest, van website tot EPK tot sociale media.",
         "tags": [
           "Web",
           "Design",
@@ -202,7 +202,7 @@
       "eric": {
         "alt": "Éric, muzikant, componist en geluidsingenieur",
         "role": "Muzikant · Compositie · Geluid",
-        "bio": "Muzikant en componist in de eerste plaats, opgeleid geluidsingenieur. Opname, video en videoclips houden geen geheimen voor hem — van tracking tot mastering.",
+        "bio": "Muzikant en componist in de eerste plaats, opgeleid geluidsingenieur. Opname, video en videoclips houden geen geheimen voor hem, van tracking tot mastering.",
         "tags": [
           "Opname",
           "Mix / Master",
@@ -245,12 +245,12 @@
     "noticeError": "Fout bij verzenden. Probeer opnieuw of schrijf ons rechtstreeks.",
     "submit": "Verzoek verzenden",
     "successTitle": "Uw e-mailprogramma is zojuist geopend.",
-    "successSub": "Controleer de verzending — we komen binnen 48 werkuren terug.",
+    "successSub": "Controleer de verzending, we komen binnen 48 werkuren terug.",
     "typeOptions": {
-      "digital": "Digitaal — web, EPK, platformen",
-      "audio": "Audio — studio, mix, compositie",
-      "video": "Video — montage, clip, opname",
-      "admin": "Admin — tech, rechten, distributie",
+      "digital": "Digitaal, web, EPK, platformen",
+      "audio": "Audio, studio, mix, compositie",
+      "video": "Video, montage, clip, opname",
+      "admin": "Admin, tech, rechten, distributie",
       "global": "Volledig pakket"
     }
   },
@@ -273,17 +273,17 @@
       "faq": "FAQ"
     },
     "meta": {
-      "overviewTitle": "Remplate — Beheer reMarkable-sjablonen op de Mac",
+      "overviewTitle": "Remplate, Beheer reMarkable-sjablonen op de Mac",
       "overviewDesc": "Een gebruiksvriendelijke Mac-app om aangepaste sjablonen toe te voegen, te organiseren en te uploaden naar je reMarkable-tablet. Eenmalig € 15.",
-      "templatesTitle": "Gratis reMarkable-sjablonen — Remplate",
-      "templatesDesc": "Gratis PNG-sjablonen voor reMarkable 2, Paper Pure, Paper Pro en Paper Pro Move — Future Log, Daily Log en een maandpakket.",
-      "faqTitle": "FAQ en handleidingen — Remplate",
+      "templatesTitle": "Gratis reMarkable-sjablonen, Remplate",
+      "templatesDesc": "Gratis PNG-sjablonen voor reMarkable 2, Paper Pure, Paper Pro en Paper Pro Move, Future Log, Daily Log en een maandpakket.",
+      "faqTitle": "FAQ en handleidingen, Remplate",
       "faqDesc": "Hoe vind je het IP-adres van je reMarkable, verbind je met Remplate, voeg je sjablonen toe en begrijp je de resoluties."
     },
     "overview": {
       "heroBadge": "BETA · macOS",
       "heroTagline": "Beheer reMarkable-sjablonen met vertrouwen",
-      "heroLead": "Voeg je eigen sjablonen toe aan je reMarkable vanaf je Mac. Kies wat je wilt, bekijk een voorbeeld en upload ze naar je tablet in een paar klikken — zonder de standaardsjablonen aan te raken.",
+      "heroLead": "Voeg je eigen sjablonen toe aan je reMarkable vanaf je Mac. Kies wat je wilt, bekijk een voorbeeld en upload ze naar je tablet in een paar klikken, zonder de standaardsjablonen aan te raken.",
       "heroGetMac": "Koop voor Mac · € 15",
       "heroNotified": "Op Windows of Linux? Blijf op de hoogte",
       "flowYourTemplate": "Jouw sjabloon",
@@ -293,7 +293,7 @@
       "featuresEyebrow": "Functies",
       "featuresTitle": "Alles wat je nodig hebt om sjablonen te beheren",
       "f1Title": "Veilig ontwerp",
-      "f1Desc": "Remplate voegt je sjablonen alleen toe naast de ingebouwde sjablonen — ze worden nooit overschreven of vervangen. Je reMarkable-standaarden blijven precies zoals ze waren.",
+      "f1Desc": "Remplate voegt je sjablonen alleen toe naast de ingebouwde sjablonen, ze worden nooit overschreven of vervangen. Je reMarkable-standaarden blijven precies zoals ze waren.",
       "f2Title": "Testen voor het opslaan",
       "f2Desc": "Stel de sjablonen in die je wilt, zie exact wat er gaat veranderen, en stuur ze pas naar je tablet als je helemaal tevreden bent.",
       "f3Title": "Geen verrassingen",
@@ -328,14 +328,14 @@
   "templates": {
       "badge": "Gratis sjablonen",
       "title": "Een starterspakket voor bullet journaling",
-      "lead": "Drie handige sjabloonpakketten — Future Log, Daily Log en een maandelijks pakket van 5 sjablonen. Pixelperfect voor je apparaat, klaar voor import.",
+      "lead": "Drie handige sjabloonpakketten, Future Log, Daily Log en een maandelijks pakket van 5 sjablonen. Pixelperfect voor je apparaat, klaar voor import.",
       "chooseDevice": "Kies je apparaat",
       "downloadPng": "Download PNG",
       "downloadPngs": "Download {count} PNG's",
       "downloadAll": "Download alles (7 PNG's)",
       "howtoEyebrow": "Aan de slag",
       "howtoTitle": "Nieuw bij Remplate?",
-      "howtoLead": "Vind het IP-adres van je tablet, maak verbinding en leer hoe sjablonen werken op je reMarkable — het duurt slechts een minuut.",
+      "howtoLead": "Vind het IP-adres van je tablet, maak verbinding en leer hoe sjablonen werken op je reMarkable, het duurt slechts een minuut.",
       "howtoButton": "Aan de slag",
     "lightboxClose": "Sluiten",
     "viewAllTemplates": "Bekijk alle {count} sjablonen",
@@ -346,12 +346,12 @@
     "packs": {
       "future": {
         "title": "Future Log",
-        "desc": "Drie maanden in één oogopslag — pagina verdeeld in drieën met maand/jaar-velden en een royale bullet-ruimte. Perfect voor langetermijnplanning.",
+        "desc": "Drie maanden in één oogopslag, pagina verdeeld in drieën met maand/jaar-velden en een royale bullet-ruimte. Perfect voor langetermijnplanning.",
         "meta": ["1 PNG", "Portret", "3 maanden/pagina"]
       },
       "daily": {
         "title": "Daily Log",
-        "desc": "Een zorgvuldig ontworpen dagelijkse pagina — datum, moodtracker met 5 gezichtjes, drie dankbaarheidsprompts en een gestippeld notitieveld.",
+        "desc": "Een zorgvuldig ontworpen dagelijkse pagina, datum, moodtracker met 5 gezichtjes, drie dankbaarheidsprompts en een gestippeld notitieveld.",
         "meta": ["1 PNG", "Portret", "Stemming + dankbaarheid"]
       },
       "monthly": {
@@ -376,23 +376,23 @@
       "groupBasics": "Sjabloon-basis",
       "groupUsing": "Remplate gebruiken",
       "helpTitle": "Kom je er niet uit?",
-      "helpLead": "We helpen je graag — stuur ons een bericht en we nemen snel contact op.",
+      "helpLead": "We helpen je graag, stuur ons een bericht en we nemen snel contact op.",
       "helpButton": "Contact opnemen",
       "items": {
         "ip": {
           "q": "Waar vind ik het IP-adres van mijn reMarkable?",
-          "a1": "Open op je tablet Instellingen → Algemeen → Help → Auteursrecht en licenties. Scroll helemaal naar beneden — onder \"Algemene informatie\" vind je het Wi-Fi IP-adres en een eenmalig SSH-wachtwoord.",
-          "a2": "Als je de reMarkable met de USB-C kabel op je computer aansluit, kun je deze ook altijd bereiken op het vaste adres 10.11.99.1 — geen Wi-Fi nodig."
+          "a1": "Open op je tablet Instellingen → Algemeen → Help → Auteursrecht en licenties. Scroll helemaal naar beneden, onder \"Algemene informatie\" vind je het Wi-Fi IP-adres en een eenmalig SSH-wachtwoord.",
+          "a2": "Als je de reMarkable met de USB-C kabel op je computer aansluit, kun je deze ook altijd bereiken op het vaste adres 10.11.99.1, geen Wi-Fi nodig."
         },
         "connect": {
           "q": "Hoe verbind ik Remplate met mijn apparaat?",
           "step1": "Zorg dat je computer en reMarkable op hetzelfde Wi-Fi-netwerk zitten, of verbind ze met de USB-C kabel.",
           "step2": "Voer in Remplate het IP-adres en het wachtwoord in zoals hierboven getoond op je tablet.",
-          "step3": "Klik op verbinden — een groen indicatielampje bevestigt de verbinding.",
+          "step3": "Klik op verbinden, een groen indicatielampje bevestigt de verbinding.",
           "sshKey": "Voor geavanceerde gebruikers is verbinding via SSH-sleutel ook mogelijk in plaats van een wachtwoord."
         },
         "error": {
-          "q": "Ik krijg een verbindingsfout — wat moet ik controleren?",
+          "q": "Ik krijg een verbindingsfout, wat moet ik controleren?",
           "check1": "Zitten beide apparaten op hetzelfde netwerk (of gebruik de USB-C kabel en 10.11.99.1).",
           "check2": "Je USB-C kabel moet gegevensoverdracht ondersteunen, niet alleen opladen.",
           "check3": "Het wachtwoord is hoofdlettergevoelig en verandert na een fabrieksreset."
@@ -406,13 +406,13 @@
         },
         "base": {
           "q": "Waar kan ik basissjablonen vinden om te beginnen?",
-          "a1": "We bieden een gratis starterspakket — Future Log, Daily Log en Monthly Log — aangepast aan elk apparaat op de sjablonenpagina.",
+          "a1": "We bieden een gratis starterspakket, Future Log, Daily Log en Monthly Log, aangepast aan elk apparaat op de sjablonenpagina.",
           "a2": "Liever zelf ontwerpen? Download een leeg basissjabloon voor Figma, Penpot, Affinity, Illustrator of PNG via de specificaties op de homepage."
         },
         "add": {
           "q": "Hoe voeg ik een nieuw sjabloon toe?",
           "a1": "Zodra je verbonden bent, toont Remplate de sjablonen op je tablet. Om je eigen sjabloon toe te voegen, klik op Sjablonen toevoegen, selecteer je PNG en kies een oriëntatie.",
-          "a2": "Elk toegevoegd sjabloon verschijnt in de categorie Custom op je reMarkable, apart van de standaard sjablonen. Bevestig de wijzigingen en upload — Remplate herstart de gebruikersinterface van de tablet automatisch."
+          "a2": "Elk toegevoegd sjabloon verschijnt in de categorie Custom op je reMarkable, apart van de standaard sjablonen. Bevestig de wijzigingen en upload, Remplate herstart de gebruikersinterface van de tablet automatisch."
         },
         "remove": {
           "q": "Kan ik de standaardsjablonen verwijderen?",

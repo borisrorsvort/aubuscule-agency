@@ -2,10 +2,10 @@
   "skipLink": "Aller au contenu principal",
   "meta": {
     "siteTitle": "Aubuscule",
-    "homeTitle": "Aubuscule — Sites web, Apps sur mesure & Studio Audio/Vidéo",
-    "siteDescription": "Sites web, apps sur mesure, automatisation et studio audio/vidéo — pour les entreprises, créateurs, artistes et tous ceux qui préfèrent se concentrer sur leur vrai travail.",
-    "agencyTitle": "Aubuscule — Artisans numériques pour artistes",
-    "agencyDescription": "Aubuscule accompagne les artistes — digital, audio, vidéo et administratif. Musiciens, plasticiens, performeurs : deux artisans au service de votre projet.",
+    "homeTitle": "Aubuscule, Sites web, Apps sur mesure & Studio Audio/Vidéo",
+    "siteDescription": "Sites web, apps sur mesure, automatisation et studio audio/vidéo, pour les entreprises, créateurs, artistes et tous ceux qui préfèrent se concentrer sur leur vrai travail.",
+    "agencyTitle": "Aubuscule, Artisans numériques pour artistes",
+    "agencyDescription": "Aubuscule accompagne les artistes, digital, audio, vidéo et administratif. Musiciens, plasticiens, performeurs : deux artisans au service de votre projet.",
     "agencyOgDescription": "Accompagnement digital, audio, vidéo et administratif pour musiciens, plasticiens et artistes.",
     "ogImageAlt": "Aubuscule"
   },
@@ -28,13 +28,13 @@
     "artists": "Musiciens · Plasticiens · Artistes"
   },
   "home": {
-    "subtitle": "On crée des sites web, des apps sur mesure et des automatisations, et on tient un studio audio/vidéo complet — pour les entreprises, créateurs, artistes, ou quiconque préfère se concentrer sur son vrai travail.",
+    "subtitle": "On crée des sites web, des apps sur mesure et des automatisations, et on tient un studio audio/vidéo complet, pour les entreprises, créateurs, artistes, ou quiconque préfère se concentrer sur son vrai travail.",
     "cardsSectionLabel": "Sections",
     "cards": {
       "agency": {
         "label": "Agence",
         "title": "Services aux artistes",
-        "desc": "Site, EPK, photo, enregistrement, mix, clip, captation live, distribution, automatisation — quatre domaines, une équipe."
+        "desc": "Site, EPK, photo, enregistrement, mix, clip, captation live, distribution, automatisation, quatre domaines, une équipe."
       },
       "apps": {
         "label": "Applications",
@@ -47,7 +47,7 @@
     "eyebrow": "Musiciens · Plasticiens · Artistes",
     "h1": "Concentrez-vous sur votre art. On fait le reste.",
     "strong": "digital, audio, vidéo",
-    "sub": "Aubuscule accompagne les artistes sur quatre fronts — <bold>digital, audio, vidéo et administratif</bold>.",
+    "sub": "Aubuscule accompagne les artistes sur quatre fronts, <bold>digital, audio, vidéo et administratif</bold>.",
     "ctaServices": "Découvrir les services",
     "ctaContact": "Nous écrire"
   },
@@ -191,7 +191,7 @@
       "boris": {
         "alt": "Boris Rorsvort, artisan numérique et photographe",
         "role": "Artisan numérique · Photo",
-        "bio": "Musicien, artisan numérique et photographe. Il façonne le web, l'image et l'automatisation autour de l'artiste — du site à l'EPK jusqu'aux réseaux.",
+        "bio": "Musicien, artisan numérique et photographe. Il façonne le web, l'image et l'automatisation autour de l'artiste, du site à l'EPK jusqu'aux réseaux.",
         "tags": [
           "Web",
           "Design",
@@ -202,7 +202,7 @@
       "eric": {
         "alt": "Éric, musicien, compositeur et ingénieur du son",
         "role": "Musicien · Composition · Son",
-        "bio": "Musicien et compositeur avant tout, ingénieur du son de formation. L'enregistrement, la vidéo et le clip n'ont pas de secrets pour lui — de la prise au mastering.",
+        "bio": "Musicien et compositeur avant tout, ingénieur du son de formation. L'enregistrement, la vidéo et le clip n'ont pas de secrets pour lui, de la prise au mastering.",
         "tags": [
           "Enregistrement",
           "Mix / Master",
@@ -245,12 +245,12 @@
     "noticeError": "Erreur lors de l'envoi. Réessayez ou écrivez-nous directement.",
     "submit": "Envoyer la demande",
     "successTitle": "Votre client mail vient de s'ouvrir.",
-    "successSub": "Vérifiez l'envoi — on revient sous 48 h ouvrées.",
+    "successSub": "Vérifiez l'envoi, on revient sous 48 h ouvrées.",
     "typeOptions": {
-      "digital": "Digital — web, EPK, plateformes",
-      "audio": "Audio — studio, mix, création",
-      "video": "Vidéo — montage, clip, captation",
-      "admin": "Admin — technique, droits, distribution",
+      "digital": "Digital, web, EPK, plateformes",
+      "audio": "Audio, studio, mix, création",
+      "video": "Vidéo, montage, clip, captation",
+      "admin": "Admin, technique, droits, distribution",
       "global": "Accompagnement global"
     }
   },
@@ -273,17 +273,17 @@
       "faq": "FAQ"
     },
     "meta": {
-      "overviewTitle": "Remplate — Gestionnaire de modèles reMarkable pour Mac",
+      "overviewTitle": "Remplate, Gestionnaire de modèles reMarkable pour Mac",
       "overviewDesc": "Une application Mac conviviale pour ajouter, organiser et envoyer des modèles personnalisés sur votre tablette reMarkable. Achat unique 15 €.",
-      "templatesTitle": "Modèles reMarkable gratuits — Remplate",
-      "templatesDesc": "Modèles PNG gratuits pour reMarkable 2, Paper Pure, Paper Pro et Paper Pro Move — Future Log, Daily Log et pack mensuel.",
-      "faqTitle": "FAQ et guides de démarrage — Remplate",
+      "templatesTitle": "Modèles reMarkable gratuits, Remplate",
+      "templatesDesc": "Modèles PNG gratuits pour reMarkable 2, Paper Pure, Paper Pro et Paper Pro Move, Future Log, Daily Log et pack mensuel.",
+      "faqTitle": "FAQ et guides de démarrage, Remplate",
       "faqDesc": "Comment trouver l'adresse IP de votre reMarkable, connecter Remplate, ajouter des modèles personnalisés et comprendre les dimensions."
     },
     "overview": {
       "heroBadge": "BETA · macOS",
       "heroTagline": "Gerez vos modèles reMarkable en toute confiance",
-      "heroLead": "Ajoutez vos propres modèles à votre reMarkable depuis votre Mac. Choisissez ce que vous voulez, prévisualisez avant d'enregistrer et envoyez-les sur votre tablette en quelques clics — sans jamais toucher aux modèles d'origine.",
+      "heroLead": "Ajoutez vos propres modèles à votre reMarkable depuis votre Mac. Choisissez ce que vous voulez, prévisualisez avant d'enregistrer et envoyez-les sur votre tablette en quelques clics, sans jamais toucher aux modèles d'origine.",
       "heroGetMac": "Acheter pour Mac · 15 €",
       "heroNotified": "Sous Windows ou Linux ? Restez informé",
       "flowYourTemplate": "Votre modèle",
@@ -293,7 +293,7 @@
       "featuresEyebrow": "Fonctionnalités",
       "featuresTitle": "Tout pour gérer vos modèles simplement",
       "f1Title": "Sûr par conception",
-      "f1Desc": "Remplate ajoute uniquement vos modèles à côté de ceux d'origine — il ne les remplace ni ne les écrase jamais. Vos configurations d'origine restent inchangées.",
+      "f1Desc": "Remplate ajoute uniquement vos modèles à côté de ceux d'origine, il ne les remplace ni ne les écrase jamais. Vos configurations d'origine restent inchangées.",
       "f2Title": "Visualisez avant d'envoyer",
       "f2Desc": "Préparez les modèles de votre choix, vérifiez précisément ce qui va changer, et envoyez sur votre reMarkable uniquement quand tout vous plaît.",
       "f3Title": "Aucune mauvaise surprise",
@@ -328,14 +328,14 @@
     "templates": {
       "badge": "Modèles gratuits",
       "title": "Un pack de démarrage pour le bullet journal",
-      "lead": "Trois packs de modèles pensés pour vous — Future Log, Daily Log et un ensemble de 5 fiches mensuelles. Adaptés au pixel près à votre appareil, prêts à importer.",
+      "lead": "Trois packs de modèles pensés pour vous, Future Log, Daily Log et un ensemble de 5 fiches mensuelles. Adaptés au pixel près à votre appareil, prêts à importer.",
       "chooseDevice": "Choisissez votre appareil",
       "downloadPng": "Télécharger le PNG",
       "downloadPngs": "Télécharger les {count} PNG",
       "downloadAll": "Tout télécharger (7 PNG)",
       "howtoEyebrow": "Démarrage",
       "howtoTitle": "Nouveau sur Remplate ?",
-      "howtoLead": "Trouvez l'IP de votre appareil, connectez-vous et découvrez le fonctionnement des modèles — cela prend moins d'une minute.",
+      "howtoLead": "Trouvez l'IP de votre appareil, connectez-vous et découvrez le fonctionnement des modèles, cela prend moins d'une minute.",
       "howtoButton": "Démarrer",
       "lightboxClose": "Fermer",
       "viewAllTemplates": "Voir les {count} modèles",
@@ -346,7 +346,7 @@
       "packs": {
         "future": {
           "title": "Future Log",
-          "desc": "Trois mois en un coup d'œil — page divisée en trois sections avec en-têtes mois/année et une large zone de notes pointillée. Idéal pour planifier.",
+          "desc": "Trois mois en un coup d'œil, page divisée en trois sections avec en-têtes mois/année et une large zone de notes pointillée. Idéal pour planifier.",
           "meta": [
             "1 PNG",
             "Portrait",
@@ -355,7 +355,7 @@
         },
         "daily": {
           "title": "Daily Log",
-          "desc": "Une page journalière soignée — date, sélecteur d'humeur à 5 smileys, trois questions de gratitude et espace de notes pointillé.",
+          "desc": "Une page journalière soignée, date, sélecteur d'humeur à 5 smileys, trois questions de gratitude et espace de notes pointillé.",
           "meta": [
             "1 PNG",
             "Portrait",
@@ -403,26 +403,26 @@
       "groupBasics": "Bases des modèles",
       "groupUsing": "Utilisation de Remplate",
       "helpTitle": "Toujours bloqué ?",
-      "helpLead": "Nous sommes là pour vous aider — écrivez-nous et nous vous répondrons rapidement.",
+      "helpLead": "Nous sommes là pour vous aider, écrivez-nous et nous vous répondrons rapidement.",
       "helpButton": "Contacter le support",
       "items": {
         "ip": {
           "q": "Où trouver l'adresse IP de ma reMarkable ?",
-          "a1": "Sur votre tablette, ouvrez Réglages → Général → Aide → Droits d'auteur et licences. Faites défiler tout en bas — sous la section « Informations générales », vous trouverez l'adresse IP Wi-Fi de votre appareil ainsi qu'un mot de passe SSH à usage unique.",
-          "a2": "Si vous connectez votre reMarkable à votre ordinateur avec le câble USB-C, vous pouvez également y accéder à l'adresse fixe 10.11.99.1 — sans avoir besoin du Wi-Fi."
+          "a1": "Sur votre tablette, ouvrez Réglages → Général → Aide → Droits d'auteur et licences. Faites défiler tout en bas, sous la section « Informations générales », vous trouverez l'adresse IP Wi-Fi de votre appareil ainsi qu'un mot de passe SSH à usage unique.",
+          "a2": "Si vous connectez votre reMarkable à votre ordinateur avec le câble USB-C, vous pouvez également y accéder à l'adresse fixe 10.11.99.1, sans avoir besoin du Wi-Fi."
         },
         "connect": {
           "q": "Comment connecter Remplate à mon appareil ?",
           "step1": "Assurez-vous que votre ordinateur et votre reMarkable sont sur le même réseau Wi-Fi, ou connectez-les via le câble USB-C.",
           "step2": "Dans Remplate, saisissez l'adresse IP et le mot de passe de l'appareil trouvés dans les réglages décrits ci-dessus.",
-          "step3": "Cliquez sur Connecter — un voyant vert confirme que la liaison est établie.",
+          "step3": "Cliquez sur Connecter, un voyant vert confirme que la liaison est établie.",
           "sshKey": "Pour les utilisateurs avancés, la connexion par clé SSH est également supportée à la place du mot de passe."
         },
         "error": {
-          "q": "J'obtiens une erreur de connexion — que dois-je vérifier ?",
+          "q": "J'obtiens une erreur de connexion, que dois-je vérifier ?",
           "check1": "Les deux appareils sont sur le même réseau (ou utilisez le câble USB-C et l'IP 10.11.99.1).",
           "check2": "Votre câble USB-C supporte le transfert de données, pas seulement la charge.",
-          "check3": "Le mot de passe correspond exactement — il est sensible à la casse et change si vous réinitialisez l'appareil."
+          "check3": "Le mot de passe correspond exactement, il est sensible à la casse et change si vous réinitialisez l'appareil."
         },
         "dims": {
           "q": "Quelles dimensions et formats de modèles utiliser ?",
@@ -433,13 +433,13 @@
         },
         "base": {
           "q": "Où obtenir des modèles de base pour créer mes designs ?",
-          "a1": "We propose un kit de démarrage gratuit — Future Log, Daily Log et Monthly Log — pré-dimensionné pour chaque modèle d'appareil sur la page Modèles.",
+          "a1": "We propose un kit de démarrage gratuit, Future Log, Daily Log et Monthly Log, pré-dimensionné pour chaque modèle d'appareil sur la page Modèles.",
           "a2": "Vous préférez repartir de zéro ? Téléchargez une grille de base blanche pour Figma, Penpot, Affinity, Illustrator ou PNG depuis la section des spécifications de la page d'accueil."
         },
         "add": {
           "q": "Comment ajouter un nouveau modèle ?",
           "a1": "Une fois connecté, Remplate affiche les modèles déjà présents sur votre tablette. Pour ajouter le vôtre, cliquez sur Ajouter un modèle, choisissez votre PNG et sélectionnez une orientation.",
-          "a2": "Chaque modèle importé apparaît dans la catégorie Custom de votre reMarkable, isolant ainsi vos ajouts des designs par défaut. Validez vos changements, passez-les en revue, puis lancez le transfert — Remplate relancera l'interface de la tablette automatiquement."
+          "a2": "Chaque modèle importé apparaît dans la catégorie Custom de votre reMarkable, isolant ainsi vos ajouts des designs par défaut. Validez vos changements, passez-les en revue, puis lancez le transfert, Remplate relancera l'interface de la tablette automatiquement."
         },
         "remove": {
           "q": "Puis-je supprimer les modèles d'origine ?",
