@@ -103,12 +103,15 @@ _Depends on: E1. Unblocks: E3–E8._
 ### 2b — Path Routing + Redirects (`next.config.ts`)
 
 - [x] Pure path routing — `/agency`, `/apps`, `/apps/[slug]`, `/blog`, `/blog/[slug]`, `/dev`, hub at `/`
-- [x] `redirects()` — `/shop` → gumroad (308), `/remplate` → `/apps/remplate` (308)
+- [x] `redirects()` — `/shop` → gumroad (308), `/remplate` → `/fr/apps/remplate` (308)
 - [x] **Verified on `next dev` AND local Worker (`opennextjs-cloudflare preview`)** — all paths + redirects correct
-- [ ] _(user)_ Cloudflare dashboard 301 redirect rules for old subdomains → paths:
-  - `agency.aubuscule.com/*` → `aubuscule.com/agency/*`  (currently live on Worker — cut over)
-  - `apps.` → `/apps`, `blog.` → `/blog`, `dev.` → `/dev`
-  - `shop.` → `https://aubuscule.gumroad.com`, `remplate.` → `aubuscule.com/apps/remplate`
+- [ ] _(user)_ Cloudflare dashboard 301 redirect rules for old subdomains → paths (point directly to `/fr/` paths to avoid 307 temporary redirects):
+  - `agency.aubuscule.com/*` → `https://www.aubuscule.com/fr/agency/*` (update this rule!)
+  - `apps.aubuscule.com/*` → `https://www.aubuscule.com/fr/apps/*`
+  - `blog.aubuscule.com/*` → `https://www.aubuscule.com/fr/blog/*`
+  - `dev.aubuscule.com/*` → `https://www.aubuscule.com/fr/dev/*`
+  - `shop.aubuscule.com/*` → `https://aubuscule.gumroad.com`
+  - `remplate.aubuscule.com/*` → `https://www.aubuscule.com/fr/apps/remplate`
 - [x] wrangler `routes`: `www.aubuscule.com` is the sole worker custom domain (PR previews use per-PR dev workers; `agency-staging` removed)
 
 ### 2c — Per-Section Metadata

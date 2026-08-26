@@ -45,14 +45,14 @@ the apex and old subdomains 301 to `www` paths. This branch’s `wrangler.jsonc`
 makes `www.aubuscule.com` the primary custom domain and drops
 `agency.aubuscule.com`, so do this in order:
 
-1. In Cloudflare, add **Redirect Rules** (301) before/at merge:
+1. In Cloudflare, add **Redirect Rules** (301) before/at merge (pointing directly to localized `/fr/` paths to avoid 307 temporary redirects that prevent Google canonicalization):
    - `aubuscule.com/*` (apex) → `https://www.aubuscule.com/$1`
-   - `agency.aubuscule.com/*` → `https://www.aubuscule.com/agency/$1`
-   - `apps.aubuscule.com/*` → `https://www.aubuscule.com/apps/$1`
-   - `blog.aubuscule.com/*` → `https://www.aubuscule.com/blog/$1`
-   - `dev.aubuscule.com/*` → `https://www.aubuscule.com/dev/$1`
+   - `agency.aubuscule.com/*` → `https://www.aubuscule.com/fr/agency/$1`
+   - `apps.aubuscule.com/*` → `https://www.aubuscule.com/fr/apps/$1`
+   - `blog.aubuscule.com/*` → `https://www.aubuscule.com/fr/blog/$1`
+   - `dev.aubuscule.com/*` → `https://www.aubuscule.com/fr/dev/$1`
    - `shop.aubuscule.com/*` → `https://aubuscule.gumroad.com`
-   - `remplate.aubuscule.com/*` → `https://www.aubuscule.com/apps/remplate`
+   - `remplate.aubuscule.com/*` → `https://www.aubuscule.com/fr/apps/remplate`
 2. Ensure `www.aubuscule.com` is attached to the Worker as a custom domain
    (it’s in `wrangler.jsonc` `routes`).
 3. Merge → Workers Builds deploys. Verify `www.aubuscule.com/`, `/agency`, etc.

@@ -36,7 +36,7 @@ const nextConfig: NextConfig = {
     return [
       { source: '/', destination: '/fr', permanent: true },
       { source: '/shop', destination: 'https://aubuscule.gumroad.com', permanent: true },
-      { source: '/remplate', destination: '/apps/remplate', permanent: true },
+      { source: '/remplate', destination: '/fr/apps/remplate', permanent: true },
     ]
   },
 }
