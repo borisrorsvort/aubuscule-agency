@@ -13,7 +13,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'meta' })
 
   return {
-    title: t('homeTitle'),
+    title: { absolute: t('homeTitle') },
     description: t('siteDescription'),
     alternates: {
       canonical: `/${locale}`,

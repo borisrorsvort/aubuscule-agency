@@ -4,7 +4,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const tMeta = await getTranslations({ locale, namespace: 'meta' })
   return {
-    title: `Dev — Aubuscule`,
+    title: "Dev",
     description: tMeta('siteDescription'),
     // TODO: remove once published
     robots: { index: false },

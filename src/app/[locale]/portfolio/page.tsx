@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: 'nav' })
   const tMeta = await getTranslations({ locale, namespace: 'meta' })
   return {
-    title: `${t('portfolio')} — Aubuscule`,
+    title: t('portfolio'),
     description: tMeta('siteDescription'),
     alternates: {
       canonical: `/${locale}/portfolio`,

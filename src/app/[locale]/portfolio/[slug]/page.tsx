@@ -8,7 +8,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params
   return {
-    title: `${slug} — Aubuscule`,
+    title: slug,
     alternates: {
       canonical: `/${locale}/portfolio/${slug}`,
       languages: {
