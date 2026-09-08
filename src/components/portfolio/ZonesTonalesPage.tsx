@@ -41,7 +41,7 @@ export function ZonesTonalesPage() {
         <p className="app-hero-lead">{t("hero.lead")}</p>
         <div className="app-hero-actions">
           <a
-            href="#"
+            href="https://tr.ee/I9DqWD4RtT"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -247,7 +247,7 @@ export function ZonesTonalesPage() {
         </p>
         <div className="app-download-actions">
           <a
-            href="#"
+            href="https://tr.ee/I9DqWD4RtT"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
