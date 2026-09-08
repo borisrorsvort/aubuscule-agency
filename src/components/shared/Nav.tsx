@@ -43,7 +43,7 @@ function AppsIcon({ className }: IconProps) {
 const icons = {
   '/': HomeIcon,
   '/agency': AgencyIcon,
-  '/apps': AppsIcon,
+  '/realisations': AppsIcon,
 } as const
 
 export function Nav() {
@@ -57,7 +57,7 @@ export function Nav() {
   const links = [
     { href: '/', label: t('home') },
     { href: '/agency', label: t('agency') },
-    { href: '/apps', label: t('apps') },
+    { href: '/realisations', label: t('realisations') },
   ] as const
 
   const isActive = (href: string) =>

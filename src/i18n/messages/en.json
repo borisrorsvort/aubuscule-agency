@@ -13,12 +13,12 @@
     "ariaLabel": "Main navigation",
     "home": "Home",
     "agency": "Agency",
-    "apps": "Apps",
     "blog": "Blog",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "themeLight": "Activate light mode",
-    "themeDark": "Activate dark mode"
+    "themeDark": "Activate dark mode",
+    "realisations": "Portfolio"
   },
   "footer": {
     "tagline": "We don't deliver projects. We clarify a need, build a solution, hand over the keys.",
@@ -36,8 +36,8 @@
         "title": "Services for artists",
         "desc": "Website, EPK, photo, recording, mix, music video, live capture, distribution, automation, four domains, one team."
       },
-      "apps": {
-        "label": "Applications",
+      "realisations": {
+        "label": "Portfolio",
         "title": "Software",
         "desc": "Custom software that makes your life easier."
       }
@@ -254,18 +254,6 @@
       "global": "Full package"
     }
   },
-  "apps": {
-    "heroTitle": "Our applications",
-    "heroLead": "Fixed price, no subscription, no account.",
-    "cardLearnMore": "Learn more",
-    "cardBuy": "Buy",
-    "cardTagDesktop": "Desktop",
-    "ctaTitle": "An application idea?",
-    "ctaText": "If you have a need that a tool could fill, let us know. We study every proposal.",
-    "ctaButton": "Write to us",
-    "listHeading": "List",
-    "cardDesc": "Manage your reMarkable templates. No command line, no risk."
-  },
   "remplate": {
     "subnav": {
       "overview": "Overview",
@@ -318,14 +306,14 @@
       "ctaGetButton": "Get for Mac · €15",
       "disclaimerTitle": "Disclaimer",
       "disclaimerDesc": "Remplate is provided \"as is\", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the author be liable for any claim, damages, data loss, device malfunction, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or its use. By downloading and using Remplate, you acknowledge that you do so at your own risk and accept full responsibility for any consequences on your reMarkable device or files.",
-    "featureOneTime": "One-time purchase",
-    "featureNoSub": "No subscription, no account",
-    "featureUpdates": "Regular updates",
-    "screenshotAlt": "Remplate app showing the reMarkable template browser",
-    "lightboxLabel": "Preview",
-    "lightboxClose": "Close"
-  },
-  "templates": {
+      "featureOneTime": "One-time purchase",
+      "featureNoSub": "No subscription, no account",
+      "featureUpdates": "Regular updates",
+      "screenshotAlt": "Remplate app showing the reMarkable template browser",
+      "lightboxLabel": "Preview",
+      "lightboxClose": "Close"
+    },
+    "templates": {
       "badge": "Free templates",
       "title": "A starter pack for bullet journaling",
       "lead": "Three thoughtful template packs, Future Log, Daily Log, and a five-template Monthly Log bundle. Pixel-perfect for your device, ready to import into Remplate.",
@@ -337,38 +325,65 @@
       "howtoTitle": "New to Remplate?",
       "howtoLead": "Find your device's IP, get connected, and learn how templates work on your reMarkable, it only takes a minute.",
       "howtoButton": "Get started",
-    "lightboxClose": "Close",
-    "viewAllTemplates": "View all {count} templates",
-    "lightboxLabel": "Preview",
-    "tagSingle": "Single",
-    "tagBundle": "Bundle · {count}",
-    "templateCount": "{count} templates",
-    "packs": {
-      "future": {
-        "title": "Future Log",
-        "desc": "Three months at a glance, page split in thirds with month/year fields and a generous bullet area for each. Perfect for long-range planning.",
-        "meta": ["1 PNG", "Portrait", "3 months/page"]
-      },
-      "daily": {
-        "title": "Daily Log",
-        "desc": "A thoughtful daily page, date fields, a 5-face mood selector next to the date, three gratitude prompts, and a dotted notes area.",
-        "meta": ["1 PNG", "Portrait", "Mood + gratitudes"]
-      },
-      "monthly": {
-        "title": "Monthly Log Bundle",
-        "desc": "Five templates: one day-by-day log for each month length, plus a monthly actions list. Each daily log has a weekday slot, notes line, and a mood circle on every row.",
-        "meta": ["5 PNGs", "Portrait", "28/29/30/31 + actions"],
-        "files": {
-          "28": { "name": "Monthly Log · 28 days", "sub": "Feb (non-leap)" },
-          "29": { "name": "Monthly Log · 29 days", "sub": "Feb (leap)" },
-          "30": { "name": "Monthly Log · 30 days", "sub": "Apr/Jun/Sep/Nov" },
-          "31": { "name": "Monthly Log · 31 days", "sub": "Jan/Mar/May/Jul/Aug/Oct/Dec" },
-          "actions": { "name": "Monthly Actions", "sub": "Numbered actions list" }
+      "lightboxClose": "Close",
+      "viewAllTemplates": "View all {count} templates",
+      "lightboxLabel": "Preview",
+      "tagSingle": "Single",
+      "tagBundle": "Bundle · {count}",
+      "templateCount": "{count} templates",
+      "packs": {
+        "future": {
+          "title": "Future Log",
+          "desc": "Three months at a glance, page split in thirds with month/year fields and a generous bullet area for each. Perfect for long-range planning.",
+          "meta": [
+            "1 PNG",
+            "Portrait",
+            "3 months/page"
+          ]
+        },
+        "daily": {
+          "title": "Daily Log",
+          "desc": "A thoughtful daily page, date fields, a 5-face mood selector next to the date, three gratitude prompts, and a dotted notes area.",
+          "meta": [
+            "1 PNG",
+            "Portrait",
+            "Mood + gratitudes"
+          ]
+        },
+        "monthly": {
+          "title": "Monthly Log Bundle",
+          "desc": "Five templates: one day-by-day log for each month length, plus a monthly actions list. Each daily log has a weekday slot, notes line, and a mood circle on every row.",
+          "meta": [
+            "5 PNGs",
+            "Portrait",
+            "28/29/30/31 + actions"
+          ],
+          "files": {
+            "28": {
+              "name": "Monthly Log · 28 days",
+              "sub": "Feb (non-leap)"
+            },
+            "29": {
+              "name": "Monthly Log · 29 days",
+              "sub": "Feb (leap)"
+            },
+            "30": {
+              "name": "Monthly Log · 30 days",
+              "sub": "Apr/Jun/Sep/Nov"
+            },
+            "31": {
+              "name": "Monthly Log · 31 days",
+              "sub": "Jan/Mar/May/Jul/Aug/Oct/Dec"
+            },
+            "actions": {
+              "name": "Monthly Actions",
+              "sub": "Numbered actions list"
+            }
+          }
         }
       }
-    }
-  },
-  "faq": {
+    },
+    "faq": {
       "badge": "Getting started",
       "title": "Everything you need to get going",
       "lead": "Connect your reMarkable, find the right template size, and learn how templates work inside Remplate.",
@@ -423,5 +438,17 @@
       "mailtoSubject": "Remplate Support",
       "mailtoBody": "Hi,\n\nI need help with Remplate.\n\nWhat I was doing:\n\n\nWhat happened:\n\n\nMy device (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move):\nmacOS version:\n\n\nThanks!"
     }
+  },
+  "realisations": {
+    "heroTitle": "Our portfolio",
+    "heroLead": "Fixed price, no subscription, no account.",
+    "cardLearnMore": "Learn more",
+    "cardBuy": "Buy",
+    "cardTagDesktop": "Desktop",
+    "ctaTitle": "An application idea?",
+    "ctaText": "If you have a need that a tool could fill, let us know. We study every proposal.",
+    "ctaButton": "Write to us",
+    "listHeading": "List",
+    "cardDesc": "Manage your reMarkable templates. No command line, no risk."
   }
 }

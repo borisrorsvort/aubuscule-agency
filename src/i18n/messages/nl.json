@@ -13,12 +13,12 @@
     "ariaLabel": "Hoofdnavigatie",
     "home": "Home",
     "agency": "Bureau",
-    "apps": "Apps",
     "blog": "Blog",
     "openMenu": "Menu openen",
     "closeMenu": "Menu sluiten",
     "themeLight": "Activeer lichte modus",
-    "themeDark": "Activeer donkere modus"
+    "themeDark": "Activeer donkere modus",
+    "realisations": "Portfolio"
   },
   "footer": {
     "tagline": "We leveren geen projecten op. We verduidelijken een nood, bouwen een oplossing, geven de sleutels door.",
@@ -36,8 +36,8 @@
         "title": "Diensten voor artiesten",
         "desc": "Website, EPK, foto, opname, mix, clip, live-opname, distributie, automatisering, vier domeinen, één team."
       },
-      "apps": {
-        "label": "Applicaties",
+      "realisations": {
+        "label": "Portfolio",
         "title": "Software",
         "desc": "Maatwerksoftware die uw leven makkelijker maakt."
       }
@@ -254,18 +254,6 @@
       "global": "Volledig pakket"
     }
   },
-  "apps": {
-    "heroTitle": "Onze applicaties",
-    "heroLead": "Vaste prijs, geen abonnement, geen account.",
-    "cardLearnMore": "Meer informatie",
-    "cardBuy": "Kopen",
-    "cardTagDesktop": "Desktop",
-    "ctaTitle": "Een app-idee?",
-    "ctaText": "Als je een behoefte hebt die een tool kan invullen, laat het ons weten. We bestuderen elk voorstel.",
-    "ctaButton": "Schrijf ons",
-    "listHeading": "Lijst",
-    "cardDesc": "Beheer je reMarkable-sjablonen. Geen commandoregel, geen risico."
-  },
   "remplate": {
     "subnav": {
       "overview": "Overzicht",
@@ -318,14 +306,14 @@
       "ctaGetButton": "Koop voor Mac · € 15",
       "disclaimerTitle": "Disclaimer",
       "disclaimerDesc": "Remplate wordt geleverd \"zoals het is\", zonder enige vorm van garantie, expliciet of impliciet. De auteur is in geen geval aansprakelijk voor claims, schade of apparaatstoringen die voortvloeien uit het gebruik van de software. Het downloaden en gebruiken van Remplate geschiedt geheel op eigen risico.",
-    "featureOneTime": "Eenmalige aankoop",
-    "featureNoSub": "Geen abonnement of account",
-    "featureUpdates": "Regelmatige updates",
-    "screenshotAlt": "Remplate-app die de reMarkable-sjabloonbrowser toont",
-    "lightboxLabel": "Voorvertoning",
-    "lightboxClose": "Sluiten"
-  },
-  "templates": {
+      "featureOneTime": "Eenmalige aankoop",
+      "featureNoSub": "Geen abonnement of account",
+      "featureUpdates": "Regelmatige updates",
+      "screenshotAlt": "Remplate-app die de reMarkable-sjabloonbrowser toont",
+      "lightboxLabel": "Voorvertoning",
+      "lightboxClose": "Sluiten"
+    },
+    "templates": {
       "badge": "Gratis sjablonen",
       "title": "Een starterspakket voor bullet journaling",
       "lead": "Drie handige sjabloonpakketten, Future Log, Daily Log en een maandelijks pakket van 5 sjablonen. Pixelperfect voor je apparaat, klaar voor import.",
@@ -337,38 +325,65 @@
       "howtoTitle": "Nieuw bij Remplate?",
       "howtoLead": "Vind het IP-adres van je tablet, maak verbinding en leer hoe sjablonen werken op je reMarkable, het duurt slechts een minuut.",
       "howtoButton": "Aan de slag",
-    "lightboxClose": "Sluiten",
-    "viewAllTemplates": "Bekijk alle {count} sjablonen",
-    "lightboxLabel": "Voorvertoning",
-    "tagSingle": "Enkel",
-    "tagBundle": "Bundel · {count}",
-    "templateCount": "{count} sjablonen",
-    "packs": {
-      "future": {
-        "title": "Future Log",
-        "desc": "Drie maanden in één oogopslag, pagina verdeeld in drieën met maand/jaar-velden en een royale bullet-ruimte. Perfect voor langetermijnplanning.",
-        "meta": ["1 PNG", "Portret", "3 maanden/pagina"]
-      },
-      "daily": {
-        "title": "Daily Log",
-        "desc": "Een zorgvuldig ontworpen dagelijkse pagina, datum, moodtracker met 5 gezichtjes, drie dankbaarheidsprompts en een gestippeld notitieveld.",
-        "meta": ["1 PNG", "Portret", "Stemming + dankbaarheid"]
-      },
-      "monthly": {
-        "title": "Monthly Log Bundle",
-        "desc": "Vijf sjablonen: een dagboek voor elke maandlengte, plus een actielijst. Elk dagboek heeft een dag-kolom, notitieregel en moodtracker.",
-        "meta": ["5 PNG's", "Portret", "28/29/30/31 + acties"],
-        "files": {
-          "28": { "name": "Monthly Log · 28 dagen", "sub": "Feb (niet-schrikkel)" },
-          "29": { "name": "Monthly Log · 29 dagen", "sub": "Feb (schrikkel)" },
-          "30": { "name": "Monthly Log · 30 dagen", "sub": "Apr/Jun/Sep/Nov" },
-          "31": { "name": "Monthly Log · 31 dagen", "sub": "Jan/Mrt/Mei/Jul/Aug/Okt/Dec" },
-          "actions": { "name": "Maandelijkse acties", "sub": "Genummerde actielijst" }
+      "lightboxClose": "Sluiten",
+      "viewAllTemplates": "Bekijk alle {count} sjablonen",
+      "lightboxLabel": "Voorvertoning",
+      "tagSingle": "Enkel",
+      "tagBundle": "Bundel · {count}",
+      "templateCount": "{count} sjablonen",
+      "packs": {
+        "future": {
+          "title": "Future Log",
+          "desc": "Drie maanden in één oogopslag, pagina verdeeld in drieën met maand/jaar-velden en een royale bullet-ruimte. Perfect voor langetermijnplanning.",
+          "meta": [
+            "1 PNG",
+            "Portret",
+            "3 maanden/pagina"
+          ]
+        },
+        "daily": {
+          "title": "Daily Log",
+          "desc": "Een zorgvuldig ontworpen dagelijkse pagina, datum, moodtracker met 5 gezichtjes, drie dankbaarheidsprompts en een gestippeld notitieveld.",
+          "meta": [
+            "1 PNG",
+            "Portret",
+            "Stemming + dankbaarheid"
+          ]
+        },
+        "monthly": {
+          "title": "Monthly Log Bundle",
+          "desc": "Vijf sjablonen: een dagboek voor elke maandlengte, plus een actielijst. Elk dagboek heeft een dag-kolom, notitieregel en moodtracker.",
+          "meta": [
+            "5 PNG's",
+            "Portret",
+            "28/29/30/31 + acties"
+          ],
+          "files": {
+            "28": {
+              "name": "Monthly Log · 28 dagen",
+              "sub": "Feb (niet-schrikkel)"
+            },
+            "29": {
+              "name": "Monthly Log · 29 dagen",
+              "sub": "Feb (schrikkel)"
+            },
+            "30": {
+              "name": "Monthly Log · 30 dagen",
+              "sub": "Apr/Jun/Sep/Nov"
+            },
+            "31": {
+              "name": "Monthly Log · 31 dagen",
+              "sub": "Jan/Mrt/Mei/Jul/Aug/Okt/Dec"
+            },
+            "actions": {
+              "name": "Maandelijkse acties",
+              "sub": "Genummerde actielijst"
+            }
+          }
         }
       }
-    }
-  },
-  "faq": {
+    },
+    "faq": {
       "badge": "Aan de slag",
       "title": "Alles om direct te beginnen",
       "lead": "Verbind je reMarkable, vind het juiste formaat en leer hoe sjabloonbeheer werkt met Remplate.",
@@ -423,5 +438,17 @@
       "mailtoSubject": "Remplate-ondersteuning",
       "mailtoBody": "Hallo,\n\nIk heb hulp nodig met Remplate.\n\nWat ik aan het doen was :\n\n\nWat er gebeurde :\n\n\nMijn apparaat (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move) :\nmacOS-versie :\n\n\nBedankt!"
     }
+  },
+  "realisations": {
+    "heroTitle": "Ons portfolio",
+    "heroLead": "Vaste prijs, geen abonnement, geen account.",
+    "cardLearnMore": "Meer informatie",
+    "cardBuy": "Kopen",
+    "cardTagDesktop": "Desktop",
+    "ctaTitle": "Een app-idee?",
+    "ctaText": "Als je een behoefte hebt die een tool kan invullen, laat het ons weten. We bestuderen elk voorstel.",
+    "ctaButton": "Schrijf ons",
+    "listHeading": "Lijst",
+    "cardDesc": "Beheer je reMarkable-sjablonen. Geen commandoregel, geen risico."
   }
 }

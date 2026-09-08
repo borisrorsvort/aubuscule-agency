@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { RemplatePage } from '@/components/apps/RemplatePage'
+import { RemplatePage } from '@/components/realisations/RemplatePage'
 
 export async function generateMetadata({
   params,
@@ -14,12 +14,12 @@ export async function generateMetadata({
     title: t('overviewTitle'),
     description: t('overviewDesc'),
     alternates: {
-      canonical: `/${locale}/apps/remplate`,
+      canonical: `/${locale}/realisations/remplate`,
       languages: {
-        fr: '/fr/apps/remplate',
-        en: '/en/apps/remplate',
-        nl: '/nl/apps/remplate',
-        'x-default': '/fr/apps/remplate',
+        fr: '/fr/realisations/remplate',
+        en: '/en/realisations/remplate',
+        nl: '/nl/realisations/remplate',
+        'x-default': '/fr/realisations/remplate',
       },
     },
   }

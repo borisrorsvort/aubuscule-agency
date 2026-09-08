@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { useTranslations } from 'next-intl'
-import '@/components/apps/apps.css'
+import '@/components/realisations/realisations.css'
 import { FAQItem } from './RemplateData'
 
 /* ── Device specs for the dimensions table ─────────────────────────── */

@@ -97,7 +97,7 @@ export function PackCard({
   onPreview: (src: string) => void
 }) {
   const t = useTranslations('remplate.templates')
-  const pathFor = (file: string) => `/apps/remplate/templates/${deviceId}/${file}`
+  const pathFor = (file: string) => `/realisations/remplate/templates/${deviceId}/${file}`
   const [bundleOpen, setBundleOpen] = useState(false)
 
   const previewSrc = pack.type === 'single' ? pathFor(pack.file) : pathFor(pack.files[0].file)

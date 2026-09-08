@@ -10,12 +10,12 @@ export async function generateMetadata({
   return {
     title: `${slug} — Aubuscule`,
     alternates: {
-      canonical: `/${locale}/apps/${slug}`,
+      canonical: `/${locale}/realisations/${slug}`,
       languages: {
-        fr: `/fr/apps/${slug}`,
-        en: `/en/apps/${slug}`,
-        nl: `/nl/apps/${slug}`,
-        'x-default': `/fr/apps/${slug}`,
+        fr: `/fr/realisations/${slug}`,
+        en: `/en/realisations/${slug}`,
+        nl: `/nl/realisations/${slug}`,
+        'x-default': `/fr/realisations/${slug}`,
       },
     },
   }

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { RemplateFAQ } from '@/components/apps/RemplateFAQ'
+import { RemplateFAQ } from '@/components/realisations/RemplateFAQ'
 
 export async function generateMetadata({
   params,

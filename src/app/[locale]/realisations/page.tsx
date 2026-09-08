@@ -1,30 +1,30 @@
 import { getTranslations } from 'next-intl/server'
-import { AppsGallery } from '@/components/apps/AppsGallery'
+import { RealisationsGallery } from '@/components/realisations/RealisationsGallery'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'nav' })
   const tMeta = await getTranslations({ locale, namespace: 'meta' })
   return {
-    title: `${t('apps')} — Aubuscule`,
+    title: `${t('realisations')} — Aubuscule`,
     description: tMeta('siteDescription'),
     alternates: {
-      canonical: `/${locale}/apps`,
+      canonical: `/${locale}/realisations`,
       languages: {
-        fr: '/fr/apps',
-        en: '/en/apps',
-        nl: '/nl/apps',
-        'x-default': '/fr/apps',
+        fr: '/fr/realisations',
+        en: '/en/realisations',
+        nl: '/nl/realisations',
+        'x-default': '/fr/realisations',
       },
     },
   }
 }
 
-export default async function AppsHome() {
+export default async function RealisationsHome() {
   return (
     <main id="main-content">
       <div className="wrap">
-        <AppsGallery />
+        <RealisationsGallery />
       </div>
     </main>
   )

@@ -18,8 +18,8 @@ const cards: HubCard[] = [
     href: '/agency',
   },
   {
-    key: 'apps',
-    href: '/apps',
+    key: 'realisations',
+    href: '/realisations',
   },
 ]
 
