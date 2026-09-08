@@ -18,7 +18,7 @@
     "closeMenu": "Menu sluiten",
     "themeLight": "Activeer lichte modus",
     "themeDark": "Activeer donkere modus",
-    "realisations": "Portfolio"
+    "portfolio": "Portfolio"
   },
   "footer": {
     "tagline": "We leveren geen projecten op. We verduidelijken een nood, bouwen een oplossing, geven de sleutels door.",
@@ -36,7 +36,7 @@
         "title": "Diensten voor artiesten",
         "desc": "Website, EPK, foto, opname, mix, clip, live-opname, distributie, automatisering, vier domeinen, één team."
       },
-      "realisations": {
+      "portfolio": {
         "label": "Portfolio",
         "title": "Software",
         "desc": "Maatwerksoftware die uw leven makkelijker maakt."
@@ -439,7 +439,7 @@
       "mailtoBody": "Hallo,\n\nIk heb hulp nodig met Remplate.\n\nWat ik aan het doen was :\n\n\nWat er gebeurde :\n\n\nMijn apparaat (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move) :\nmacOS-versie :\n\n\nBedankt!"
     }
   },
-  "realisations": {
+  "portfolio": {
     "heroTitle": "Ons portfolio",
     "heroLead": "Vaste prijs, geen abonnement, geen account.",
     "cardLearnMore": "Meer informatie",
@@ -449,6 +449,44 @@
     "ctaText": "Als je een behoefte hebt die een tool kan invullen, laat het ons weten. We bestuderen elk voorstel.",
     "ctaButton": "Schrijf ons",
     "listHeading": "Lijst",
-    "cardDesc": "Beheer je reMarkable-sjablonen. Geen commandoregel, geen risico."
+    "cardDesc": "Beheer je reMarkable-sjablonen. Geen commandoregel, geen risico.",
+    "ztCardTitle": "Tonale Zones",
+    "ztCardDesc": "Behandel 99% van de westerse muzikale harmonie in een enkele PDF.",
+    "ztCardTag": "PDF"
+  },
+  "zonesTonales": {
+    "meta": {
+      "title": "Tonale Zones — Aubuscule",
+      "desc": "Behandel 99% van de westerse muzikale harmonie in een enkele PDF."
+    },
+    "hero": {
+      "badge": "PDF · 20 PAGES",
+      "title": "Tonale Zones",
+      "lead": "Behandel 99% van de westerse muzikale harmonie in een enkele PDF. Een visueel, praktisch hulpmiddel voor het begrijpen van akkoordprogressies en modulaties in alle toonsoorten.",
+      "buy": "Hier kopen · 29 €",
+      "price": "29 €"
+    },
+    "features": {
+      "f1Title": "Alle Toonsoorten",
+      "f1Desc": "Een complete gids met alle grote en kleine toonsoorten met hun relatieve akkoorden.",
+      "f2Title": "Interactieve PDF",
+      "f2Desc": "Navigeer eenvoudig tussen verschillende toonsoorten dankzij klikbare links.",
+      "f3Title": "Harmonietheorie",
+      "f3Desc": "Bevat 8 pagina’s met een heldere inleiding in de theorie van akkoorden, cadensen en modulaties.",
+      "f4Title": "50 Jaar Ervaring",
+      "f4Desc": "Gemaakt door Alexandre Furnelle, puttend uit een enorme pedagogische achtergrond in het onderwijzen van harmonie.",
+      "f5Title": "Ontworpen voor Gebruik",
+      "f5Desc": "Harmonische compositietabellen met duidelijke kleurcodering voor gemakkelijk lezen.",
+      "f6Title": "Universeel Formaat",
+      "f6Desc": "Lees het op elk apparaat, telefoon, tablet of computer met een eenvoudige PDF-lezer."
+    },
+    "previewTitle": "Voorbeeld",
+    "featuresTitle": "Wat zit er in de PDF",
+    "galleryLabel": "Galerij",
+    "ctaTitle": "Ontvang uw exemplaar",
+    "ctaDesc": "Eenmalige aankoop van 29 €. Directe download.",
+    "trust1": "Interactieve PDF",
+    "trust2": "Levenslange toegang",
+    "trust3": "Veilige betaling"
   }
 }

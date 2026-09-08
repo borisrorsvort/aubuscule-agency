@@ -18,7 +18,7 @@
     "closeMenu": "Fermer le menu",
     "themeLight": "Activer le mode clair",
     "themeDark": "Activer le mode sombre",
-    "realisations": "Réalisations"
+    "portfolio": "Réalisations"
   },
   "footer": {
     "tagline": "On ne livre pas des projets. On éclaire un besoin, on construit une solution, on transmet les clés.",
@@ -36,7 +36,7 @@
         "title": "Services aux artistes",
         "desc": "Site, EPK, photo, enregistrement, mix, clip, captation live, distribution, automatisation, quatre domaines, une équipe."
       },
-      "realisations": {
+      "portfolio": {
         "label": "Réalisations",
         "title": "Logiciels",
         "desc": "Des logiciels sur mesure qui vous rendent la vie plus facile."
@@ -439,7 +439,7 @@
       "mailtoBody": "Bonjour,\n\nJ'ai besoin d'aide avec Remplate.\n\nCe que je faisais :\n\n\nCe qui s'est passé :\n\n\nMon appareil (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move) :\nVersion de macOS :\n\n\nMerci !"
     }
   },
-  "realisations": {
+  "portfolio": {
     "heroTitle": "Nos réalisations",
     "heroLead": "Prix fixe, pas d’abonnement, pas de compte.",
     "cardLearnMore": "En savoir plus",
@@ -449,6 +449,44 @@
     "ctaText": "Si vous avez un besoin qu’un outil pourrait combler, dites-le nous. On étudie chaque proposition.",
     "ctaButton": "Nous écrire",
     "listHeading": "Liste",
-    "cardDesc": "Gérez vos templates reMarkable. Sans ligne de commande, sans risque."
+    "cardDesc": "Gérez vos templates reMarkable. Sans ligne de commande, sans risque.",
+    "ztCardTitle": "Zones Tonales",
+    "ztCardDesc": "Couvrez 99% de l’harmonie musicale occidentale en un seul PDF.",
+    "ztCardTag": "PDF"
+  },
+  "zonesTonales": {
+    "meta": {
+      "title": "Zones Tonales — Aubuscule",
+      "desc": "Couvrez 99% de l’harmonie musicale occidentale en un seul PDF."
+    },
+    "hero": {
+      "badge": "PDF · 20 PAGES",
+      "title": "Zones Tonales",
+      "lead": "Couvrez 99% de l’harmonie musicale occidentale en un seul PDF. Un outil visuel et pratique pour comprendre les enchaînements d’accords et les modulations dans toutes les tonalités.",
+      "buy": "Acheter · 29 €",
+      "price": "29 €"
+    },
+    "features": {
+      "f1Title": "Toutes les tonalités",
+      "f1Desc": "Un guide complet incluant toutes les tonalités majeures et mineures avec leurs accords relatifs.",
+      "f2Title": "PDF Interactif",
+      "f2Desc": "Naviguez facilement entre les différentes tonalités grâce à des liens internes cliquables.",
+      "f3Title": "Théorie de l’harmonie",
+      "f3Desc": "Comprend 8 pages d’introduction claire à la théorie des accords, cadences et modulations.",
+      "f4Title": "50 ans d’expérience",
+      "f4Desc": "Le fruit de 50 ans d’expérience d’Alexandre Furnelle, avec un énorme bagage pédagogique.",
+      "f5Title": "Design pensé pour l’usage",
+      "f5Desc": "Des tables de composition harmoniques avec un code couleur clair pour faciliter la lecture.",
+      "f6Title": "Format universel",
+      "f6Desc": "Lisez-le sur n’importe quel appareil, téléphone, tablette ou ordinateur."
+    },
+    "previewTitle": "Aperçu",
+    "featuresTitle": "Ce que contient le PDF",
+    "galleryLabel": "Galerie",
+    "ctaTitle": "Obtenir votre copie",
+    "ctaDesc": "Achat unique de 29 €. Téléchargement immédiat.",
+    "trust1": "PDF Interactif",
+    "trust2": "Accès à vie",
+    "trust3": "Paiement sécurisé"
   }
 }

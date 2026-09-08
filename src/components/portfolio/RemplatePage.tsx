@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import '@/components/realisations/realisations.css'
+import '@/components/portfolio/portfolio.css'
 
 /* ── Flow arrow ───────────────────────────────────────────────────── */
 
@@ -45,7 +45,7 @@ const TOOLS = [
   },
   {
     label: 'Penpot',
-    url: '/realisations/remplate/base/Remplate-device-frames.penpot',
+    url: '/portfolio/remplate/base/Remplate-device-frames.penpot',
     download: true,
     logo: (
       <svg width="13" height="13" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ const TOOLS = [
   },
   {
     label: 'Affinity',
-    url: '/realisations/remplate/base/Remplate-device-frames.afdesign',
+    url: '/portfolio/remplate/base/Remplate-device-frames.afdesign',
     download: true,
     logo: (
       <svg width="13" height="13" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@ const TOOLS = [
   },
   {
     label: 'PNG',
-    url: '/realisations/remplate/base/Remplate-device-frames-png.zip',
+    url: '/portfolio/remplate/base/Remplate-device-frames-png.zip',
     download: true,
     logo: (
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -157,9 +157,9 @@ export function RemplatePage() {
           <FlowArrow />
 
           {/* MIDDLE — Screenshot */}
-          <div className="app-hero-screenshot" onClick={() => setLightboxSrc('/realisations/remplate/screenshot.png')} style={{ cursor: 'zoom-in' }}>
+          <div className="app-hero-screenshot" onClick={() => setLightboxSrc('/portfolio/remplate/screenshot.png')} style={{ cursor: 'zoom-in' }}>
             <img
-              src="/realisations/remplate/screenshot.png"
+              src="/portfolio/remplate/screenshot.png"
               alt={t('screenshotAlt')}
               className="app-screenshot-img"
             />
@@ -263,7 +263,7 @@ export function RemplatePage() {
           <p className="app-specs-desc">
             {t('specsDesc')}
           </p>
-          <a href="/realisations/remplate/templates" className="app-specs-link">
+          <a href="/portfolio/remplate/templates" className="app-specs-link">
             {t('specsLink')}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ marginLeft: '4px' }}>
               <line x1="5" y1="12" x2="19" y2="12" />
