@@ -10,9 +10,23 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "zonesTonales.meta" });
 
+  const getOgImage = (loc: string) => {
+    if (loc === "en") return "/images/tonal-zones-cover-en.png";
+    if (loc === "nl") return "/images/tonale-zones-cover-nl.png";
+    return "/images/zones-tonales-cover.png";
+  };
+  const ogImage = getOgImage(locale);
+
   return {
     title: t("title"),
     description: t("desc"),
+    openGraph: {
+      images: [{ url: ogImage }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: [ogImage],
+    },
     alternates: {
       canonical: `/${locale}/portfolio/zones-tonales`,
       languages: {
