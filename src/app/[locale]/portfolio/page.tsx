@@ -1,20 +1,20 @@
 import { getTranslations } from 'next-intl/server'
-import { RealisationsGallery } from '@/components/realisations/RealisationsGallery'
+import { RealisationsGallery } from '@/components/portfolio/RealisationsGallery'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'nav' })
   const tMeta = await getTranslations({ locale, namespace: 'meta' })
   return {
-    title: `${t('realisations')} — Aubuscule`,
+    title: `${t('portfolio')} — Aubuscule`,
     description: tMeta('siteDescription'),
     alternates: {
-      canonical: `/${locale}/realisations`,
+      canonical: `/${locale}/portfolio`,
       languages: {
-        fr: '/fr/realisations',
-        en: '/en/realisations',
-        nl: '/nl/realisations',
-        'x-default': '/fr/realisations',
+        fr: '/fr/portfolio',
+        en: '/en/portfolio',
+        nl: '/nl/portfolio',
+        'x-default': '/fr/portfolio',
       },
     },
   }

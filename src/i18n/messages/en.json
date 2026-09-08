@@ -18,7 +18,7 @@
     "closeMenu": "Close menu",
     "themeLight": "Activate light mode",
     "themeDark": "Activate dark mode",
-    "realisations": "Portfolio"
+    "portfolio": "Portfolio"
   },
   "footer": {
     "tagline": "We don't deliver projects. We clarify a need, build a solution, hand over the keys.",
@@ -36,7 +36,7 @@
         "title": "Services for artists",
         "desc": "Website, EPK, photo, recording, mix, music video, live capture, distribution, automation, four domains, one team."
       },
-      "realisations": {
+      "portfolio": {
         "label": "Portfolio",
         "title": "Software",
         "desc": "Custom software that makes your life easier."
@@ -439,7 +439,7 @@
       "mailtoBody": "Hi,\n\nI need help with Remplate.\n\nWhat I was doing:\n\n\nWhat happened:\n\n\nMy device (reMarkable 2 / Paper Pure / Paper Pro / Paper Pro Move):\nmacOS version:\n\n\nThanks!"
     }
   },
-  "realisations": {
+  "portfolio": {
     "heroTitle": "Our portfolio",
     "heroLead": "Fixed price, no subscription, no account.",
     "cardLearnMore": "Learn more",
@@ -449,6 +449,44 @@
     "ctaText": "If you have a need that a tool could fill, let us know. We study every proposal.",
     "ctaButton": "Write to us",
     "listHeading": "List",
-    "cardDesc": "Manage your reMarkable templates. No command line, no risk."
+    "cardDesc": "Manage your reMarkable templates. No command line, no risk.",
+    "ztCardTitle": "Tonal Zones",
+    "ztCardDesc": "Cover 99% of Western musical harmony in a single PDF.",
+    "ztCardTag": "PDF"
+  },
+  "zonesTonales": {
+    "meta": {
+      "title": "Tonal Zones — Aubuscule",
+      "desc": "Cover 99% of Western musical harmony in a single PDF."
+    },
+    "hero": {
+      "badge": "PDF · 20 PAGES",
+      "title": "Tonal Zones",
+      "lead": "Cover 99% of Western musical harmony in a single PDF. A visual, practical tool for understanding chord progressions and modulations in all keys.",
+      "buy": "Buy here · 29 €",
+      "price": "29 €"
+    },
+    "features": {
+      "f1Title": "All Keys Covered",
+      "f1Desc": "A complete guide including all major and minor keys with their relative chords.",
+      "f2Title": "Interactive PDF",
+      "f2Desc": "Navigate seamlessly between different keys and tonalities using built-in clickable links.",
+      "f3Title": "Harmony Theory",
+      "f3Desc": "Includes 8 pages of clear introduction to the theory of chords, cadences, and modulations.",
+      "f4Title": "50 Years of Experience",
+      "f4Desc": "Created by Alexandre Furnelle, drawing from a massive pedagogical background in teaching harmony.",
+      "f5Title": "Designed for Use",
+      "f5Desc": "Harmonic composition tables with clear color-coding for easy reading and analysis.",
+      "f6Title": "Universal Format",
+      "f6Desc": "Read it on any device, phone, tablet, or computer with a simple PDF reader."
+    },
+    "previewTitle": "Preview",
+    "featuresTitle": "What’s inside the PDF",
+    "galleryLabel": "Gallery",
+    "ctaTitle": "Get your copy",
+    "ctaDesc": "A one-time 29 € purchase. Immediate download.",
+    "trust1": "Interactive PDF",
+    "trust2": "Lifetime access",
+    "trust3": "Secure payment"
   }
 }

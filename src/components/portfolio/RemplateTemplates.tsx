@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import '@/components/realisations/realisations.css'
+import '@/components/portfolio/portfolio.css'
 import { DEVICES, PACKS, PackCard } from './RemplateData'
 
 export function RemplateTemplates() {
@@ -16,7 +16,7 @@ export function RemplateTemplates() {
       if (pack.type === 'single') {
         setTimeout(() => {
           const a = document.createElement('a')
-          a.href = `/realisations/remplate/templates/${deviceId}/${pack.file}`
+          a.href = `/portfolio/remplate/templates/${deviceId}/${pack.file}`
           a.download = pack.file
           document.body.appendChild(a)
           a.click()
@@ -26,7 +26,7 @@ export function RemplateTemplates() {
         pack.files.forEach(f => {
           setTimeout(() => {
             const a = document.createElement('a')
-            a.href = `/realisations/remplate/templates/${deviceId}/${f.file}`
+            a.href = `/portfolio/remplate/templates/${deviceId}/${f.file}`
             a.download = f.file
             document.body.appendChild(a)
             a.click()
@@ -103,7 +103,7 @@ export function RemplateTemplates() {
         <p className="app-why-lead">
           {t('howtoLead')}
         </p>
-        <a href="/realisations/remplate/faq" className="btn-primary" style={{ marginTop: 'var(--sp-4)' }}>
+        <a href="/portfolio/remplate/faq" className="btn-primary" style={{ marginTop: 'var(--sp-4)' }}>
           {t('howtoButton')}
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <line x1="5" y1="12" x2="19" y2="12" />

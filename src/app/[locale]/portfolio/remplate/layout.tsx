@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { AppSubNav } from '@/components/realisations/AppSubNav'
+import { AppSubNav } from '@/components/portfolio/AppSubNav'
 
 export default async function RemplateLayout({
   children,

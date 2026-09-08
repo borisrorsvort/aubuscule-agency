@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static date to avoid unnecessary re-crawling of unchanged pages on every build.
   // Update this when content actually changes.
   const lastModified = new Date('2024-06-30')
-  const paths = ['', '/agency', '/realisations', '/realisations/remplate', '/realisations/remplate/templates', '/realisations/remplate/faq']
+  const paths = ['', '/agency', '/portfolio', '/portfolio/remplate', '/portfolio/remplate/templates', '/portfolio/remplate/faq']
 
   return paths.flatMap((path) =>
     locales.map((locale) => ({

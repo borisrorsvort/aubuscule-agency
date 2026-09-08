@@ -14,7 +14,7 @@ export function Footer() {
   const navLinks = [
     { href: '/', label: tNav('home') },
     { href: '/agency', label: tNav('agency') },
-    { href: '/realisations', label: tNav('realisations') },
+    { href: '/portfolio', label: tNav('portfolio') },
   ] as const
 
   return (
