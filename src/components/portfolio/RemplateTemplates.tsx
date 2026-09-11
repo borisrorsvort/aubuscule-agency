@@ -16,7 +16,7 @@ export function RemplateTemplates() {
       if (pack.type === 'single') {
         setTimeout(() => {
           const a = document.createElement('a')
-          a.href = `/portfolio/remplate/templates/${deviceId}/${pack.file}`
+          a.href = `/apps/remplate/templates/${deviceId}/${pack.file}`
           a.download = pack.file
           document.body.appendChild(a)
           a.click()
@@ -26,7 +26,7 @@ export function RemplateTemplates() {
         pack.files.forEach(f => {
           setTimeout(() => {
             const a = document.createElement('a')
-            a.href = `/portfolio/remplate/templates/${deviceId}/${f.file}`
+            a.href = `/apps/remplate/templates/${deviceId}/${f.file}`
             a.download = f.file
             document.body.appendChild(a)
             a.click()

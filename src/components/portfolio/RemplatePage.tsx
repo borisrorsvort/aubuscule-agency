@@ -45,7 +45,7 @@ const TOOLS = [
   },
   {
     label: 'Penpot',
-    url: '/portfolio/remplate/base/Remplate-device-frames.penpot',
+    url: '/apps/remplate/base/Remplate-device-frames.penpot',
     download: true,
     logo: (
       <svg width="13" height="13" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ const TOOLS = [
   },
   {
     label: 'Affinity',
-    url: '/portfolio/remplate/base/Remplate-device-frames.afdesign',
+    url: '/apps/remplate/base/Remplate-device-frames.afdesign',
     download: true,
     logo: (
       <svg width="13" height="13" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@ const TOOLS = [
   },
   {
     label: 'PNG',
-    url: '/portfolio/remplate/base/Remplate-device-frames-png.zip',
+    url: '/apps/remplate/base/Remplate-device-frames-png.zip',
     download: true,
     logo: (
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -157,9 +157,9 @@ export function RemplatePage() {
           <FlowArrow />
 
           {/* MIDDLE — Screenshot */}
-          <div className="app-hero-screenshot" onClick={() => setLightboxSrc('/portfolio/remplate/screenshot.png')} style={{ cursor: 'zoom-in' }}>
+          <div className="app-hero-screenshot" onClick={() => setLightboxSrc('/apps/remplate/screenshot.png')} style={{ cursor: 'zoom-in' }}>
             <img
-              src="/portfolio/remplate/screenshot.png"
+              src="/apps/remplate/screenshot.png"
               alt={t('screenshotAlt')}
               className="app-screenshot-img"
             />

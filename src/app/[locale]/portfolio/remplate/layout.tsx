@@ -12,9 +12,9 @@ export default async function RemplateLayout({
   const t = await getTranslations({ locale, namespace: 'remplate.subnav' })
 
   const navItems = [
-    { href: '/apps/remplate', label: t('overview') },
-    { href: '/apps/remplate/templates', label: t('templates') },
-    { href: '/apps/remplate/faq', label: t('faq') },
+    { href: '/portfolio/remplate', label: t('overview') },
+    { href: '/portfolio/remplate/templates', label: t('templates') },
+    { href: '/portfolio/remplate/faq', label: t('faq') },
   ]
 
   return (

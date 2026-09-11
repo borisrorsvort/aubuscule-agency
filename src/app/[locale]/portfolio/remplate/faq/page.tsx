@@ -14,12 +14,12 @@ export async function generateMetadata({
     title: t('faqTitle'),
     description: t('faqDesc'),
     alternates: {
-      canonical: `/${locale}/apps/remplate/faq`,
+      canonical: `/${locale}/portfolio/remplate/faq`,
       languages: {
-        fr: '/fr/apps/remplate/faq',
-        en: '/en/apps/remplate/faq',
-        nl: '/nl/apps/remplate/faq',
-        'x-default': '/fr/apps/remplate/faq',
+        fr: '/fr/portfolio/remplate/faq',
+        en: '/en/portfolio/remplate/faq',
+        nl: '/nl/portfolio/remplate/faq',
+        'x-default': '/fr/portfolio/remplate/faq',
       },
     },
     openGraph: {

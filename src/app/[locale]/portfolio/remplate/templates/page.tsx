@@ -14,12 +14,12 @@ export async function generateMetadata({
     title: t('templatesTitle'),
     description: t('templatesDesc'),
     alternates: {
-      canonical: `/${locale}/apps/remplate/templates`,
+      canonical: `/${locale}/portfolio/remplate/templates`,
       languages: {
-        fr: '/fr/apps/remplate/templates',
-        en: '/en/apps/remplate/templates',
-        nl: '/nl/apps/remplate/templates',
-        'x-default': '/fr/apps/remplate/templates',
+        fr: '/fr/portfolio/remplate/templates',
+        en: '/en/portfolio/remplate/templates',
+        nl: '/nl/portfolio/remplate/templates',
+        'x-default': '/fr/portfolio/remplate/templates',
       },
     },
     openGraph: {
