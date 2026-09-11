@@ -22,6 +22,24 @@ export async function generateMetadata({
         'x-default': '/fr/portfolio/remplate',
       },
     },
+    openGraph: {
+      title: t('overviewTitle'),
+      description: t('overviewDesc'),
+      images: [
+        {
+          url: '/apps/remplate/screenshot.png',
+          width: 1440,
+          height: 1036,
+          alt: t('overviewTitle'),
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('overviewTitle'),
+      description: t('overviewDesc'),
+      images: ['/apps/remplate/screenshot.png'],
+    },
   }
 }
 

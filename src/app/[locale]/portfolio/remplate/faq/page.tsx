@@ -22,6 +22,24 @@ export async function generateMetadata({
         'x-default': '/fr/apps/remplate/faq',
       },
     },
+    openGraph: {
+      title: t('faqTitle'),
+      description: t('faqDesc'),
+      images: [
+        {
+          url: '/apps/remplate/screenshot.png',
+          width: 1440,
+          height: 1036,
+          alt: t('faqTitle'),
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('faqTitle'),
+      description: t('faqDesc'),
+      images: ['/apps/remplate/screenshot.png'],
+    },
   }
 }
 
